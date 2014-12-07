@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  <form-bean name="userinfoForm" type="com.bbs.web.struts.form.UserinfoForm"/>
+  <form-bean name="logonForm" type="com.bbs.web.struts.form.LogonForm"/>
+  <form-bean name="pageForm" type="com.bbs.web.struts.form.PageForm" />
+  <form-bean name="newtopicForm" type="com.bbs.web.struts.form.TopicForm"/>
+  <form-bean name="responseForm" type="com.bbs.web.struts.form.ResponseForm"/>
+  <form-bean name="subjectForm" type="com.bbs.web.struts.form.SubjectForm"/>
+  </form-beans>
+  <global-exceptions>  
+  </global-exceptions>
+  <global-forwards>
+  	<forward name="newtopic" path="/forum/newtopic.jsp"/>
+  	<forward name="error" path="/forum/error.jsp"/>
+  	<forward name="logon" path="/user/logon.jsp"/>
+  </global-forwards>
+  <action-mappings>
+  
+  	<action path="/usermanager"
+  			input="/user/register.jsp"
+  			name="userinfoForm" 
+      		parameter="method"
+      		scope="request"
+      		validate="true"
+      		type="com.bbs.web.struts.action.UserAction">      		
+      <forward name="userlist" path="/admin/manager.jsp" />
+      <forward name="registersuccess" path="/forum/welcometoforum.jsp"/>
+      <forward name="register" path="/user/register.jsp"/>
+      <forward name="delete" path="/usermanager.do?method=listuser"/>
+      <forward name="list" path="/usermanager.do?method=listuser"/>
+      <forward name="edituser" path="/user/register.jsp"/>
+    </action>
+    
+    <action path="/register"
+    		parameter="method"
+    		name="userinfoForm"
+    		scope="request"
+      		validate="false"
+    		type="com.bbs.web.struts.action.UserAction">
+    		<forward name="register" path="/user/register.jsp"/>
+    		<forward name="edituser" path="/user/register.jsp"/>
+    		<forward name="userlist" path="/admin/manager.jsp" />
+      <forward name="registersuccess" path="/forum/welcometoforum.jsp"/>
+      <forward name="delete" path="/admin/userdelete.jsp"/>
+      <forward name="list" path="/register.do?method=listuser"/>
+      <forward name="viewusersuccess" path="/admin/viewuser.jsp"/>
+   	</action>
+    
+    <action path="/subjectmanager"
+      		name="subjectForm" 
+      		parameter="method"
+      		scope="request"
+      		validate="false"
+      		type="com.bbs.web.struts.action.SubjectAction">      		
+            <forward name="listbyadmin" path="/admin/subjectmanager.jsp"/>
+            <forward name="delete" path="/subjectmanager.do?method=listbyadmin"/> 
+            <forward name="addsubject" path="/admin/newsubject.jsp"/>
+            <forward name="addsubjectsuccess" path="/subjectmanager.do?method=listbyadmin"/>
+    </action>
+    
+    
+    <action path="/logon"
+      		name="logonForm" 
+      		parameter="method"
+      		scope="request"
+      		validate="false"
+      		type="com.bbs.web.struts.action.UserAction">
+      <forward name="success" path="/forum/welcometoforum.jsp" />
+      <forward name="adminlogon" path="/admin/admintop.jsp"/>
+      <forward name="logout" path="/user/logon.jsp"/>
+    </action>
+    
+    <action  path="/subject"
+    	parameter="method"
+    		type="com.bbs.web.struts.action.SubjectAction">
+    		<forward name="viewsubject" path="/forum/index.jsp"/>
+    </action> 
+    
+    		
+    <action path="/topic"
+      		name="newtopicForm" 
+      		parameter="method"
+      		scope="request"
+      		validate="false"
+      		type="com.bbs.web.struts.action.TopicAction">
+      <forward name="topiclist" path="/forum/viewalltopic.jsp" />
+      <forward name="addtopicsuccess" path="/topic.do?method=listtopic"/> 
+      <forward name="newtopic" path="/forum/newtopic.jsp"/>    
+      <forward name="delete" path="/topic.do?method=listtopic"/> 
+    </action>
+    
+    <action path="/response"
+    		name="responseForm"
+             parameter="method"
+             scope="request"
+             validate="false"
+    		type="com.bbs.web.struts.action.ResponseAction">  
+    		<forward name="responselist" path="/forum/viewresponse.jsp"/>  	
+    		<forward name="addresponsesuccess" path="/response.do?method=responselist"/>	
+    		<forward name="editresponse" path="/forum/edit_response.jsp"/>
+    		<forward name="newresponse" path="/response.do?method=responselist"/>
+    </action>
+    
+   <action
+      attribute="pageForm"
+      name="pageForm"
+      parameter="method"
+      path="/forum/topicPage"
+      scope="request"
+      type="com.bbs.web.struts.action.PageAction"
+      validate="false">
+      <forward name="success" path="/forum/viewalltopic.jsp" />
+    </action>
+  
+     <action
+      attribute="pageForm"
+      name="pageForm"
+      parameter="method"
+      path="/forum/responsePage"
+      scope="request"
+      type="com.bbs.web.struts.action.PageAction"
+      validate="false">
+      <forward name="success" path="/forum/viewresponse.jsp" />
+    </action>
+  <action
+      attribute="pageForm"
+      name="pageForm"
+      parameter="method"
+      path="/forum/userPage"
+      scope="request"
+      type="com.bbs.web.struts.action.PageAction"
+      validate="false">
+      <forward name="success" path="/admin/manager.jsp" />
+    </action>
+    
+    <action
+      attribute="pageForm"
+      name="pageForm"
+      parameter="method"
+      path="/forum/subjectPage"
+      scope="request"
+      type="com.bbs.web.struts.action.PageAction"
+      validate="false">
+      <forward name="success" path="/admin/subjectmanager.jsp" />
+    </action>
+    
+    
+  
+  </action-mappings>
+  <message-resources parameter="com.bbs.struts.ApplicationResources" />
+</struts-config>
+

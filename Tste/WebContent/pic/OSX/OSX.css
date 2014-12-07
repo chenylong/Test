@@ -1,0 +1,185 @@
+.BodyHeader_Left {
+	font-family: "宋体";
+	font-size: 10pt;
+	text-decoration: none;
+	background-image: url(TopLeft.gif);
+	font-weight: bold;
+	vertical-align: middle;
+	height: 22px;
+	width: 81px;
+	cursor: pointer;
+}
+.BodyHeader_Middle {
+	font-family: "宋体";
+	font-size: 10pt;
+	text-decoration: none;
+	background-image: url(TopMiddle.gif);
+	vertical-align: middle;
+	height: 22px;
+	width: auto;
+	cursor: pointer;
+}
+.BodyHeader_Right {
+	font-family: "宋体";
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: url(TopRight.gif);
+	vertical-align: middle;
+	height: 22px;
+	width: 47px;
+	cursor: pointer;
+}
+.Body {
+	font-family: "宋体";
+	font-size: 9pt;
+	text-decoration: none;
+	width: auto;
+	background-color: #EEEEEE;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #0099FF;
+	border-right-color: #0099FF;
+	border-bottom-color: #0099FF;
+	border-left-color: #0099FF;
+	vertical-align: middle;
+}
+.BodyFooter_Left {
+	font-family: "宋体";
+	font-size: 7pt;
+	text-decoration: none;
+	background-image: url(BottomLeft.gif);
+	vertical-align: middle;
+	height: 14px;
+	width: 12px;
+}
+.BodyFooter_Middle {
+	font-family: "宋体";
+	font-size: 7pt;
+	text-decoration: none;
+	background-image: url(BottomMiddle.gif);
+	vertical-align: middle;
+	height: 14px;
+	width: auto;
+}
+.BodyFooter_Right {
+	font-family: "宋体";
+	font-size: 7pt;
+	text-decoration: none;
+	background-image: url(BottomRight.gif);
+	vertical-align: middle;
+	height: 14px;
+	width: 65px;
+}
+.Succ {
+	font-family: "幼圆";
+	font-size: 36pt;
+	font-style: italic;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #0066FF;
+}
+a:link {
+	font-family: "宋体";
+	font-size: 10pt;
+	color: #6633FF;
+	text-decoration: none;
+}
+a:visited {
+	font-family: "宋体";
+	font-size: 10pt;
+	color: #6633FF;
+	text-decoration: none;
+}
+a:hover {
+	font-family: "宋体";
+	font-size: 10pt;
+	color: #FF0000;
+	text-decoration: none;
+}
+a:active {
+	font-family: "宋体";
+	font-size: 10pt;
+	color: #6633FF;
+	text-decoration: none;
+}
+.normalText {
+	font-family: "宋体";
+	font-size: 9pt;
+	text-decoration: none;
+}
+.pageText {
+	font-family: "宋体";
+	font-size: 16pt;
+	text-decoration: none;
+	color:#3366CC
+}
+.blackText {
+	font-family: "黑体";
+	font-size: 11pt;
+	text-decoration: none;
+}
+.timeText {
+	font-family: "宋体";
+	font-size: 11pt;
+	text-decoration: none;
+	color: #0066FF;
+}
+.normal_1Text {
+	font-family: "宋体";
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+.bookText {
+	font-family: "宋体";
+	font-size: 10pt;
+	text-decoration: none;
+	color: #0033CC;
+}
+.bookTitleText {
+	font-family: "宋体";
+	font-size: 11pt;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bolder;
+}
+.singlePXTable_Unit {
+	border-top: 1px solid #000000;
+	border-right: 1px none #000000;
+	border-bottom: 1px none #000000;
+	border-left: 1px solid #000000;
+}
+.singlePXTable_Table {
+	border-top: 1px none #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px none #000000;
+}
+.buttonText {
+	font-family: "宋体";
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0066FF;
+}
+.buttonText {
+	font-family: "宋体";
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0066FF;
+}
+.downloadText {
+	font-family: "宋体";
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: bold;
+	color:#FF0000;
+}

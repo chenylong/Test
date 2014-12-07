@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<!-- DO NOT EDIT: This is a generated file that is synchronized -->
+<!-- by MyEclipse Hibernate tool integration.                   -->
+<!-- Created Mon Apr 10 21:02:56 CST 2006                         -->
+<hibernate-mapping package="com.bbs.domain.model">
+
+    <class name="User" table="user">
+        <id name="id" column="id" type="long">
+            <generator class="increment"/>
+        </id>
+ 
+        <property name="username" column="username" type="string"  not-null="true" />
+        <property name="pwd" column="pwd" type="string"  not-null="true" />
+        <property name="nickname" column="nickname" type="string" />
+        <property name="sex" column="sex" type="string" />
+        <property name="birthday" column="birthday" type="string" />
+        <property name="email" column="email" type="string" />
+        <property name="phone" column="phone" type="string" />
+        <property name="description" column="description" type="string" />
+        <property name="count" column="count" type="integer" />
+        <property name="status" column="status" type="string" />
+        <property name="registerdate" column="registerdate" type="timestamp" />
+        <property name="role" column="role" type="string"/>
+         <set
+        		name="topic"
+        		cascade="delete">
+        		<key column="writer"/>
+        		<one-to-many class="Topic"/>
+        		</set>
+        <set
+        		name="responses"
+        		cascade="delete">
+        		<key column="writer"/>
+        		<one-to-many class="Response"/>
+        </set>
+        
+    </class>
+    
+</hibernate-mapping>
