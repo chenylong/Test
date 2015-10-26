@@ -1,0 +1,312 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="&lt;categories&gt; element" >
+  <key name="candlestick chart" >
+    <topic name="Overview.html" url="../../../Candlestick/Overview.html" />
+  </key>
+  <key name="create box and whisker chart" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+  <key name="create radar chart" >
+    <topic name="FirstChart.html" url="../../../Radar/FirstChart.html" />
+  </key>
+  <key name="create step line chart" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+  <key name="error bar chart" >
+    <topic name="ErrorBarSimpleChart.html" url="../../../ErrorChart/ErrorBarSimpleChart.html" />
+  </key>
+  <key name="error line chart" >
+    <topic name="ErrorLineSimpleChart.html" url="../../../ErrorChart/ErrorLineSimpleChart.html" />
+  </key>
+  <key name="error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+  <key name="JSON overview" >
+    <topic name="JSONOverview.html" url="../../../DataFormats/JSONOverview.html" />
+  </key>
+</key>
+<key name="&lt;category&gt; element" >
+  <key name="candlestick chart" >
+    <topic name="Overview.html" url="../../../Candlestick/Overview.html" />
+  </key>
+  <key name="create box and whisker chart" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+  <key name="create error bar chart" >
+    <topic name="ErrorBarSimpleChart.html" url="../../../ErrorChart/ErrorBarSimpleChart.html" />
+  </key>
+  <key name="create error line chart" >
+    <topic name="ErrorLineSimpleChart.html" url="../../../ErrorChart/ErrorLineSimpleChart.html" />
+  </key>
+  <key name="create error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create radar chart" >
+    <topic name="FirstChart.html" url="../../../Radar/FirstChart.html" />
+  </key>
+  <key name="create step line chart" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+  <key name="JSON overview" >
+    <topic name="JSONOverview.html" url="../../../DataFormats/JSONOverview.html" />
+  </key>
+  <key name="multi level pie chart" >
+    <topic name="FirstChart.html" url="../../../MultiLevelPie/FirstChart.html" />
+  </key>
+</key>
+<key name="&lt;color&gt; element" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="gradient legend in heat map chart" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+  <key name="icon legend in heat map chart" >
+    <topic name="iconlegend.html" url="../../../HeatMap/iconlegend.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="&lt;colorRange&gt; element" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="gradient legend in heat map chart" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+  <key name="icon legend in heat map chart" >
+    <topic name="iconlegend.html" url="../../../HeatMap/iconlegend.html" />
+  </key>
+  <key name="map out of range data in heat map chart" >
+    <topic name="outofrange.html" url="../../../HeatMap/outofrange.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="&lt;column&gt; element" >
+  <key name="numeric based charting in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="&lt;columns&gt; element" >
+  <key name="heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="&lt;connector&gt; element" >
+  <key name="add or edit connectors in drag node chart" >
+    <topic name="AddEditConnectors.html" url="../../../Dragnode/AddEditConnectors.html" />
+  </key>
+</key>
+<key name="&lt;connectors&gt; element" >
+  <key name="add or edit connectors in drag node chart" >
+    <topic name="AddEditConnectors.html" url="../../../Dragnode/AddEditConnectors.html" />
+  </key>
+</key>
+<key name="&lt;dataset&gt; element" >
+  <key name="add or edit connectors in a drag node chart" >
+    <topic name="AddEditNodes.html" url="../../../Dragnode/AddEditNodes.html" />
+  </key>
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure mean deviation in box and whisker chart" >
+    <topic name="MeanDeviation.html" url="../../../BoxandWhisker/MeanDeviation.html" />
+  </key>
+  <key name="configure mean in box and whisker chart" >
+    <topic name="Mean.html" url="../../../BoxandWhisker/Mean.html" />
+  </key>
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html" url="../../../BoxandWhisker/QuartileDeviation.html" />
+  </key>
+  <key name="create box and whisker chart" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create radar chart" >
+    <topic name="FirstChart.html" url="../../../Radar/FirstChart.html" />
+  </key>
+  <key name="create step line chart" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+  <key name="drag node chart overview" >
+    <topic name="Overview.html" url="../../../Dragnode/Overview.html" />
+  </key>
+  <key name="error bar chart" >
+    <topic name="ErrorBarSimpleChart.html" url="../../../ErrorChart/ErrorBarSimpleChart.html" />
+  </key>
+  <key name="error line chart" >
+    <topic name="ErrorLineSimpleChart.html" url="../../../ErrorChart/ErrorLineSimpleChart.html" />
+  </key>
+  <key name="error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+  <key name="JSON overview" >
+    <topic name="JSONOverview.html" url="../../../DataFormats/JSONOverview.html" />
+  </key>
+</key>
+<key name="&lt;EMBED&gt; tag" >
+  <key name="use to embed in Web pages" >
+    <topic name="HtmlEmbed.html" url="../../../FirstChart/HtmlEmbed.html" />
+  </key>
+</key>
+<key name="&lt;FORM&gt; element" >
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html" url="../../../JavaScript/JS_Example.html" />
+  </key>
+</key>
+<key name="&lt;OBJECT&gt; tag" >
+  <key name="use to embed in Web pages" >
+    <topic name="HtmlEmbed.html" url="../../../FirstChart/HtmlEmbed.html" />
+  </key>
+</key>
+<key name="&lt;row&gt; element" >
+  <key name="heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="&lt;rows&gt; element" >
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="&lt;set&gt; element" >
+  <key name="add or edit connectors in a drag node chart" >
+    <topic name="AddEditNodes.html" url="../../../Dragnode/AddEditNodes.html" />
+  </key>
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure mean deviation in box and whisker chart" >
+    <topic name="MeanDeviation.html" url="../../../BoxandWhisker/MeanDeviation.html" />
+  </key>
+  <key name="configure mean in box and chart" >
+    <topic name="Mean.html" url="../../../BoxandWhisker/Mean.html" />
+  </key>
+  <key name="configure outliers in box and whisker chart" >
+    <topic name="Outliers.html" url="../../../BoxandWhisker/Outliers.html" />
+  </key>
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html" url="../../../BoxandWhisker/QuartileDeviation.html" />
+  </key>
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html" url="../../../BoxandWhisker/StandardDeviation.html" />
+  </key>
+  <key name="create box and whisker chart" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create radar chart" >
+    <topic name="FirstChart.html" url="../../../Radar/FirstChart.html" />
+  </key>
+  <key name="create step line chart" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+  <key name="drag node chart overview" >
+    <topic name="Overview.html" url="../../../Dragnode/Overview.html" />
+  </key>
+  <key name="error bar chart" >
+    <topic name="ErrorBarSimpleChart.html" url="../../../ErrorChart/ErrorBarSimpleChart.html" />
+  </key>
+  <key name="error line chart" >
+    <topic name="ErrorLineSimpleChart.html" url="../../../ErrorChart/ErrorLineSimpleChart.html" />
+  </key>
+  <key name="error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+  <key name="JSON overview" >
+    <topic name="JSONOverview.html" url="../../../DataFormats/JSONOverview.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+  <key name="step line chart" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+  <key name="waterfall chart" >
+    <topic name="Config.html" url="../../../Waterfall/Config.html" />
+  </key>
+</key>
+
+<key name="addEventListener function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#methods" url="../../../JavaScript/JS_EventOverview.html#methods" />
+  </key>
+  <key name="listen to LinkedCharts events" >
+    <topic name="JS_LinkedCharts.html#events" url="../../../JavaScript/JS_LinkedCharts.html#events" />
+  </key>
+</key>
+<key name="addVariable() function" >
+  <key name="change chart messages" >
+    <topic name="ChartMessages#multiple" url="../../../Advanced/ChartMessages.html#multiple" />
+  </key>
+</key>
+<key name="alert() function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#advanced" url="../../../JavaScript/JS_EventOverview.html#advanced" />
+  </key>
+</key>
+<key name="allowDrag attribute" >
+  <key name="drag node chart overview" >
+    <topic name="Overview.html" url="../../../Dragnode/Overview.html" />
+  </key>
+</key>
+<key name="alpha attribute" >
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="anchors" >
+  <key name="attributes" >
+    <topic name="Anchors.html" url="../../../AttDesc/Anchors.html" />
+  </key>
+</key>
+<key name="animation style type" >
+  <key name="easing" >
+    <topic name="Animation.html#easing" url="../../../Styles/Animation.html#easing" />
+  </key>
+  <key name="macro" >
+    <topic name="Animation.html#macro" url="../../../Styles/Animation.html#macro" />
+  </key>
+  <key name="overview" >
+    <topic name="Animation.html" url="../../../Styles/Animation.html" />
+  </key>
+</key>
+<key name="appendFusionCharts method" >
+  <key name="insert chart at the end of HTML elements" >
+    <topic name="Using various chart rendering methods in FusionCharts jQuery plugin#append" url="../../../jQuery/AdvancedRendering.html#append" />
+  </key>
+</key>
+
+</indexdata>

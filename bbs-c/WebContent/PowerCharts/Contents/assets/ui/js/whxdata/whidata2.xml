@@ -1,0 +1,328 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="client-side export" >
+  <key name="component UI" >
+    <topic name="ECComponentUI.html" url="../../../Export/ECComponentUI.html" />
+  </key>
+  <key name="configure export dialog cosmetics" >
+    <topic name="ECExportDialog.html" url="../../../Export/ECExportDialog.html" />
+  </key>
+  <key name="configure output formats and context menu" >
+    <topic name="ECServerFormats.html" url="../../../Export/ECServerFormats.html" />
+  </key>
+  <key name="export multiple charts" >
+    <topic name="ECClientMultiple.html" url="../../../Export/ECClientMultiple.html" />
+  </key>
+  <key name="overview" >
+    <topic name="ECClientOverview.html" url="../../../Export/ECClientOverview.html" />
+  </key>
+  <key name="set JavaScript callback" >
+    <topic name="ECClientCallback.html" url="../../../Export/ECClientCallback.html" />
+  </key>
+  <key name="simple example" >
+    <topic name="ECClientSimple.html" url="../../../Export/ECClientSimple.html" />
+  </key>
+</key>
+<key name="client-side export handlers" >
+  <key name="export your first chart as image/PDF" >
+    <topic name="ExportChart.html" url="../../../FirstChart/ExportChart.html" />
+  </key>
+</key>
+<key name="clone() function" >
+  <key name="duplicate chart" >
+    <topic name="Methods.html#clonemore" url="../../../JavaScript/API/Methods.html#clonemore" />
+  </key>
+  <key name="JavaScript API functions" >
+    <topic name="Methods.html#clone" url="../../../JavaScript/API/Methods.html#clone" />
+  </key>
+</key>
+<key name="cloneFusionCharts method" >
+  <key name="using jQuery" >
+    <topic name="Using various chart rendering methods in FusionCharts jQuery plugin#clone" url="../../../jQuery/AdvancedRendering.html#clone" />
+  </key>
+</key>
+<key name="code attribute" >
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="gradient legend in heat map chart" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="color attribute" >
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="colorRangeLabel attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="handle out of range data in heat map chart" >
+    <topic name="outofrange.html" url="../../../HeatMap/outofrange.html" />
+  </key>
+</key>
+<key name="columnId attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="compact rendering method" >
+  <key name="mixed parameters" >
+    <topic name="JS_CreateChart.html#compact_mixedparams" url="../../../JavaScript/JS_CreateChart.html#compact_mixedparams" />
+  </key>
+  <key name="object as constructor parameter" >
+    <topic name="JS_CreateChart.html#compact_objparam" url="../../../JavaScript/JS_CreateChart.html#compact_objparam" />
+  </key>
+</key>
+<key name="configure() function" >
+  <key name="change chart properties" >
+    <topic name="JS_ChangeChartProperties.html#configure" url="../../../JavaScript/JS_ChangeChartProperties.html#configure" />
+  </key>
+  <key name="managed printing in Mozilla browsers" >
+    <topic name="JS_PrintManager.html#advanced" url="../../../JavaScript/JS_PrintManager.html#advanced" />
+  </key>
+</key>
+<key name="configureLink() function" >
+  <key name="change chart messages" >
+    <topic name="ChartMessages#addvaraible" url="../../../Advanced/ChartMessages.html#addvaraible" />
+  </key>
+  <key name="create your first chart as a LinkedChart" >
+    <topic name="LinkedCharts.html#background" url="../../../FirstChart/LinkedCharts.html#background" />
+  </key>
+</key>
+<key name="connectNullData attribute" >
+  <key name="configure mean deviation in box and whisker chart" >
+    <topic name="MeanDeviation.html" url="../../../BoxandWhisker/MeanDeviation.html" />
+  </key>
+  <key name="configure mean in box and whisker chart" >
+    <topic name="Mean.html#connectnulldata" url="../../../BoxandWhisker/Mean.html#connectnulldata" />
+  </key>
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html" url="../../../BoxandWhisker/QuartileDeviation.html" />
+  </key>
+  <key name="plot discontinuous data" >
+    <topic name="DiscData#null" url="../../../Advanced/DiscData.html#null" />
+  </key>
+</key>
+<key name="connectorAlpha attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="connectorColor attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="connectorDashed attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+</key>
+<key name="connectorDashGap attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="connectorDashLen attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="connectorThickness attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="create" >
+  <key name="box and whisker chart" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+  <key name="charts using JavaScript renderer" >
+    <topic name="UsingPureJS.html" url="../../../FirstChart/UsingPureJS.html" />
+  </key>
+  <key name="charts using various JavaScript methods" >
+    <topic name="JS_CreateChart.html" url="../../../JavaScript/JS_CreateChart.html" />
+  </key>
+  <key name="charts using various server-side scripts" >
+    <topic name="ServerSideScripts.html" url="../../../FirstChart/ServerSideScripts.html" />
+  </key>
+  <key name="database driven charts" >
+    <topic name="DatabaseCharts.html" url="../../../FirstChart/DatabaseCharts.html" />
+  </key>
+  <key name="drill down charts" >
+    <topic name="Simple.html" url="../../../DrillDown/Simple.html" />
+  </key>
+  <key name="error bar chart" >
+    <topic name="ErrorBarSimpleChart.html" url="../../../ErrorChart/ErrorBarSimpleChart.html" />
+  </key>
+  <key name="error line chart" >
+    <topic name="ErrorLineSimpleChart.html" url="../../../ErrorChart/ErrorLineSimpleChart.html" />
+  </key>
+  <key name="error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+  <key name="first chart" >
+    <topic name="FirstChart.html" url="../../../FirstChart/FirstChart.html" />
+  </key>
+  <key name="heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="LinkedCharts" >
+    <topic name="JS_LinkedCharts.html" url="../../../JavaScript/JS_LinkedCharts.html" />
+  </key>
+  <key name="LinkedCharts in your first chart" >
+    <topic name="LinkedCharts.html" url="../../../FirstChart/LinkedCharts.html" />
+  </key>
+  <key name="Log Column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="Log Line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="multi level pie chart" >
+    <topic name="FirstChart.html" url="../../../MultiLevelPie/FirstChart.html" />
+  </key>
+  <key name="radar chart" >
+    <topic name="FirstChart.html" url="../../../Radar/FirstChart.html" />
+  </key>
+  <key name="step line chart" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+</key>
+<key name="cumulative attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Config.html" url="../../../Waterfall/Config.html" />
+  </key>
+</key>
+<key name="currency symbols" >
+  <key name="Cent sign" >
+    <topic name="SpCharAll#cent" url="../../../Advanced/SpCharAll.html#cent" />
+  </key>
+  <key name="Euro sign" >
+    <topic name="SpCharAll#euro" url="../../../Advanced/SpCharAll.html#euro" />
+  </key>
+  <key name="Franc sign" >
+    <topic name="SpCharAll#franc" url="../../../Advanced/SpCharAll.html#franc" />
+  </key>
+  <key name="Pound sign" >
+    <topic name="SpCharAll#pound" url="../../../Advanced/SpCharAll.html#pound" />
+  </key>
+  <key name="Yen sign" >
+    <topic name="SpCharAll#yen" url="../../../Advanced/SpCharAll.html#yen" />
+  </key>
+</key>
+<key name="custom about menu" >
+  <key name="customize" >
+    <topic name="CustomAboutMenu.html" url="../../../AttDesc/CustomAboutMenu.html" />
+  </key>
+  <key name="customize the output CSV format" >
+    <topic name="ExportDataSetup.html#format" url="../../../Export/ExportDataSetup.html#format" />
+  </key>
+  <key name="export chart data" >
+    <topic name="ExportDataSetup.html" url="../../../Export/ExportDataSetup.html" />
+  </key>
+  <key name="set up" >
+    <topic name="ExportDataSetup.html#setup" url="../../../Export/ExportDataSetup.html#setup" />
+  </key>
+</key>
+<key name="data labels attributes" >
+  <topic name="DataLabels.html" url="../../../AttDesc/DataLabels.html" />
+</key>
+<key name="data plot attributes" >
+  <topic name="DataPlot.html" url="../../../AttDesc/DataPlot.html" />
+</key>
+<key name="data String method" >
+  <topic name="DataXMLExp.html" url="../../../WebDev/DataXMLExp.html" />
+</key>
+<key name="data values attributes" >
+  <topic name="DataValues.html" url="../../../AttDesc/DataValues.html" />
+</key>
+<key name="database driven charts" >
+  <topic name="DatabaseCharts.html" url="../../../FirstChart/DatabaseCharts.html" />
+</key>
+<key name="dataSeparator attribute" >
+  <key name="box and whisker chart process" >
+    <topic name="Howitworks.html" url="../../../BoxandWhisker/Howitworks.html" />
+  </key>
+</key>
+<key name="dataURL method" >
+  <topic name="DataURL.html" url="../../../WebDev/DataURL.html" />
+</key>
+<key name="debug" >
+  <key name="basic" >
+    <topic name="Basic.html" url="../../../Debug/Basic.html" />
+  </key>
+  <key name="debug window" >
+    <topic name="Window.html" url="../../../Debug/Window.html" />
+  </key>
+  <key name="export chart as image/PDF" >
+    <topic name="ECReferenceDebugJS.html" url="../../../Export/ECReferenceDebugJS.html" />
+  </key>
+  <key name="using JavaScript" >
+    <topic name="JS.html" url="../../../Debug/JS.html" />
+  </key>
+</key>
+<key name="decimals attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="decimalSeparator attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+
+<key name="displayValue attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure labels in heat map chart" >
+    <topic name="labels.html#displayvalue" url="../../../HeatMap/labels.html#displayvalue" />
+  </key>
+</key>
+<key name="dispose() function" >
+  <key name="dispose a chart" >
+    <topic name="Methods.html#disposemore" url="../../../JavaScript/API/Methods.html#disposemore" />
+  </key>
+  <key name="JavaScript API functions" >
+    <topic name="Methods.html#dispose" url="../../../JavaScript/API/Methods.html#dispose" />
+  </key>
+</key>
+<key name="drag-able chart" >
+  <topic name="Overview.html" url="../../../Dragable/Overview.html" />
+  <key name="drag-able area chart XML sheet" >
+    <topic name="DragArea" url="../../../ChartSS/DragArea.htm" />
+  </key>
+  <key name="drag-able Column 2D chart XML sheet" >
+    <topic name="DragCol2D" url="../../../ChartSS/DragCol2D.htm" />
+  </key>
+  <key name="drag-able line chart XML sheet" >
+    <topic name="DragLine" url="../../../ChartSS/DragLine.htm" />
+  </key>
+  <key name="get original and updated XML data from drag-able charts" >
+    <topic name="JS_DataBackFromChart.html#drag" url="../../../JavaScript/JS_DataBackFromChart.html#drag" />
+  </key>
+  <key name="read data using JavaScript" >
+    <topic name="JSRead.html" url="../../../Dragable/JSRead.html" />
+  </key>
+  <key name="submit data as form" >
+    <topic name="Form.html" url="../../../Dragable/Form.html" />
+  </key>
+</key>
+
+</indexdata>

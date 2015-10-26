@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>PowerCharts XT - Heat Map Chart</title>
+		<script type="text/javascript" language="Javascript" src="../assets/ui/js/jquery.min.js"></script>
+		<script type="text/javascript" language="Javascript" src="../assets/ui/js/lib.js"></script>
+        <script type="text/javascript" src="../../Charts/FusionCharts.js"></script>
+
+
+    </head>
+
+    <body  style="height:100%;margin:0; padding:0;">
+        
+                        <div id="chartContainer">PowerCharts XT will load here</div>
+						<script type="text/javascript" src="PeriodicTableData.js" ></script>
+
+                        <script type="text/javascript"><!--
+
+                            var myChart = new FusionCharts( "../../Charts/HeatMap.swf", "myChartId", "100%", "100%", "0");
+                            myChart.setXMLData( dataString );
+                            myChart.render( "chartContainer" );
+
+                            // -->
+                        </script>
+        <script type="text/javascript"><!--//
+		 
+			$(document).ready(function() {
+				window.windowIsReady = true;
+				showConditionalMessage( "Your browser does not seem to have Flash Player support. A JavaScript chart is rendered instead.", isJSRenderer(myChart) );
+			});	
+			
+			function notifyLocalAJAXSecurityRestriction()
+			{
+				if(isLocal())
+				{
+					addConditionalMessage( "<br /><br /><strong>Unable to see the chart below?</strong><br />"+isLocal()+"This sample uses data provided as URL. If you are unable to see the chart below, it is due to the browser's restriction on JavaScript from accessing local file system owing to security reasons. If you run the sample from a server, it will run absolutely fine, though. When running locally, however, if you provide the data as string, it works fine. Click <a href='weekly-sales-xml-embed.html'>here</a> to check out a sample using data as string.", isJSRenderer(myChart) );
+				}
+			}
+
+			
+		// -->
+		</script>
+    </body>
+</html>

@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+
+
+<title>PowerCharts XT Version History</title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Introduction",  "What's new in XT?" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr>
+    <td class="pageHeader">PowerCharts XT Version History</td>
+  </tr>
+  <tr>
+    <td valign="top" class="text">
+       <p>
+          PowerCharts XT boasts of a plethora of enhancements which are listed below:</p>
+    </td>
+  </tr>
+
+  <tr>
+      <td valign="top"  class="header"><a name="v331SR2" id="v331SR2"></a>What's new in XT (v3.3.1 - SR3)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+          <p class="highlightBlock">Existing PowerCharts XT users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+		  <p><strong> Fix: </strong>
+			<ul>
+				<li>Fixed issues with unexpected and thick borders and other graphic artefacts appearing on Chrome version 29 and above.</li>
+    <li>Fixed the issue where on printing charts in IE8 and below, the tooltips were also getting printed along with the charts.</li>
+    <li>Fixed issue with tooltip text being incorrectly wrapped when charts are resized.</li>
+    <li>Plugged memory leakage caused while managing text wrapping when charts are repeatedly resized.</li>
+    <li>Reversed plotting for data in a specific range is fixed in log charts.</li>
+    <li>Fixed mapping issue of task id in Gantt chart.</li>
+    <li>Data in Drag-Node chart is set to reflect dynamically added connectors.</li>
+    <li>Minor fix in Heat Map chart to show bottom-right label properly.</li>
+    <li>Fixed automatic setting of y-axis limits in CandleStick chart.</li>
+    <li>Fixed Multi-Axis Line chart to match visibility of any axis to that of its check-box.</li>
+    <li>Fixed issue with hidden axis limits in LogMSLine chart.</li>
+    <li>Multi-Axis Line chart is fixed to show/hide an axis via check box in absence of legend.</li>
+    <li>Fixed the rendering issue of missing level in Multi-Level Pie chart when value is set to zero in a lone child category.</li>
+    <li>Fixed the runtime error on edit of axis limits in drag-able charts.</li>
+  </ul>
+  <p><strong>Improved:</strong></p>
+  <ul>
+    <li>FusionCharts export servers are now SSL enabled to allow seamless exporting of charts rendered inside SSL secured pages.</li>
+    <li>Gradient legend is now more responsive to user interactivity on touch devices.</li>
+			</ul>
+		  </p>
+	  </td>
+  </tr>
+  <tr>
+	  <td>&nbsp;</td>
+  </tr>
+
+    <tr>
+      <td valign="top"  class="header"><a name="v331SR2" id="v331SR2"></a>What's new in XT (v3.3.1 - SR2)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+          <p class="highlightBlock">Existing PowerCharts XT users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+		  <p><strong> Fix: </strong>
+			<ul>
+				<li>Dataplot links now works as expected in Kagi chart</li>
+				<li>External images are no more included in the export stream</li>
+				<li>Minor fix related to visibility of Radar plot in Internet Explorer</li>
+				<li>Minor fix related to displacement of line when dragged in DragLine chart</li>
+				<li>Minor fix while exporting charts and gauges to PDF in Internet Explorer 9+</li>
+				<li>Tooltip now correctly shows category labels when <span class="codeInline">showLabel='0'</span> is set to <span class="codeInline">&lt;category&gt;</span></li>
+			</ul>
+		  </p>
+	  </td>
+  </tr>
+  <tr>
+	  <td>&nbsp;</td>
+  </tr>
+
+
+    <tr>
+     <td valign="top"  class="header"><a name="v331SR1" id="v331SR1"></a>What's new in XT (v3.3.1 - SR1)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+        <p class="highlightBlock">Existing PowerCharts XT users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+       </p>
+		 <p><strong>New Features:</strong>
+			<ul>
+				<li>Ability to convert HTML Table to chart using jQuery plugin.</li>
+			</ul>
+		 </p>
+
+		 <p><strong>Improved:</strong>
+			<ul>
+				<li>Optimized rendering of line charts.</li>
+			</ul>
+		 </p>
+
+		 <p><strong>Fix:</strong>
+			<ul>
+				<li>Hot-fix in VML Rendering Library.</li>
+				<li>Trendline labels for Secondary Y-Axis are now positioned correctly.</li>
+				<li>Trendzones are now correctly drawn in inverse charts.</li>
+			</ul>
+		 </p>
+	  </td>
+	</tr>
+
+
+  <tr>
+     <td valign="top"  class="header"><a name="v331" id="v331"></a>What's new in XT (v3.3.1)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+        <p class="highlightBlock">Existing PowerCharts XT users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+       </p>
+		 <p><strong>Improved:</strong>
+
+		 <ul>
+		 <li>Improved X-Axis calculation of Flash Candlestick chart.</li>
+		 <li>Better positioning of min and max values in JavaScript BoxAndWhisker2D chart.</li>
+		 </ul>
+
+		 </p>
+		 <p><strong>Fix:</strong>
+		 <ul><li><span class="codeInline">legendPosition='right'</span> now works in Flash Candlestick chart.</li>
+		 <li><span class="codeInline">showYAxisValues='1'</span> now enables Y-Axis values in JavaScript Drag-node chart.</li>
+		 <li>Label text does not display <span class="codeInline">undefined</span> while deleting a label in JavaScript Drag-node chart.</li>
+		 <li><span class="codeInline">plotBorderColor</span> attribute now works in JavaScript Spline Area and MSSpline Area charts.</li>
+		 <li><span dir="ltr" id=":1ae"> Minor fix related to rendering of plot in JavaScript Spline charts.</span></li>
+		 <li>Long captions are now aligned properly in Flash charts.</li>
+		 <li><span class="codeInline">manageLabelOverflow</span> attribute will now work properly when set along with <span class="codeInline">baseFontSize</span>, in JavaScript charts.</li>
+		 <li>Minor fix in legend icon color when legend position is right in JavaScript BoxAndWhisker2D chart.</li>
+		 <li>Minor fix in positioning of data values in JavaScript BoxAndWhisker2D chart.</li>
+		 <li>Minor fix in data plots when <span class="codeInline">useRoundEdges='1'</span> in JavaScript Logarithmic charts.</li>
+		 <li>Minor fix in the drawing of Trendzone in JavaScript Inverse charts.</li>
+		 <li>Trendline <span class="codeInline">displayvalue</span> no longer dislocates on using <span class="codeInline">endValue</span> attribute in JavaScript Inverse charts.</li>
+		 <li>Minor fix in rendering of canvas shadow while using <span class="codeInline">useRoundEdges='1'</span> in VML Browsers.</li>
+		 </ul>
+		 </p>
+</td></tr>
+  <tr>
+     <td valign="top"  class="header"><a name="v330" id="v330"></a>What's new in XT (v3.3.0)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+        <p class="highlightBlock">Existing PowerCharts XT users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+       </p>
+		 <p><strong>New Features:
+		 </strong>
+	   <ul>
+	   <li>Exported JavaScript charts can now be saved to a server (using PHP and JAVA).</li>
+	   <li>Ability to show X-Axis labels on top of the chart canvas in Heat Map chart.</li>
+	   </ul>
+		 </p>
+		 <p><strong>Improved:</strong>
+		 <ul>
+		 <li>Better and crisp visualization of JavaScript charts.</li>
+		 <li>Major improvement in the visualization of JavaScript CandleStick chart.</li>
+		 <li>Improved drawing of JavaScript LogMSColumn2D chart in inverse mode.</li>
+		 <li>Added support to customize export related context-menu items of JavaScript charts.</li>
+		 </ul>
+
+		 </p>
+		 <p><strong>Fix:</strong>
+		 <ul>
+		 <li>Links are no more invoked in drag events for Flash charts.</li>
+		 <li>Common alpha can be set on gradient colors in Flash charts.</li>
+		 <li>Minor fix in axis number formatting of Flash Multi-axis Line chart.</li>
+		 <li>Minor fix related to visibility of nodes in Flash Drag-node chart.</li>
+		 <li><span class="codeInline">bgColor</span> of label now occupies the whole node in Flash Drag-node chart.</li>
+		 <li><span class="codeInline"></span>Minor fix in displaying upper limit values of JavaScript Drag-able charts.</li>
+		 <li>Minor fix in the position of data values in JavaScript LogMSColumn2D chart.</li>
+		 <li>Font Style can now be applied to data labels in JavaScript Multi-Level Pie chart.</li>
+		 <li>Minor fix related to displacement of data plot in JavaScript Line and Area charts.</li>
+		 <li>Minor fix in&nbsp;padding attribute in the&nbsp;<span class="codeInline">&lt;label&gt;</span> node of JavaScript Drag-node chart.</li>
+		 <li><span class="codeInline">'bgColor'</span> of label text is now occupying the whole node in Flash Drag Node chart.</li>
+		 <li>Dashed styles can now be applied to individual plots of JavaScript Multi-Axis Line chart.</li>
+		 <li>Minor fix in determining the max or min value of the color range in JavaScript Heat Map chart.</li>
+		 <li>Tooltip box does not appear any more when category&nbsp;<span class="codeInline">value</span> is null in JavaScript MultiLevelPie chart.</li>
+		 <li><span class="codeInline">getSVGString()</span> and&nbsp;<span class="codeInline">exportChart()</span> can now be invoked multiple times in JavaScript charts.</li>
+		 </ul>
+		 </p>
+</td></tr>
+   <tr>
+     <td valign="top"  class="header"><a name="XTSR1" id="XTSR1"></a>What's new in XT (v3.2.1 - SR1)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+        <p class="highlightBlock">Existing PowerCharts users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+       </p>
+		 <p><strong>New Features:</strong></p>
+		<ul>
+		 <li>JavaScript Multi-axis Line chart now supports shifting of axes upon clicking.</li>
+		 <li>Ability to configure zero-plane attributes within the <span class="codeInline">&lt;axis&gt;</span> elements in JavaScript Multi-axis Line chart.</li>
+		 <li>Option to disable automatic adjustment of divisional lines using <span class="codeInline">adjustDiv='0'</span> for individual axes in JavaScript Multi-axis Line chart.</li>
+		 <li>Support to configure cosmetics of lines associated with each axis through the <span class="codeInline">&lt;axis&gt;</span> element in JavaScript Multi-axis Line chart.</li>
+		 <li>Multi-level Pie chart now supports Number Formatting, Number Scaling and Recursive Number Scaling.</li>
+		 <li>Ability to turn off url-decoding of links using the <span class="codeInline">unescapeLinks</span> attribute in JavaScript charts.</li>
+		 </ul>
+		<p><strong>Improved:</strong></p>
+		<ul>
+		 <li>Enhanced label management in Radar chart.</li>
+		 <li>Enhanced mouse interactivity in JavaScript Multi-level Pie chart.</li>
+		 <li>Added support for tool tip formatting chart attributes for JavaScript Multi-level Pie chart.</li>
+		 <li>Improved space management and shadow effects in JavaScript Multi-level Pie chart.</li>
+		 <li>JavaScript Multi-axis Line chart now supports divisional line configuration on per-axis level.</li>
+		 <li>Enhanced space management to avoid overlapping Y-Axis values in JavaScript Multi-axis Line chart.</li>
+		 <li>JavaScript Multi-axis Line chart now supports axis check-boxes and the <span class="codeInline">allowSelection</span> attribute to control the check-boxes.</li>
+	   </ul>
+		<p><strong>Fix:</strong></p>
+		<ul>
+		 <li>jQuery 1.8 compatibility issues.</li>
+		 <li>Mixed content browser warning on Internet Explorer when using charts within secured (https) pages.</li>
+		 <li>Exporting issues related to JavaScript <i>LinkedCharts</i>.</li>
+		 <li>Minor fix in label position while using stagger label display mode.</li>
+		 <li>Minor fix in Flash Drag-node chart related to the visibility of a node.</li>
+		 <li>Minor fix related to legend interactivity in JavaScript charts.</li>
+		 <li>Minor fix in axis number formatting of Flash Multi-axis Line chart.</li>
+		 <li>Minor fix in label position in Flash Multi-level Pie chart.</li>
+		 <li>Minor fix in <span class="codeInline">xAxisName</span> position in Flash Heat Map chart.</li>
+		 <li>Minor fix related to displacement of dataplot in Line and Area charts.</li>
+		 <li>Minor fix related to drawing of axis limit ticks in JavaScript Multi-axis Line chart.</li>
+		 <li>Flash <i>LinkedCharts</i> overlay button does not disappear anymore while exporting.</li>
+		 <li>Links are no longer invoked when mouse is dragged onto chart from foreign elements.</li>
+		 <li>Label in image-node no more hides behind the image in Drag-node chart.</li>
+		 <li>Blank tool tip box no longer appears when category label is not defined in Flash Multi-level Pie chart.</li>
+		 <li>Tool tip separator character is no longer shown in JavaScript Multi-level Pie chart when data value is not provided.</li>
+		 <li>Error bars are no longer drawn when error values are not provided in JavaScript ErrorBar2D and ErrorLine charts.</li>
+		 <li><span class="codeInline">setAdaptiveYMin</span> now remains disabled by default in Flash charts when all the values are negative.</li>
+		 <li>JavaScript charts now export the current state of the charts.</li>
+		 <li><span class="codeInline">showDivLineValues='1'</span> now works as expected in conjunction with show<span class="codeInline">YAxisValues='0'</span> in JavaScript Multi-axis Line chart.</li>
+		 <li><span class="codeInline">forceDecimals</span> is now correctly applied to the values of the first <span class="codeInline">&lt;dataset&gt;</span> in JavaScript Multi-axis Line chart.</li>
+		 <li>JavaScript links using <span class="codeInline">j- </span>or<span class="codeInline"> JavaScript:</span> is now functional in Multi-level Pie Chart.</li>
+		 <li>Drill-down links now work correctly in JavaScript Heat Map chart.</li>
+		 <li>JavaScript ErrorBar2D and ErrorLine charts now include X-Axis labels in tool tips.</li>
+		 <li>Legend in JavaScript Heat Map chart can now be disabled under all conditions.</li>
+		 <li>Bold and Italics styles can now be applied to tool tips.</li>
+		 <li>Dataplots now correctly associate with corresponding icon legends with respect to legend interactivity in Flash Heat Map chart.</li>
+	   </ul>
+	</td>
+		</tr>
+		<tr>
+		<td valign="top" class="text">&nbsp;</td>
+		</tr>
+  <tr>
+     <td valign="top"  class="header"><a name="321" id="321"></a>What's new in XT (v3.2.1)</td>
+  </tr>
+  <tr>
+     <td valign="top">
+        <p class="highlightBlock">Existing PowerCharts users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+         </p>
+		 <p><strong>New Features:</strong></p>
+        <ul>
+           <li>All the charts now render in pure JavaScript also. New charts in JavaScript include:
+              <ul>
+              <li>Heat Map</li>
+              <li>Box and Whisker</li>
+              <li>Kagi</li>
+              <li>Select Scatter</li>
+              <li>Drag Node</li>
+              <li>Drag Column</li>
+              <li>Drag Line and </li>
+              <li>Drag Area.<br />
+                 </li>
+              </ul>
+            </li>
+           <li> JavaScript charts look almost similar to Flash charts. <br />
+            </li>
+           <li>JavaScript Drag Node chart, Drag Column, Drag Area and Drag Line support:<ul>
+              <li>Drag and selection interactivity.</li>
+              <li>Data submission to a server side script.</li>
+              </ul>
+            </li><li>JavaScript Drag Node chart supports live addition and modification of nodes, connectors and labels.</li>
+           <li>Enhanced label management in all charts to avoid overlapping of labels when there are large labels or many of them.</li>
+           <li>Image can now be used to fill the chart background in different modes with custom alignments.</li>
+           <li>Ability to center the x-axis and y-axis titles with respect to chart area.</li>
+           <li>Scatter charts support regression lines and configuration for x-axis number formatting, vertical division lines, grids and zero plane.</li>
+           <li>Support for auto generation of x-axis in Scatter charts.</li>
+           <li>Ability to control number formatting for Indian and East Asian thousand/lac separation formats.</li>
+           <li>Support for recursive number scaling to display the chart data better.</li>
+           <li>jQuery plugin to render and manage charts using jQuery syntax.<br />
+            </li>
+         </ul>
+
+
+        <p><strong>Improved:</strong></p>
+        <ul>
+           <li>JavaScript Multi-level pie, Multi-axis line, Candlestick, Waterfall charts are improved.</li>
+           <li>Rally and Decline cosmetics are now configurable.</li>
+           <li>Considerable reduction of memory leaks upon resize, data-update and dispose of charts.</li>
+           <li>Text-selection (I-beam) cursor does not appear now when hovered over text.</li>
+           <li>Text wrapping for labels in JavaScript charts.<br />
+            </li>
+         </ul>
+        <p><strong>Fix:</strong></p>
+        <ul>
+           <li> <span class="codeInline">ExportReady</span> event not being raised in advanced event model.</li>
+           <li>Erratic ordering of Legend icons in Chrome.</li>
+           <li>Data loading and rendering issues specific to Internet Explorer 6/7/8.</li>
+           <li> iOS gradient issue.</li>
+           <li>Disappearing 'close' button in <em>LinkedCharts</em> (JavaScript chart).</li>
+         </ul>
+        <p></p>
+      </td>
+  </tr>
+  <tr>
+     <td valign="top"  class="header"><a name="32" id="32"></a>What's new in&nbsp; v3.2</td>
+  </tr>
+  <tr>
+  <td valign="top" class="text">
+    <p class="highlightBlock">Existing PowerCharts users can learn how to use the new features introduced in PowerCharts XT <a href="Upgrading32.html">here</a>.
+      </p>
+    <ul>
+  <li>Automatic rendering of JavaScript charts on devices (like iPad and iPhone) where Flash player is not supported</li>
+  <li>5 new chart types:
+    <ul>
+      <li>Error Scatter chart</li>
+      <li>Error Line chart</li>
+      <li>Heat map chart</li>
+      <li>Box and whisker chart</li>
+      <li>Multi-series Step line chart</li>
+      </ul>
+  </li>
+  <li>Support for JSON data format</li>
+  <li>Drag-node chart now provides run time addition and deletion of nodes and connectors</li>
+  <li>Drag-node chart now allows to add text labels at run time or from the XML or JSON data </li>
+  <li>Support for <i>LinkedCharts</i>, where a single data source controls multiple charts</li>
+  <li>Interactive legends in charts that allow for selective showing/hiding of data series (or slicing, in case of pie charts) </li>
+  <li>Legends now support icons for each data series </li>
+  <li>Better management of labels on charts. Labels now have an auto rendering mode to prevent them from overlapping,  the chart selects the best display mode for labels depending on the length of the labels and the width of the chart. Long labels are   truncated, with ellipses appended to the truncated end of each label, and a tooltip bearing the completed label text is displayed when the user hovers over a truncated label</li>
+  <li>Support for line breaks and wrapping in all text elements including: caption, sub caption, x-axis title, y-axis title, labels and tooltips</li>
+  <li>In Line charts, data values can now be positioned either above or below the dataplots. Automatic positioning of data values is also supported</li>
+  <li>Custom alignment of caption and sub caption using STYLES</li>
+  <li>Advanced print management using JavaScript</li>
+  <li>Additional options for efficient event handling using JavaScript</li>
+  <li>Support for dynamic update of chart properties using JavaScript</li>
+  <li>Charts now support % based sizes along with dynamic resizing apart from Select Scatter, Drag Node, Drag Column, Drag Line, Drag Area charts </li>
+  </ul>
+  <br />
+  </td>
+  </tr>
+
+   <tr>
+    <td valign="top" class="header"><a name="311" id="311"></a>What's new in v3.1: </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text">
+    <br />
+    <ul>
+      <li>Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click</li>
+      <li>Ability to use multi-lingual text in rotated fonts as well. We now use bitmap fonts to render all UTF-8 characters</li>
+      <li>Ability to specify labels for vLines and also to configure position of vLines and labels</li>
+      <li>Ability to copy data from chart as CSV using context menu, or JavaScript function</li>
+      <li>Personalization of chart - you can now add your logos over the chart, and also add an "About your company" to chart's context menu and link it to your URL</li>
+      <li><span class="codeInline">DisplayValue</span> attribute - Each data plot can now display a text value (instead of just the numeric value), allowing a sort of annotation to be rendered for each data point</li>
+      <li>Support for custom palettes for data point. You can now specify a list of colors that the chart will use for rendering data plots (column, pie, bar, line etc.). This allows for global configuration of palettes</li>
+      <li>Support for automatic wrapping in caption/sub-caption and tool-tips</li>
+      <li>More control over chart using JavaScript - many new APIs and events exposed by chart</li>
+    <br />
+    </ul></td>
+  </tr>
+  <tr>
+    <td valign="top" class="header"><a name="30" id="30"></a>What's new in v3.0? </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text">
+    <br />
+    <table width="95%" border="0" align="center" cellpadding="2" cellspacing="0">
+        <tr valign="middle" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Available Chart Types</td>
+        </tr>
+        <tr valign="middle" class="text">
+          <td>&nbsp;</td>
+          <td class="text">PowerCharts v3 introduces a lot of powerful chart types
+              like:<br />
+            <ul>
+              <li>Error Bar Charts  </li>
+              <li>Spline Charts</li>
+              <li>Spline Area Charts</li>
+              <li>Logarithmic Axis Charts</li>
+              <li>Waterfall Chart</li>
+              <li>Inverse charts </li>
+              <li>Drag Node Chart</li>
+              <li>Multi Axis Line Chart</li>
+              <li>Candlestick</li>
+              <li>Radar Chart</li>
+              <li>Drag-able Column and Line Charts for advanced simulation scenarios </li>
+              <li>Kagi Chart </li>
+			  <li>Multi-level Pie Chart </li>
+			  <li>Select Scatter Chart </li>
+            </ul>
+            </td>
+        </tr>
+       <tr><td colspan="2" height="23"></td></tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Ability to export charts as image </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>Starting PowerCharts v3.0.5, you can now export your charts as images using a combination of client side and server side manipulation.</p>
+          </td>
+        </tr>
+
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Easy but advanced integration with JavaScript</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 offers advanced options to integrate charts with your AJAX applications   or JavaScript modules. You can update charts on client side, invoke JavaScript   functions as hotspot links, or make dynamic calls for XML data without   involving any page refreshes. You can also specify a <span class="codeInline">DOMId</span> for each chart and have it register with JavaScript. The chart can then keep JavaScript functions posted around it's activities.</p>
+          </td>
+        </tr>
+
+
+
+        <tr valign="middle" class="text">
+          <td width="15"> <div align="center"><img src="../Images/Bullet.gif" width="18" height="19"  /></div></td>
+          <td class="textBold">STYLE Element</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>FusionCharts v3 suite introduces <span class="codeInline">Styles</span>
+            to help you apply font,  effects and even animation to various objects
+            of the chart. <span class="codeInline">Styles </span>lends a simple
+            mechanism, using which you can easily control the visual layout of
+            charts. </p>
+          </td>
+        </tr>
+
+        <tr valign="middle" class="text">
+          <td width="15"> <div align="center"><img src="../Images/Bullet.gif" width="18" height="19"  /></div></td>
+          <td class="textBold">Built in Adobe Flash 8 using ActionScript 2</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 is coded in Flash 8 and ActionScript 2 to fully
+            utilize the new and advanced features of Flash 8 like dynamic tweening,
+            filters, better speed, advanced OOP structures etc.</p>
+          </td>
+        </tr>
+       <tr valign="top" class="text">
+          <td width="15" valign="middle"> <div align="center"><img src="../Images/Bullet.gif" width="18" height="19"  /></div></td>
+          <td class="textBold">New Debug Mode</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 introduces a debug mode for each chart. The debug
+            mode helps you to look into what's happening in the chart - behind the
+            scenes. You can see how the chart is initializing, getting its data
+            and interacting with JavaScript. Various errors generated are also
+            shown in this. So, whenever you see an error on the chart now, all
+            you need to do is switch to the debug mode to locate and fix it.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td width="15" valign="middle"> <div align="center"><img src="../Images/Bullet.gif" width="18" height="19"  /></div></td>
+          <td class="textBold">Gradient Support</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>FusionCharts v3 suite supports gradients for most of chart objects like
+            background, canvas, data plot etc. Many new charts support a single
+            attribute <span class="codeInline">use3DLighting</span> to allow advanced
+            lighting and gradient effects on the chart for better visuals.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><div align="center"><img src="../Images/Bullet.gif" width="18" height="19"  /></div></td>
+          <td class="textBold">Palette Support</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 introduces <span class="codeInline">Palettes</span> to help you quickly select colors themes for your chart. Starting v3, you can select one of the five pre-defined palettes to change look of your chart. You wouldn't need to specify any hex color codes when using <span class="codeInline">Palettes</span>.</p>
+          </td>
+        </tr>
+
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Dashed Line Support</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>Starting PowerCharts v3, you can use dashed lines to plot:</p>
+
+            <ul>
+              <li>Data (Columns, Lines, Pies etc.)</li>
+              <li>Grid Divisional Lines</li>
+              <li>Trend Lines</li>
+              <li>Vertical separator lines</li>
+            </ul>
+            <p>You can also specify the dash properties like dash length, gap
+              etc.</p></td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Multiple display modes for data labels</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>In PowerCharts v3, a lot of options have been introduced to allow
+            for better x-axis label control. You can now WRAP, STAGGER or ROTATE
+            the x-axis labels.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Rotated value boxes &amp; dynamic placement options</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>The data value text fields can now be rotated to avoid cluttering.
+            Also, in case of column charts, you can select whether to place the
+            value textboxes inside the columns or outside. If there is no space,
+            PowerCharts v3 will automatically adjust positions.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Number scale support</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 introduces number scaling and better control
+              over number formatting.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Automatic Divisional Line Numbering</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 introduces automatic divisional line numbering
+              and placement to best position them on the chart.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Better printing support</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>The context menu of the chart now includes a new item &quot;Print
+              Chart&quot;, which offers standard cross-browser printing support.</p></td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">More control over dynamic resizing</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>v3 introduces two mode of chart resizing - <span class="codeInline">exactFit</span>
+              and <span class="codeInline">noScale</span>. <span class="codeInline">noScale</span>
+              uses pixel based resizing. In <span class="codeInline">exactFit</span>
+              mode, you can resize the chart based on percentage. Also, <span class="codeInline">exactFit</span>
+              mode allows dynamic scaling, when the container object (browser,
+              table, DIV etc.) is resized.</p></td>
+        </tr>
+
+
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Better Legend</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td>
+            <p>PowerCharts v3 introduces a better looking and interactive legend
+              for the multi-series/combination charts. You can customize a lot
+              of the properties for the Legend of each chart.</p>
+          </td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Advanced drill down features</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>The chart items can now link to new window, pop-up, frames or
+              self window.</p></td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Vertical division lines between any two data points.</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>In charts with axis support, you can now opt for vertical division lines between
+              any two sets of data. This particularly helps when you're plotting
+              data for say 2 yrs and you want a visible separator between the
+              two years' data on chart.</p></td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19"  /></td>
+          <td class="textBold">Entire chart as a hotspot</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>Starting v3, the entire chart can now act as a single hotspot.</p></td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19" /></td>
+          <td class="textBold">Custom tool tip for each data plot item</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>You can now set your own custom tool tip text for each data plot item.</p></td>
+        </tr>
+        <tr valign="top" class="text">
+          <td valign="middle"><img src="../Images/Bullet.gif" width="18" height="19" /></td>
+          <td class="textBold">Multiple language support for application messages</td>
+        </tr>
+        <tr valign="top" class="text">
+          <td>&nbsp;</td>
+          <td><p>You can now easily customize the chart to show application messages
+              (loading chart, loading data, rendering chart etc.) in your own
+              language. To do so, you need to specify the messages in chart source
+              and re-compile</p></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("JavaScript charting capabilities|JSChartingCapabilities.html","Upgrading from Evaluation|UpgradingEval.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

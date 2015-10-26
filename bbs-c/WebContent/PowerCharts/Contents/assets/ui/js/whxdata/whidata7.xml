@@ -1,0 +1,346 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="meanIconRadius attribute" >
+  <key name="configure mean in box and whisker chart" >
+    <topic name="Mean.html#meanicon" url="../../../BoxandWhisker/Mean.html#meanicon" />
+  </key>
+</key>
+<key name="meanIconShape attribute" >
+  <key name="configure mean in box and whikser chart" >
+    <topic name="Mean.html#meanicon" url="../../../BoxandWhisker/Mean.html#meanicon" />
+  </key>
+</key>
+<key name="meanIconSides attribute" >
+  <key name="configure mean in box and whisker chart" >
+    <topic name="Mean.html#meanicon" url="../../../BoxandWhisker/Mean.html#meanicon" />
+  </key>
+</key>
+<key name="minValue attribute" >
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="multi axis line chart" >
+  <topic name="Overview.html" url="../../../MultiAxis/Overview.html" />
+  <key name="XML sheet" >
+    <topic name="MALine" url="../../../ChartSS/MALine.htm" />
+  </key>
+</key>
+<key name="multi level pie chart" >
+  <key name="create" >
+    <topic name="FirstChart.html" url="../../../MultiLevelPie/FirstChart.html" />
+  </key>
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../MultiLevelPie/Overview.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="MultiLevelPie" url="../../../ChartSS/MultiLevelPie.htm" />
+  </key>
+</key>
+<key name="multi-lingual text" >
+  <key name="add BOM detail" >
+    <topic name="SpChar#bomdetail" url="../../../Advanced/SpChar.html#bomdetail" />
+  </key>
+  <key name="overview" >
+    <topic name="SpChar" url="../../../Advanced/SpChar.html" />
+  </key>
+</key>
+<key name="multiple charts in a page" >
+  <topic name="MultipleCharts.html" url="../../../FirstChart/MultipleCharts.html" />
+</key>
+<key name="multiple lines in tool tip" >
+  <topic name="TTip_Lines" url="../../../Advanced/TTip_Lines.html" />
+</key>
+<key name="myCallBackFunction(objRtn) function" >
+  <key name="save exported output on server disk" >
+    <topic name="ECServerSave.html" url="../../../Export/ECServerSave.html" />
+  </key>
+</key>
+<key name="myChartListener function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#advanced" url="../../../JavaScript/JS_EventOverview.html#advanced" />
+  </key>
+</key>
+<key name="negativeColor attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Config.html" url="../../../Waterfall/Config.html" />
+  </key>
+</key>
+<key name="normal rendering method" >
+  <key name="mixed parameters" >
+    <topic name="JS_CreateChart.html#normal_mixedparams" url="../../../JavaScript/JS_CreateChart.html#normal_mixedparams" />
+  </key>
+  <key name="object as constructor parameter" >
+    <topic name="JS_CreateChart.html#normal_objparam" url="../../../JavaScript/JS_CreateChart.html#normal_objparam" />
+  </key>
+</key>
+<key name="number formatting" >
+  <key name="add number prefix and suffix" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+  <key name="automatic number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+  <key name="configure decimal places" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+  <key name="decimal formatting for y-axis values when automatic adjustment of div-lines is off" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+  <key name="setting custom decimal separator character" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="number scaling" >
+  <topic name="Number_Scaling" url="../../../Advanced/Number_Scaling.html" />
+</key>
+<key name="numberFormatScale attribute" >
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+</key>
+<key name="numberPrefix attribute" >
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="numberScaleUnit attribute" >
+  <key name="number scaling" >
+    <topic name="Number_Scaling" url="../../../Advanced/Number_Scaling.html" />
+  </key>
+</key>
+<key name="numberScaleValue attribute" >
+  <key name="number scaling" >
+    <topic name="Number_Scaling" url="../../../Advanced/Number_Scaling.html" />
+  </key>
+</key>
+<key name="numberSuffix attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="numMinorDivLines attribute" >
+  <key name="logtarithmic chart" >
+    <topic name="Overview.html" url="../../../Log/Overview.html" />
+  </key>
+</key>
+<key name="onAfterClose eventListener" >
+  <key name="open LinkedCharts in highslide lightbox" >
+    <topic name="JS_LinkedCharts.html#highslide" url="../../../JavaScript/JS_LinkedCharts.html#highslide" />
+  </key>
+</key>
+<key name="open links in pop-up windows" >
+  <topic name="PopUps.html" url="../../../DrillDown/PopUps.html" />
+  <key name="new window attributes" >
+    <topic name="PopUps.html#config" url="../../../DrillDown/PopUps.html#config" />
+  </key>
+</key>
+<key name="outlierIconAlpha attribute" >
+  <key name="configure outliers in box and whikser chart" >
+    <topic name="Outliers.html#outliers" url="../../../BoxandWhisker/Outliers.html#outliers" />
+  </key>
+</key>
+<key name="outlierIconColor attribute" >
+  <key name="configure outliers in box and whikser chart" >
+    <topic name="Outliers.html#outliers" url="../../../BoxandWhisker/Outliers.html#outliers" />
+  </key>
+</key>
+<key name="outlierIconRadius attribute" >
+  <key name="configure outliers in box and whikser chart" >
+    <topic name="Outliers.html#outliers" url="../../../BoxandWhisker/Outliers.html#outliers" />
+  </key>
+</key>
+<key name="outlierIconShape attribute" >
+  <key name="configure outliers in box and whisker chart" >
+    <topic name="Outliers.html#outliers" url="../../../BoxandWhisker/Outliers.html#outliers" />
+  </key>
+</key>
+<key name="outlierIconSides attribute" >
+  <key name="configure outliers in box and whikser chart" >
+    <topic name="Outliers.html#outliers" url="../../../BoxandWhisker/Outliers.html#outliers" />
+  </key>
+</key>
+<key name="outliers attribute" >
+  <key name="configure outliers in box and whisker chart" >
+    <topic name="Outliers.html" url="../../../BoxandWhisker/Outliers.html" />
+  </key>
+</key>
+<key name="padding attributes" >
+  <topic name="Padding.html" url="../../../AttDesc/Padding.html" />
+</key>
+<key name="palette attribute" >
+  <key name="set new color theme using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#setcolor" url="../../../jQuery/RetrieveUpdate.html#setcolor" />
+  </key>
+</key>
+<key name="paletteColors attribute" >
+  <key name="set new color theme using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#setcolor" url="../../../jQuery/RetrieveUpdate.html#setcolor" />
+  </key>
+</key>
+<key name="param attribute" >
+  <key name="animation style type" >
+    <topic name="Animation.html#param" url="../../../Styles/Animation.html#param" />
+  </key>
+</key>
+<key name="plot discontinuous data" >
+  <topic name="DiscData" url="../../../Advanced/DiscData.html" />
+  <key name="connect null data" >
+    <topic name="DiscData#null" url="../../../Advanced/DiscData.html#null" />
+  </key>
+</key>
+<key name="plotFillAlpha attribute" >
+  <key name="JavaScript charting capabilities" >
+    <topic name="JSChartingCapabilities.html#limitations" url="../../../Introduction/JSChartingCapabilities.html#limitations" />
+  </key>
+</key>
+<key name="plotGradientColor attribute" >
+  <key name="set chart gradient" >
+    <topic name="Gradients.html" url="../../../Advanced/Gradients.html" />
+  </key>
+</key>
+<key name="positiveColor attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Config.html" url="../../../Waterfall/Config.html" />
+  </key>
+</key>
+<key name="PowerCharts" >
+  <key name="chart list" >
+    <topic name="ChartList.html" url="../../../Introduction/ChartList.html" />
+  </key>
+  <key name="download package contents" >
+    <topic name="DownloadC.html" url="../../../Introduction/DownloadC.html" />
+  </key>
+  <key name="install on your local machine" >
+    <topic name="Installation.html#local" url="../../../Introduction/Installation.html#local" />
+  </key>
+  <key name="install on your web application" >
+    <topic name="Installation.html#web" url="../../../Introduction/Installation.html#web" />
+  </key>
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../Overview.html" />
+  </key>
+  <key name="PowerCharts JSON overview" >
+    <topic name="JSONOverview.html" url="../../../DataFormats/JSONOverview.html" />
+  </key>
+  <key name="PowerCharts XML overview" >
+    <topic name="XMLOverview.html" url="../../../DataFormats/XMLOverview.html" />
+  </key>
+  <key name="system requirements" >
+    <topic name="SysReq.html" url="../../../Introduction/SysReq.html" />
+  </key>
+  <key name="upgrade from PowerCharts v3.2 evaluation" >
+    <topic name="UpgradingEval.html" url="../../../Introduction/UpgradingEval.html" />
+  </key>
+  <key name="upgrade to v3.2 from PowerCharts v3.x.y" >
+    <topic name="Upgrading32.html" url="../../../Introduction/Upgrading32.html" />
+  </key>
+  <key name="version history" >
+    <topic name="WhatsNew32.html" url="../../../Introduction/WhatsNew32.html" />
+  </key>
+</key>
+<key name="prependFusionCharts method" >
+  <key name="insert chart at the beginning of HTML elements" >
+    <topic name="Using various chart rendering methods in FusionCharts jQuery plugin#prepend" url="../../../jQuery/AdvancedRendering.html#prepend" />
+  </key>
+</key>
+<key name="PrintReadyStateChange event" >
+  <key name="managed printing in Mozilla browsers" >
+    <topic name="JS_PrintManager.html" url="../../../JavaScript/JS_PrintManager.html" />
+  </key>
+</key>
+<key name="provide and update chart data using JavaScript" >
+  <topic name="JS_ChangeData.html" url="../../../JavaScript/JS_ChangeData.html" />
+  <key name="list of functions that help in providing data to chart" >
+    <topic name="JS_ChangeData.html#related" url="../../../JavaScript/JS_ChangeData.html#related" />
+  </key>
+  <key name="provide chart data" >
+    <topic name="JS_ChangeData.html#provide" url="../../../JavaScript/JS_ChangeData.html#provide" />
+  </key>
+  <key name="provide chart data using compact rendering method" >
+    <topic name="JS_ChangeData.html#compact" url="../../../JavaScript/JS_ChangeData.html#compact" />
+  </key>
+  <key name="update an existing chart" >
+    <topic name="JS_ChangeData.html#update" url="../../../JavaScript/JS_ChangeData.html#update" />
+  </key>
+</key>
+<key name="QDIconAlpha attribute" >
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html#quartiledeviation" url="../../../BoxandWhisker/QuartileDeviation.html#quartiledeviation" />
+  </key>
+</key>
+<key name="QDIconColor attribute" >
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html#quartiledeviation" url="../../../BoxandWhisker/QuartileDeviation.html#quartiledeviation" />
+  </key>
+</key>
+<key name="QDIconRadius attribute" >
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html#quartiledeviation" url="../../../BoxandWhisker/QuartileDeviation.html#quartiledeviation" />
+  </key>
+</key>
+<key name="QDIconShape attribute" >
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html#quartiledeviation" url="../../../BoxandWhisker/QuartileDeviation.html#quartiledeviation" />
+  </key>
+</key>
+<key name="QDIconSides attribute" >
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html#quartiledeviation" url="../../../BoxandWhisker/QuartileDeviation.html#quartiledeviation" />
+  </key>
+</key>
+<key name="radar chart" >
+  <key name="create" >
+    <topic name="FirstChart.html" url="../../../Radar/FirstChart.html" />
+  </key>
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../Radar/Overview.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="Radar" url="../../../ChartSS/Radar.html" />
+  </key>
+</key>
+<key name="registerWithJS attribute" >
+  <key name="create first chart" >
+    <topic name="FirstChart.html" url="../../../FirstChart/FirstChart.html" />
+  </key>
+  <key name="use JavaScript functions as links" >
+    <topic name="JavaScript.html" url="../../../DrillDown/JavaScript.html" />
+  </key>
+</key>
+
+<key name="resizeTo()function" >
+  <key name="change chart dimensions" >
+    <topic name="JS_ChangeChartProperties.html#changedimension" url="../../../JavaScript/JS_ChangeChartProperties.html#changedimension" />
+  </key>
+</key>
+<key name="rowId attribute" >
+  <key name="category bsed mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="create first chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="sDecimals attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+
+</indexdata>

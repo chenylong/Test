@@ -1,0 +1,390 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<script type="text/javascript" src="../../Charts/FusionCharts.js" ></script>
+
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+
+
+<title>JavaScript Charting capabilities </title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Introduction",  "JavaScript charting capabilities" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+   <tr>
+      <td class="pageHeader">JavaScript Charting capabilities </td>
+
+   </tr>
+   
+   <tr>
+      <td valign="top" class="text">
+         <p>Starting PowerCharts XT, you can now render the charts on devices where Flash player is not supported, is not installed or is disabled (like in iPhone/iPad) using the in-built JavaScript rendering capabilities. The charts rendered by this module are purely JavaScript based and do not need Flash Player at all.</p>
+         <p>PowerCharts XT gives you the option of either using automatic fallback, wherein the charts figure out the best mode of rendering (either Flash or JavaScript, based on availability of Flash Player), or lets you configure whether to render charts exclusively using JavaScript. If you are already using PowerCharts XT and wish to add iPad/iPhone fallback, you just need to replace the old SWF and JS files with the new ones - without changing a single line of code. </p>
+         <p>In case you wish to render JavaScript based charts only, irrespective of whether Flash Player is installed or not, all you  need to do is add a single line of code to your existing implementation. This has been covered in <a href="../FirstChart/UsingPureJS.html#force">forthcoming sections</a>. Meanwhile, let's get an overview of PowerCharts XT JavaScript based charting capabilities. </p>
+   </td><td>   </td></tr>
+   <tr>
+      <td valign="top" class="header"><a name="how"></a>How it works?</td>
+   </tr>
+   <tr>
+      <td valign="top" class="text">
+         <p>PowerCharts XT features a completely new FusionCharts JavaScript Class. FusionCharts JavaScript Class now consists of these main JavaScript files: <span class="codeInline">FusionCharts.js</span>, <span class="codeInline">FusionCharts.HC.js, </span><span class="codeInline"> FusionCharts.HC.PowerCharts.js </span>(for PowerCharts XT) and<span class="codeInline"> jquery.min.js</span>. These files are  present in respective product's <span class="codeInline">Download Pack &gt; Charts</span> folder. Although you only need to include <span class="codeInline">FusionCharts.js</span> in your web page (however, do not forget to copy the rest of files to your web application). The rest of the JavaScript files will be automatically loaded on-demand by <span class="codeInline">FusionCharts.js</span>.         </p>
+         <p>When the FusionCharts JavaScript Class determines that the device is iPad/iPhone, it automatically switches the rendering mode to JavaScript. </p>
+         <p>However, you can also <a href="../FirstChart/UsingPureJS.html#force">forcefully set the rendering method </a>to JavaScript from your code. For this you need to add a single line - <span class="codeInline">FusionCharts.setCurrentRenderer('javascript')</span> before you render a chart. </p>
+    </td>
+   </tr>
+   
+   <tr>
+      <td >
+         <table width="800" border="0" cellspacing="0" cellpadding="0" height="388" style="padding:0;margin:0;">
+            <tr>
+               <td width="500" style="background-image:url(../FirstChart/Images/iPad.jpg);background-repeat:no-repeat; background-position:bottom; height:388px; padding:0 0 40px 0;" height="388" align="center" valign="bottom" id="ipadChartLive">&nbsp;</td>
+               <td width="300" style="background-image:url(../FirstChart/Images/iphone.jpg); background-repeat:no-repeat; background-position:bottom; height:388px;padding:0 0 44px 0;" height="388" align="center" valign="bottom" id="iphoneChartLive">&nbsp;</td>
+            </tr>
+         </table>      </td>
+   </tr>
+   <tr><td height="15"></td></tr>
+   <tr>
+      <td valign="top" class="header"><a name="JSsupported_charts" id="JSsupported_charts"></a>Chart types supported </td>
+   </tr>
+   <tr>
+      <td valign="top" class="text">
+         <p>Given below is the list of chart types from PowerCharts XT which are supported by the FusionCharts JavaScript renderer:</p>
+         <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="table">
+            <tr>
+               <td width="34%" valign="top" class="header">Chart Type </td>
+               <td width="33%" valign="top" class="header">JavaScript Chart Alias </td>
+               <td width="33%" valign="top" class="header">SWF Name</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text"><strong>Logarithmic Charts </strong></td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Logarithmic Column 2D Chart </td>
+               <td valign="top">LogMSColumn2D</td>
+               <td valign="top">LogMSColumn2D.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Logarithmic Line 2D Chart </td>
+               <td valign="top">LogMSLine</td>
+               <td valign="top">LogMSLine.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text"><strong>Spline Charts </strong></td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Single-Series Spline 2D </td>
+               <td valign="top">Spline</td>
+               <td valign="top">Spline.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Single-Series Spline Area 2D </td>
+               <td valign="top">SplineArea</td>
+               <td valign="top">SplineArea.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Multi-Series Spline 2D </td>
+               <td valign="top">MSSpline</td>
+               <td valign="top">MSSpline.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Multi-Series Spline Area 2D </td>
+               <td valign="top">MSSplineArea</td>
+               <td valign="top">MSSplineArea.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text"><strong>Error Charts </strong></td>
+            </tr>
+            <tr>
+               <td valign="top" style="padding-left:20px;">Error Bar Chart</td>
+               <td valign="top">ErrorBar2D</td>
+               <td valign="top">ErrorBar2D.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" style="padding-left:20px;">Error Line 2D Chart
+                  <div class="version-info">Since v 3.2</div>
+               </td>
+               <td valign="top">ErrorLine</td>
+               <td valign="top">ErrorLine.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" style="padding-left:20px;">Error Scatter Chart
+                  <div class="version-info">Since v 3.2</div>
+               </td>
+               <td valign="top">ErrorScatter</td>
+               <td valign="top">ErrorScatter.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text"><strong>Inverse Y Axis Charts </strong></td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Inverse y-Axis Area 2D Chart </td>
+               <td valign="top">InverseMSArea</td>
+               <td valign="top">InverseMSArea.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Inverse y-Axis Column 2D Chart </td>
+               <td valign="top">InverseMSColumn2D</td>
+               <td valign="top">InverseMSColumn2D.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Inverse y-Axis Line 2D Chart </td>
+               <td valign="top">InverseMSLine</td>
+               <td valign="top">InverseMSLine.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text"><strong>Drag-able Charts </strong></td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Drag-able Column 2D Chart </td>
+               <td valign="top">DragColumn2D</td>
+               <td valign="top">DragColumn2D.swf </td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Drag-able Line 2D Chart </td>
+               <td valign="top">DragLine</td>
+               <td valign="top">DragLine.swf</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text" style="padding-left:20px;">Drag-able Area 2D Chart </td>
+               <td valign="top">DragArea</td>
+               <td valign="top">DragArea.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Radar Chart </strong></td>
+               <td valign="top">Radar</td>
+               <td valign="top">Radar.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Heat Map Chart </strong>
+                  <div class="version-info">Since v 3.2</div>
+               </td>
+               <td valign="top">HeatMap</td>
+               <td valign="top">HeatMap.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Box and Whisker Chart </strong>
+                  <div class="version-info">Since v 3.2</div>
+               </td>
+               <td valign="top">BoxAndWhisker2D</td>
+               <td valign="top">BoxAndWhisker2D.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Candle-Stick Chart </strong>(with support for line chart, bar chart and volume chart) </td>
+               <td valign="top">CandleStick</td>
+               <td valign="top">CandleStick.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Drag Node Chart </strong></td>
+               <td valign="top">DragNode</td>
+               <td valign="top">DragNode.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Step Line Charts </strong>
+                  <div class="version-info">Since v 3.2</div>
+               </td>
+               <td valign="top">MSStepLine</td>
+               <td valign="top">MSStepLine.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Multi-axis Line Chart </strong></td>
+               <td valign="top">MultiAxisLine</td>
+               <td valign="top">MultiAxisLine.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Multi-level Pie Chart </strong></td>
+               <td valign="top">MultiLevelPie</td>
+               <td valign="top">MultiLevelPie.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Select-Scatter Chart </strong></td>
+               <td valign="top">SelectScatter</td>
+               <td valign="top">SelectScatter.swf</td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Waterfall / Cascade Chart </strong></td>
+               <td valign="top">Waterfall2D</td>
+               <td valign="top">Waterfall2D.swf </td>
+            </tr>
+            <tr>
+               <td colspan="3" valign="top" class="text">&nbsp;</td>
+            </tr>
+            <tr>
+               <td valign="top" class="text"><strong>Kagi Chart </strong></td>
+               <td valign="top">Kagi</td>
+               <td valign="top">Kagi.swf</td>
+            </tr>
+         </table>
+         <div style="clear:both;"></div>     </td>
+   </tr>
+   <tr><td height="20">&nbsp;</td></tr>
+   
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("List of Charts|ChartList.html","Version History|WhatsNew32.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+<script  type="text/javascript">
+
+
+	var dataXML1 = "<chart caption='Variance Analysis' bgColor='FFFFFF' radarFillColor='FFFFFF'  radarBorderThickness='1' radarBorderAlpha='50' plotFillAlpha='5' anchorAlpha='100' numberPrefix='$' numDivLines='2' legendPosition='RIGHT' showPlotBorder='1' plotBorderAlpha='40' plotBorderThickness='1'>\n\
+	<categories font='Arial' fontSize='11' >\n\
+		<category label='Jan' />\n\
+		<category label='Feb' />\n\
+		<category label='Mar' />\n\
+		<category label='Apr' />\n\
+		<category label='May' />\n\
+		<category label='Jun' />\n\
+		<category label='Jul' />\n\
+		<category label='Aug' />\n\
+		<category label='Sep' />\n\
+		<category label='Oct' />\n\
+		<category label='Nov' />\n\
+		<category label='Dec' />\n\
+	</categories>\n\
+	<dataset seriesname='Products' color='CD6AC0' anchorSides='6' anchorRadius='2' anchorBorderColor='CD6AC0' anchorBgAlpha='0' plotBorderColor='881D7A'  >\n\
+		<set value='1127654' />\n\
+		<set value='1226234' />\n\
+		<set value='1299456' />\n\
+		<set value='1311565' />\n\
+		<set value='1324454' />\n\
+		<set value='1357654' />\n\
+		<set value='1296234' />\n\
+		<set value='1359456' />\n\
+		<set value='1391565' />\n\
+		<set value='1414454' />\n\
+		<set value='1671565' />\n\
+		<set value='1134454' />\n\
+	</dataset>\n\
+	<dataset seriesname='Services' color='0099FF'  anchorSides='10' anchorBorderColor='0099FF' anchorBgAlpha='0' anchorRadius='2' plotBorderColor='0099FF' >\n\
+		<set value='534241' />\n\
+		<set value='556728' />\n\
+		<set value='575619' />\n\
+		<set value='676713' />\n\
+		<set value='665520' />\n\
+		<set value='634241' />\n\
+		<set value='656728' />\n\
+		<set value='675619' />\n\
+		<set value='776713' />\n\
+		<set value='865520' />\n\
+		<set value='976713' />\n\
+		<set value='665520' />\n\
+	</dataset>\n\
+</chart>";
+
+            var dataXML2 = "<chart canvasBgAlpha='0' canvasBorderAlpha='0' showLabels='0' showValues='0' yAxisMaxValue='200' numDivLines='3' showYAXisValues='0' chartLeftMargin='0'\n\
+				 chartRightMargin='0' chartTopMargin='0' chartBottomMargin='0' >\n\
+                                <set label='Jan' value='122' />\n\
+                                <set label='Feb' value='101' />\n\
+                                <set label='Mar' value='135' />\n\
+                                <set label='Apr' value='122' />\n\
+                                <set label='May' value='152' />\n\
+                                <set label='Jun' value='182' />\n\
+                                <set label='Jul' value='116' />\n\
+                                <set label='Aug' value='100' />\n\
+                                <set label='Sep' value='98' />\n\
+                                <set label='Oct' value='135' />\n\
+                                <set label='Nov' value='102' />\n\
+                                <set label='Dec' value='112' />\n\
+                                <trendLines>\n\
+                                <line startValue='0.1' displayValue=' ' color='BBBBBB' />\n\
+                                <line startValue='200' displayValue=' ' color='BBBBBB' />\n\
+                                </trendLines>\n\
+                            </chart>";
+	FusionCharts.setCurrentRenderer('javascript');									 
+	var salesChart = new FusionCharts('../../../Charts/Radar.swf', 'chart-1', '420', '280', '0');
+	salesChart.setXMLData(dataXML1);
+	salesChart.render('ipadChartLive');
+
+	var salesLine = new FusionCharts('../../../Charts/SplineArea.swf', 'chart-2', '175', '70', '0');
+	salesLine.setXMLData(dataXML2);
+	salesLine.render('iphoneChartLive');
+
+
+
+</script>
+</body>
+</html>

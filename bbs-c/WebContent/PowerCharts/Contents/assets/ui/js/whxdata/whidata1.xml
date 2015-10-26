@@ -1,0 +1,308 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="attrFusionCharts method" >
+  <key name="get current title" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#gettitle" url="../../../jQuery/RetrieveUpdate.html#gettitle" />
+  </key>
+  <key name="retrieve and update properties of charts using FusionCharts jQuery plugin" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin" url="../../../jQuery/RetrieveUpdate.html" />
+  </key>
+  <key name="set new color theme" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#setcolor" url="../../../jQuery/RetrieveUpdate.html#setcolor" />
+  </key>
+  <key name="set new title" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#settitle" url="../../../jQuery/RetrieveUpdate.html#settitle" />
+  </key>
+</key>
+<key name="autoOrderLegendIcon attribute" >
+  <key name="legend cosmetics in heat map chart" >
+    <topic name="legendcosmetics.html" url="../../../HeatMap/legendcosmetics.html" />
+  </key>
+</key>
+<key name="base attribute" >
+  <key name="logarithmic chart" >
+    <topic name="Overview.html" url="../../../Log/Overview.html" />
+  </key>
+</key>
+<key name="batch export" >
+  <topic name="ECBatchOverview.html" url="../../../Export/ECBatchOverview.html" />
+  <key name="configure XML for client-side export" >
+    <topic name="ECBatchSetup.html" url="../../../Export/ECBatchSetup.html" />
+  </key>
+  <key name="create instance of export component in your Web page" >
+    <topic name="ECBatchSetup.html" url="../../../Export/ECBatchSetup.html" />
+  </key>
+  <key name="customizing the export component UI" >
+    <topic name="ECBatchSetup.html" url="../../../Export/ECBatchSetup.html" />
+  </key>
+  <key name="over-ride export parameters" >
+    <topic name="ECBatchOverride.html" url="../../../Export/ECBatchOverride.html" />
+  </key>
+  <key name="set JavaScript callback" >
+    <topic name="ECBatchCallback.html" url="../../../Export/ECBatchCallback.html" />
+  </key>
+  <key name="set up" >
+    <topic name="ECBatchSetup.html" url="../../../Export/ECBatchSetup.html" />
+  </key>
+</key>
+<key name="BeforeLinkedItemOpen event" >
+  <key name="listen to LinkedCharts events" >
+    <topic name="JS_LinkedCharts.html#events" url="../../../JavaScript/JS_LinkedCharts.html#events" />
+  </key>
+</key>
+<key name="BeforeLinkItemClose event" >
+  <key name="listen to LinkedChart events" >
+    <topic name="JS_LinkedCharts.html#events" url="../../../JavaScript/JS_LinkedCharts.html#events" />
+  </key>
+</key>
+<key name="bevel style type" >
+  <topic name="Bevel.html" url="../../../Styles/Bevel.html" />
+</key>
+<key name="bgAlpha attribute" >
+  <key name="set background color when chart messages are displayed" >
+    <topic name="ChartMessages#setbg" url="../../../Advanced/ChartMessages.html#setbg" />
+  </key>
+  <key name="set chart gradient" >
+    <topic name="Gradients.html" url="../../../Advanced/Gradients.html" />
+  </key>
+</key>
+<key name="bgAngle attribute" >
+  <key name="set chart gradient" >
+    <topic name="Gradients.html" url="../../../Advanced/Gradients.html" />
+  </key>
+</key>
+<key name="bgColor attribute" >
+  <key name="set gradients" >
+    <topic name="Gradients.html" url="../../../Advanced/Gradients.html" />
+  </key>
+</key>
+<key name="bgRatio attribute" >
+  <key name="set gradients" >
+    <topic name="Gradients.html" url="../../../Advanced/Gradients.html" />
+  </key>
+</key>
+<key name="bgSWF attribute" >
+  <key name="set chart background" >
+    <topic name="BgSWF" url="../../../Advanced/BgSWF.html" />
+  </key>
+</key>
+<key name="bind method" >
+  <key name="handle events using FusionCharts jQuery plugin" >
+    <topic name="Handling events using FusionCharts jQuery plugin" url="../../../jQuery/Events.html" />
+  </key>
+</key>
+<key name="blLabel attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure labels in heat map chart" >
+    <topic name="labels.html#br" url="../../../HeatMap/labels.html#br" />
+  </key>
+  <key name="configuring tooltips in heat map chart" >
+    <topic name="labels.html#tooltip" url="../../../HeatMap/labels.html#tooltip" />
+  </key>
+</key>
+<key name="box and whisker chart" >
+  <topic name="Overview.html" url="../../../BoxandWhisker/Overview.html" />
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+  <key name="create" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+  <key name="customize the median (Q2)" >
+    <topic name="Chartconfig.html#median" url="../../../BoxandWhisker/Chartconfig.html#median" />
+  </key>
+  <key name="Customize the minimum and maximum numbers (lower and upper whiskers)" >
+    <topic name="Chartconfig.html#whiskers" url="../../../BoxandWhisker/Chartconfig.html#whiskers" />
+  </key>
+  <key name="customize the upper and lower quartiles (Q1 and Q3)" >
+    <topic name="Chartconfig.html#quartiles" url="../../../BoxandWhisker/Chartconfig.html#quartiles" />
+  </key>
+  <key name="legend" >
+    <topic name="Legend.html" url="../../../BoxandWhisker/Legend.html" />
+  </key>
+  <key name="mean" >
+    <topic name="Mean.html" url="../../../BoxandWhisker/Mean.html" />
+  </key>
+  <key name="mean deviation" >
+    <topic name="MeanDeviation.html" url="../../../BoxandWhisker/MeanDeviation.html" />
+  </key>
+  <key name="outliers" >
+    <topic name="Outliers.html" url="../../../BoxandWhisker/Outliers.html" />
+  </key>
+  <key name="process" >
+    <topic name="Howitworks.html" url="../../../BoxandWhisker/Howitworks.html" />
+  </key>
+  <key name="show all five-summary numbers" >
+    <topic name="Chartconfig.html#showall" url="../../../BoxandWhisker/Chartconfig.html#showall" />
+  </key>
+  <key name="show or hide individual standard deviation values" >
+    <topic name="StandardDeviation.html#showhideSD" url="../../../BoxandWhisker/StandardDeviation.html#showhideSD" />
+  </key>
+  <key name="show or hide mean deviation values" >
+    <topic name="MeanDeviation.html#showhidemeandeviation" url="../../../BoxandWhisker/MeanDeviation.html#showhidemeandeviation" />
+  </key>
+  <key name="show or hide mean values" >
+    <topic name="Mean.html#showhidemean" url="../../../BoxandWhisker/Mean.html#showhidemean" />
+  </key>
+  <key name="show or hide the five summary numbers" >
+    <topic name="Chartconfig.html#showhide" url="../../../BoxandWhisker/Chartconfig.html#showhide" />
+  </key>
+  <key name="standard deviation" >
+    <topic name="StandardDeviation.html" url="../../../BoxandWhisker/StandardDeviation.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="BoxandWhisker2D" url="../../../ChartSS/BoxandWhisker2D.html" />
+  </key>
+</key>
+<key name="brLabel attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure labels in  heat map chart" >
+    <topic name="labels.html#br" url="../../../HeatMap/labels.html#br" />
+  </key>
+  <key name="configure tooltips in heat map chart" >
+    <topic name="labels.html#tooltip" url="../../../HeatMap/labels.html#tooltip" />
+  </key>
+</key>
+<key name="btnTextColor attribute" >
+  <key name="select scatter chart" >
+    <topic name="Form.html" url="../../../SelectScatter/Form.html" />
+  </key>
+</key>
+<key name="candlestick chart" >
+  <topic name="Overview.html" url="../../../Candlestick/Overview.html" />
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../Candlestick/Overview.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="Candlestick" url="../../../ChartSS/Candlestick.htm" />
+  </key>
+</key>
+<key name="canvasPadding attribute" >
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+</key>
+<key name="caption attribute" >
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+</key>
+<key name="change" >
+  <key name="change chart attributes" >
+    <topic name="JS_ChangeChartProperties.html#setchartattribute" url="../../../JavaScript/JS_ChangeChartProperties.html#setchartattribute" />
+  </key>
+  <key name="change chart caption" >
+    <topic name="JS_ChangeChartProperties.html#chartcaption" url="../../../JavaScript/JS_ChangeChartProperties.html#chartcaption" />
+  </key>
+  <key name="chart height" >
+    <topic name="JS_ChangeChartProperties.html#changedimension" url="../../../JavaScript/JS_ChangeChartProperties.html#changedimension" />
+  </key>
+  <key name="chart messages" >
+    <topic name="JS_ChangeChartProperties.html#configure" url="../../../JavaScript/JS_ChangeChartProperties.html#configure" />
+  </key>
+  <key name="chart size" >
+    <topic name="ChangeSize.html" url="../../../FirstChart/ChangeSize.html" />
+  </key>
+  <key name="chart sub caption" >
+    <topic name="JS_ChangeChartProperties.html#chartsubcaption" url="../../../JavaScript/JS_ChangeChartProperties.html#chartsubcaption" />
+  </key>
+  <key name="chart type" >
+    <topic name="ChangeChart.html" url="../../../FirstChart/ChangeChart.html" />
+  </key>
+  <key name="chart width" >
+    <topic name="JS_ChangeChartProperties.html#changedimension" url="../../../JavaScript/JS_ChangeChartProperties.html#changedimension" />
+  </key>
+  <key name="grid settings" >
+    <topic name="JS_ChangeChartProperties.html#gridsettings" url="../../../JavaScript/JS_ChangeChartProperties.html#gridsettings" />
+  </key>
+  <key name="number formatting settings" >
+    <topic name="JS_ChangeChartProperties.html#numberformattingsettings" url="../../../JavaScript/JS_ChangeChartProperties.html#numberformattingsettings" />
+  </key>
+</key>
+<key name="change chart messages" >
+  <key name="set background color when chart messages are displayed" >
+    <topic name="ChartMessages#setbg" url="../../../Advanced/ChartMessages.html#setbg" />
+  </key>
+  <key name="set multiple messages" >
+    <topic name="ChartMessages#multiple" url="../../../Advanced/ChartMessages.html#multiple" />
+  </key>
+</key>
+<key name="changeAttribute() function" >
+  <key name="change chart caption" >
+    <topic name="JS_ChangeChartProperties.html#chartcaption" url="../../../JavaScript/JS_ChangeChartProperties.html#chartcaption" />
+  </key>
+</key>
+<key name="chart background attributes" >
+  <topic name="Background.html" url="../../../AttDesc/Background.html" />
+</key>
+<key name="chart border attributes" >
+  <topic name="Background.html" url="../../../AttDesc/Background.html" />
+</key>
+<key name="chart canvas attributes" >
+  <topic name="Canvas.html" url="../../../AttDesc/Canvas.html" />
+</key>
+<key name="chart height" >
+  <key name="resize" >
+    <topic name="JS_ChangeChartProperties.html#resizechartwh" url="../../../JavaScript/JS_ChangeChartProperties.html#resizechartwh" />
+  </key>
+  <key name="resize in percent values using FusionCharts JavaScript class" >
+    <topic name="JS_ChangeChartProperties.html#resizechartpercent" url="../../../JavaScript/JS_ChangeChartProperties.html#resizechartpercent" />
+  </key>
+  <key name="resize in pixel values using FusionCharts JavaScript class" >
+    <topic name="JS_ChangeChartProperties.html#resizechartpixel" url="../../../JavaScript/JS_ChangeChartProperties.html#resizechartpixel" />
+  </key>
+  <key name="set in percent" >
+    <topic name="ChangeSize.html#precent" url="../../../FirstChart/ChangeSize.html#precent" />
+  </key>
+  <key name="set in pixels" >
+    <topic name="ChangeSize.html#pixels" url="../../../FirstChart/ChangeSize.html#pixels" />
+  </key>
+</key>
+<key name="chart limits attributes" >
+  <topic name="ChartLimits.html" url="../../../AttDesc/ChartLimits.html" />
+</key>
+<key name="chart palettes attributes" >
+  <topic name="ChartPalettes.html" url="../../../AttDesc/ChartPalettes.html" />
+</key>
+<key name="chart title attributes" >
+  <topic name="Titles.html" url="../../../AttDesc/Titles.html" />
+</key>
+<key name="chart width" >
+  <key name="resize" >
+    <topic name="JS_ChangeChartProperties.html#resizechartwh" url="../../../JavaScript/JS_ChangeChartProperties.html#resizechartwh" />
+  </key>
+  <key name="resize in percent values using FusionCharts JavaScript class" >
+    <topic name="JS_ChangeChartProperties.html#resizechartpercent" url="../../../JavaScript/JS_ChangeChartProperties.html#resizechartpercent" />
+  </key>
+  <key name="resize in pixel values using FusionCharts JavaScript class" >
+    <topic name="JS_ChangeChartProperties.html#resizechartpixel" url="../../../JavaScript/JS_ChangeChartProperties.html#resizechartpixel" />
+  </key>
+  <key name="set in percent" >
+    <topic name="ChangeSize.html#precent" url="../../../FirstChart/ChangeSize.html#precent" />
+  </key>
+  <key name="set in pixels" >
+    <topic name="ChangeSize.html#pixels" url="../../../FirstChart/ChangeSize.html#pixels" />
+  </key>
+</key>
+<key name="ChartFromId() method" >
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html" url="../../../JavaScript/JS_Example.html" />
+  </key>
+</key>
+<key name="clickURL attribute" >
+  <key name="set full chart as hotspot" >
+    <topic name="ClickURL.html" url="../../../DrillDown/ClickURL.html" />
+  </key>
+</key>
+
+</indexdata>

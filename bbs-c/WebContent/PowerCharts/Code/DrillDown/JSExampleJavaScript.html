@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> PowerCharts XT - DrillDown - Using JavaScript as links (javascript: format)</title>
+        <script type="text/javascript" language="Javascript" src="../assets/ui/js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="../../Charts/FusionCharts.js"></script>
+		<script type="text/javascript" language="Javascript" src="../assets/ui/js/lib.js"></script>
+        <link href="../assets/ui/css/style.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+
+    <body>
+        <!-- wrapper -->
+        <div id="wrapper">
+            <!-- header -->
+            <div id="header">
+                <div class="logo"><a href="http://www.fusioncharts.com/powercharts/?BS=OfflineDocsLogo" target="_blank"><img src="../assets/ui/images/powercharts-xt-logo.jpg" width="180" height="97" alt="PowerCharts XT logo" /></a></div>
+                <h1 class="brand-name">PowerCharts XT</h1>
+                <h1 class="logo-text-home">DrillDown - Using JavaScript as links (javascript: format)</h1>
+            </div>
+            <!-- content area -->
+            <div class="content-area">
+                <div id="content-area-inner-main">
+				<p class="text" align="center">This sample showcases drilldown feature of charts. Each anchor, when clicked, calls a JavaScript function and passes a string parameter to the function. The function shows the parameter string as alert message. Here JavaScript: prefix is used to call the JavaScript function.</p>
+					<div id="messageBox" style="margin-left:10px; margin-right:10px; display:none;"></div>
+					<p>&nbsp;</p>
+                    
+
+                    <div class="gen-chart-render">
+
+                        <center>
+                            <div id="chartContainer">PowerCharts XT will load here</div>
+
+                            <script type="text/javascript"><!--
+
+                                function myJS(myVar) {
+                                    window.alert(myVar);
+                                }
+								
+								var JSExampleJavaScriptData ='<chart caption="ABC Bank Branches" subCaption="(In Asian Countries)" yaxislabel="Branches" xaxislabel="Country">\n\
+								<set label="Hong Kong" value="235" link="JavaScript:myJS(\'Hong Kong,235\');"/> \n\
+								<set label="Japan" value="123" link="JavaScript:myJS(\'Japan, 123\');"/>\n\
+								<set label="Singapore" value="129" link="JavaScript:myJS(\'Singapore, 129\');"/> \n\
+								<set label="Malaysia" value="121" link="JavaScript:myJS(\'Malaysia, 121\');"/> \n\
+								<set label="Taiwan" value="110" link="JavaScript:myJS(\'Taiwan, 110\');"/> \n\
+								<set label="China" value="90" link="JavaScript:myJS(\'China, 90\');"/> \n\
+								<set label="S. Korea" value="86" link="JavaScript:myJS(\'S.Korea, 86\');"/> \n\
+							</chart>';
+
+                                var myChart = new FusionCharts( "../../Charts/Spline.swf",
+                                "myChartId", "510", "347", "0");
+                                myChart.setXMLData(JSExampleJavaScriptData);
+                                myChart.render("chartContainer");
+
+                                // -->
+                            </script>
+                        </center>
+
+                    </div>
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                    <p class="small">    </p>
+                    <div class="underline-dull"></div>
+					<div>
+					
+                <p class="highlightBlock">The above sample showcases how to use JavaScript functions as links. Click <a href="../../Contents/index.html?DrillDown/JavaScript.html" target="_blank">here</a> to know more on how the code of this example works.</p>
+            </div>
+                </div>
+                <!-- footer -->
+                <div id="footer">
+                    <ul>
+                        <li><a href="index.html"><span>&laquo; Back to list of examples</span></a></li>
+                        <li class="pipe">|</li>
+                        <li><a href="../NoChart.html"><span>Unable to see the chart above?</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<script type="text/javascript"><!--//
+		 
+			$(document).ready(function() {
+				window.windowIsReady = true;
+				showConditionalMessage( "Your browser does not seem to have Flash Player support. A JavaScript chart is rendered instead.", isJSRenderer(myChart) );
+			});	
+			
+			function notifyLocalAJAXSecurityRestriction()
+			{
+				if(isLocal())
+				{
+					addConditionalMessage( "<br /><br /><strong>Unable to see the chart below?</strong><br />"+isLocal()+"This sample uses data provided as URL. If you are unable to see the chart below, it is due to the browser's restriction on JavaScript from accessing local file system owing to security reasons. If you run the sample from a server, it will run absolutely fine, though. When running locally, however, if you provide the data as string, it works fine. Click <a href='weekly-sales-xml-embed.html'>here</a> to check out a sample using data as string.", isJSRenderer(myChart) );
+				}
+			}
+
+			
+		// -->
+		</script>
+    </body>
+</html>

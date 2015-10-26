@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+
+
+
+<title>Setting backgrounds for charts </title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Advanced charting", "Set backgrounds for chart" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="pageHeader">Setting backgrounds for charts </td>
+
+  </tr>
+  <tr> 
+    <td valign="top" class="text"><p>PowerCharts XT allows you to easily set a background image/movie for your   chart. You can use this option to embed background images (GIF, JPEG, or PNG), other SWF Files, or data tables (in image format) as your chart background. </p>
+      <p>To embed an image, all you need to do is set <span class="codeInline">bgImage</span> property of <span class="codeInline">&lt;chart&gt;</span> element. Additionally, you can also do a lot more configurations like setting transparency, scale, stretch, tile etc. We will learn about each of these in details soon in this page.</p>
+	  <p class="highlightBlock"><a href="../../Code/JavaScript/Basics/bgImageTryout/index.html" target="_blank">Click here to explore all the configurable options of background image using an interactive demo.</a></p>
+      <p>Let us first see how we may use the <span class="codeInline">bgImage</span> property in a chart, as shown below:</p></td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <div class="container">
+    <ul class="tabs">
+       <li><a href="#tab1">XML</a></li>
+       <li><a href="#tab2">JSON</a></li>
+    </ul>
+    <div class="tab_container"> 
+       <div id="tab1" class="tab_content"><pre class="prettyprint code_container" style="height:450px; overflow:auto;">&lt;chart caption="Pizza Mania" subcaption="Consumption" 
+palettecolors="880000,880000" plotgradientcolor="fba71a" showplotBorder="0" 
+plotfillalpha="90,90" canvasbgalpha="0" numdivlines="0" showyaxisvalues="0" 
+rotateValues="1" formatNumberScale="0" 
+canvasborderalpha="0" bgImage="pizza.jpg" &gt;
+
+&lt;set label="Jan" value="900" /&gt;
+&lt;set label="Feb" value="500" /&gt;
+&lt;set label="Mar" value="700" /&gt;
+&lt;set label="Apr" value="1000" /&gt;
+&lt;set label="May" value="500" /&gt;
+&lt;set label="June" value="200" /&gt;
+&lt;set label="July" value="400"  /&gt;
+
+   &lt;styles&gt;
+	  &lt;definition&gt;
+		 &lt;style name="ani" type="animation" DURATION="3" easing="bounce" start="0" param="_xscale"/&gt;
+		 &lt;style name="myFont" type="font" color="390D07"/&gt;
+		 &lt;style name="myFontCaption" type="font" size="18" color="ffffff" /&gt;
+		 &lt;style name="myFontSubCaption" type="font" size="12" color="ffffff"/&gt;
+		 &lt;style name="myShadow" type="shadow" color="333333" angle="45" strength="3"/&gt;
+	  &lt;/definition&gt;
+	  &lt;application&gt;
+		 &lt;apply toObject="Dataplot" styles="ani"/&gt;
+		 &lt;apply toObject="Datavalues" styles="myFont"/&gt;
+		 &lt;apply toObject="Datalabels" styles="myFont"/&gt;
+		 &lt;apply toObject="caption" styles="myFontCaption,myShadow"/&gt;
+		 &lt;apply toObject="subcaption" styles="myFontSubCaption,myShadow"/&gt;
+	  &lt;/application&gt;
+   &lt;/styles&gt;
+
+&lt;/chart&gt;</pre></div>
+<div id="tab2" class="tab_content">
+  <pre id="pre-datajson" class="prettyprint code_container" style="height:450px; overflow:auto;">{
+  "chart": {
+    "caption": "Pizza Mania",
+    "subcaption": "Consumption",
+    "palettecolors": "880000,880000",
+    "plotgradientcolor": "fba71a",
+    "showplotborder": "0",
+    "plotfillalpha": "90,90",
+    "canvasbgalpha": "0",
+    "numdivlines": "0",
+    "showyaxisvalues": "0",
+    "rotatevalues": "1",
+    "formatnumberscale": "0",
+    "canvasborderalpha": "0",
+    "bgimage": "pizza.jpg"
+  },
+  "data": [
+    {
+      "label": "Jan",
+      "value": "900"
+    },
+    {
+      "label": "Feb",
+      "value": "500"
+    },
+    {
+      "label": "Mar",
+      "value": "700"
+    },
+    {
+      "label": "Apr",
+      "value": "1000"
+    },
+    {
+      "label": "May",
+      "value": "500"
+    },
+    {
+      "label": "June",
+      "value": "200"
+    },
+    {
+      "label": "July",
+      "value": "400"
+    }
+  ],
+  "styles": {
+    "definition": [
+      {
+        "name": "ani",
+        "type": "animation",
+        "duration": "3",
+        "easing": "bounce",
+        "start": "0",
+        "param": "_xscale"
+      },
+      {
+        "name": "myFont",
+        "type": "font",
+        "color": "390D07"
+      },
+      {
+        "name": "myFontCaption",
+        "type": "font",
+        "size": "18",
+        "color": "ffffff"
+      },
+      {
+        "name": "myFontSubCaption",
+        "type": "font",
+        "size": "12",
+        "color": "ffffff"
+      },
+      {
+        "name": "myShadow",
+        "type": "shadow",
+        "color": "333333",
+        "angle": "45",
+        "strength": "3"
+      }
+    ],
+    "application": [
+      {
+        "toobject": "Dataplot",
+        "styles": "ani"
+      },
+      {
+        "toobject": "Datavalues",
+        "styles": "myFont"
+      },
+      {
+        "toobject": "Datalabels",
+        "styles": "myFont"
+      },
+      {
+        "toobject": "caption",
+        "styles": "myFontCaption,myShadow"
+      },
+      {
+        "toobject": "subcaption",
+        "styles": "myFontSubCaption,myShadow"
+      }
+    ]
+  }
+}</pre>
+</div>
+    </div></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>In the above code, we are:</p>
+      <ul>
+        <li>Loading a background image <span class="codeInline">pizza.jpg</span> by setting it as <span class="codeInline">bgImage</span> attribute. If your image file is in a different location, you will need to specify the relative path. Note that due to security restrictions, your image file has to reside on the same sub-domain as chart SWF File and a relative path to the same has to be specified. </li>
+        <li>Setting canvas alpha as 0, so that it becomes see-through for the background to appear.</li>
+        <li>Defining styles for formatting of other chart elements.  </li>
+      </ul>
+    <p>When you view this chart (with the background image), you will get something as under: </p></td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><img src="Images/bgSWF.jpg" width="692" height="340" class="imageBorder" /></td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>See a similar example <a href="../../Code/MyFirstChart/pizza-consumption-using-background-image.html" target="_blank">live</a>! </p>
+      <p>Simple and effective - isn't it? </p>
+      <p class="highlightBlock"><strong>Existing users</strong>: You might be wondering what happened to the  <span class="codeInline">bgSWF</span> attribute which you have been using. Starting PowerCharts XT, use of <span class="codeInline">bgSWF </span>and<span class="codeInline"> bgSWFAlpha </span>is deprecated. However, you can continue to use this parameter in your existing code without any problem.</p>
+    <p>In the following sections of this page we will learn how the background image can be configured.</p></td>
+  </tr>
+  <tr>
+  <td class="header"><a name="bgimage" id="bgimage"></a>Configuring background image</td>
+  </tr>
+  <tr>
+  <td class="text"><p>PowerCharts XT allows you to configure the background images. You can configure the following:</p>
+    <ul>
+    <li><a href="#alpha">Set transparency of the loaded image</a></li>
+    <li> <a href="#scale">Scale the loaded image</a> </li>
+    <li> <a href="#alignment">Horizontally or vertically align the image with respect to the chart </a>and </li>
+    <li><a href="#displaymode">Set the mode in which the image will be displayed (like tile, stretch etc.) </a></li>
+    </ul>
+  </td></tr>
+  <tr>
+  <td class="text"><p>In the following sections, we will discuss how to implement the above given configurations on the background image.</p>
+    </td>
+  </tr>
+  <tr>
+  <td class="header"><a name="alpha"></a>Setting the transparency of the background image</td>
+  </tr>
+  <tr>
+  <td class="text"><p>You can set the transparency of the image using the <span class="codeInline">bgImageAlpha</span> attribute.The default value of this attribute is '100'. The image remains fully opaque when 100 is set. 0 (zero) turns the image completely transparent. An example code setting the background image 30% transparent is shown as under:</p></td></tr> 
+  <tr>
+    <td valign="top">
+    <div class="container">
+    <ul class="tabs">
+       <li><a href="#tab3">XML</a></li>
+       <li><a href="#tab4">JSON</a></li>
+    </ul>
+    <div class="tab_container">
+       <div id="tab3" class="tab_content">
+         <pre class="prettyprint code_container">&lt;chart <strong>... bgImageAlpha='30' bgImage='pizza.jpg'</strong> ...&gt;
+   ...
+&lt;/chart&gt;</pre>
+       </div>
+<div id="tab4" class="tab_content">
+  
+  <pre id="pre-datajson" class="prettyprint code_container">{<br />&nbsp; &quot;chart&quot;:{&nbsp; &nbsp; 
+    ...
+    <strong>&quot;bgImage&quot;:&quot;pizza.jpg&quot;
+    &quot;bgImageAlpha&quot;:&quot;30&quot;</strong>,
+},
+  ...
+}  </pre>
+</div></div></div></td>
+  </tr>
+  <tr>
+  <td class="text"><p> In the above code, we have added the attribute <span class="codeInline">bgImageAlpha='30'</span>. The chart will look as under:</p>
+    <p> <img src="Images/alpha.jpg" width="694" height="345" class="imageBorder" /></p>
+          <p class="highlightBlock"><strong>Existing users</strong>: You might be wondering what happened to the  <span class="codeInline">bgSWFAlpha</span> attribute which you have been using. Starting PowerCharts XT, use of <span class="codeInline">bgSWF </span>and<span class="codeInline"> bgSWFAlpha </span>is deprecated. However, you can continue to use this parameter in your existing code without any problem.</p>
+
+  </td></tr>
+	
+	<tr>
+	  <td class="header"><a name="scale"></a>Setting the scale of the background image </td>
+	</tr>
+	<tr><td class="text"> <p>You can also increase or decrease the magnification of the background image. To customize the magnification of the background image the attribute <span class="codeInline">bgImageScale</span> is used. The value of this attribute can be anything between<span class="codeInline"> 0-300</span>. The default value of the attribute is <span class="codeInline">100</span>. Any value less than <span class="codeInline">100</span> will reduce the size of the background image and any value more than <span class="codeInline">100</span> will increase the size of the background image. </p></td></tr>
+	
+	<tr>
+	  <td class="text">In this example below, the value of the <span class="codeInline">bgImageScale</span> attribute is set to <span class="codeInline">50</span>. Hence, the size of the background image will be reduced to half of its size.<br/>
+      <br/></td>
+	</tr>
+	<tr>
+    <td valign="top">
+    <div class="container">
+    <ul class="tabs">
+       <li><a href="#tab5">XML</a></li>
+       <li><a href="#tab6">JSON</a></li>
+    </ul>
+    <div class="tab_container">
+       <div id="tab5" class="tab_content">
+         <pre class="prettyprint code_container">&lt;chart ... bgImageAlpha='30' bgImage='pizza.jpg' <strong>bgImageScale='60'</strong> &gt;
+   ...
+&lt;/chart&gt;</pre>
+       </div>
+<div id="tab6" class="tab_content">
+  
+  <pre id="pre-datajson" class="prettyprint code_container">{<br />&nbsp; &quot;chart&quot;:{<br />      ...
+    &quot;bgImage&quot;:&quot;pizza.jpg&quot;
+    &quot;bgImageAlpha&quot;:&quot;30&quot; 
+    <strong>&quot;bgImageScale&quot;:&quot;60&quot;</strong>,
+},
+  ...
+}  </pre>
+</div></div></div></td>
+  </tr>
+  <tr><td class="text"><p>The chart for the above code will look as under:</p>
+  <img src="Images/customScale.jpg" width="672" height="344" class="imageBorder" /><br/>
+  <br/></td></tr>
+   <tr>
+  <td> See it <a href="../../Code/MyFirstChart/bgImage-scale.html" target="_blank">live</a>!<br/>
+    <br/></td>
+  </tr>
+  <tr>
+  <td class="header"><a name="alignment"></a>Vertical &amp; Horizontal alignment of the&nbsp; background image</td>
+  </tr>
+  <tr>
+  <td class="text"><p>You can set the position of the background image on the chart according to your choice by altering the vertical and horizontal alignments of the background image. The two attributes used to set the alignments are <span class="codeInline">bgImageVAlign</span> (top, middle, bottom) and <span class="codeInline">bgImageHAlign </span>(left, middle, right). The default value of these two attributes are <span class="codeInline">bgImageVAlign='top'</span> and <span class="codeInline">bgImageHALign='left'</span>. 
+  By default, the background image will appear on the top-left position of the chart. </p></td></tr>
+ 
+  <tr>
+  <td class="text">All possible combinations of vertical and horizontal alignments of the background image are given below:<br/>
+    <br/></td></tr>
+  <tr>
+  	<td>
+	<table width="925">
+  <tr>
+  <td width="33%"><img src="Images/topLeft.jpg" width="295" height="235" class="imageBorder" /></td>
+  <td width="33%"><img src="Images/topMiddle.jpg" width="295" height="235" class="imageBorder" /></td>
+  <td width="33%"><img src="Images/topRight.jpg" width="295" height="235" class="imageBorder" /></td>
+  </tr>
+  <tr align="center">
+  <td class="text"><span class="codeInline">bgImageVAlign='top'</span> <br />
+    <span class="codeInline">bgImageHAlign='left'</span></td>
+   <td class="text"><span class="codeInline">bgImageVAlign='top'</span> <span class="codeInline"><br />
+     bgImageHAlign='middle'</span></td>
+   <td class="text"><span class="codeInline">bgImageVAlign='top'</span> <span class="codeInline"><br />
+     bgImageHAlign='right'</span></td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td></tr>
+  
+  <tr>
+  <td width="33%"><img src="Images/middleLeft.jpg" width="295" height="235" class="imageBorder" /></td>
+  <td width="33%"><img src="Images/middleMiddle.jpg" width="295" height="235" class="imageBorder" /></td>
+  <td width="33%"><img src="Images/middleRight.jpg" width="295" height="235" class="imageBorder"/></td>
+  </tr>
+   <tr align="center">
+  <td class="text"><span class="codeInline">bgImageVAlign='middle'</span> <br />
+    <span class="codeInline">bgImageHAlign='left'</span></td>
+   <td class="text"><span class="codeInline">bgImageVAlign='middle'</span> <span class="codeInline"><br />
+     bgImageHAlign='middle'</span></td>
+   <td class="text"><span class="codeInline">bgImageVAlign='middle'</span> <span class="codeInline"><br />
+     bgImageHAlign='right'</span></td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td></tr>
+ 
+ 
+  <tr>
+  <td width="33%"><img src="Images/bottomLeft.jpg" width="295" height="235" class="imageBorder" /></td>
+  <td width="33%"><img src="Images/bottomMiddle.jpg" width="295" height="235" class="imageBorder" /></td>
+  <td width="33%"><img src="Images/bottomRight.jpg" width="295" height="235" class="imageBorder" /></td>
+  </tr>
+  <tr align="center">
+  <td class="text"><span class="codeInline">bgImageVAlign='bottom'</span> 
+  <span class="codeInline"><br />
+  bgImageHAlign='left'</span></td>
+   <td class="text"><span class="codeInline">bgImageVAlign='bottom'</span> <br />
+     <span class="codeInline">bgImageHAlign='middle'</span></td>
+   <td class="text"><span class="codeInline">bgImageVAlign='bottom'</span> <br />
+     <span class="codeInline">bgImageHAlign='right'</span></td>
+  </tr>
+  
+  
+  </table>
+  <br/>
+	</td>
+  </tr>
+  <tr>
+  <td> See the samples <a href="../../Code/MyFirstChart/bgImage-align.html" target="_blank">live</a>!<br/>
+    <br/></td>
+  </tr>
+  <tr>
+  <td class="header"><a name="displaymode"></a>Setting the mode of display of the background image</td>
+  </tr>
+  <tr>
+  <td class="text"><p>A  background image can be displayed using one of the various modes of display. The form can be changed using the <span class="codeInline">bgImageDisplayMode</span> attribute. The values of this attribute are  <span class="codeInline">none</span>, <span class="codeInline">center</span>, <span class="codeInline">stretch</span>, <span class="codeInline">tile</span>, <span class="codeInline">fit</span> and <span class="codeInline">fill</span>. By default, the value of the attribute is set to <span class="codeInline">none</span>. Examples with different display modes are shown below:</p></td></tr>
+  <tr>
+  <td>
+  <table width="658" height="1832" >
+  <tr>
+  <td  align="center"><img src="Images/noneMode.jpg" width="415" height="236" class="imageBorder" /></td>
+  </tr>
+  <tr align="center">
+  <td align="center"><span class="codeInline">none </span>- The original image is placed at the top left corner of the background (default mode)</td>
+  </tr>
+  <tr>  </tr><tr>
+  <td align="center" class="text">&nbsp;</td>
+  </tr>
+  
+  <td align="center"><img src="Images/center.jpg" width="415" height="235" class="imageBorder" /></td>
+  </tr>
+  <tr align="left">
+  <td align="center"><span class="codeInline">Center </span>- The image is positioned at the center of the chart area</td>
+  </tr>
+   <tr>
+  <td align="center" class="text">&nbsp;</td>
+  </tr>
+  
+  <tr>
+  <td align="center"><img src="Images/stretchMode.jpg" width="415" height="233" class="imageBorder" /></td>
+  </tr>
+  <tr align="left">
+  <td align="center"><span class="codeInline">Stretch </span>- Expands the image to fit the entire chart area, without maintaining original image constraints</td>
+  </tr>
+  <tr>
+  <td align="center" class="text">&nbsp;</td>
+  </tr>
+  
+  <tr>
+  
+  <td align="center"><img src="Images/tileMode.jpg" class="imageBorder" /></td>
+  </tr>
+  <tr>  </tr><tr align="left">
+  <td align="center"><span class="codeInline">Tile</span> - The image is repeated as a pattern on the entire chart area</td>
+  </tr>
+  <td align="center" class="text">&nbsp;</td>
+  </tr>
+  
+  
+  <tr>
+  <td align="center"><img src="Images/fitMode.jpg" width="414" height="235" class="imageBorder" /></td>
+  </tr>
+   <tr align="left">
+  <td align="center"><span class="codeInline">Fit </span>- Fits the  image proportionately on the chart area</td>
+   </tr>
+  <tr>
+  <td align="center" class="text">&nbsp;</td>
+  </tr>
+ 
+  
+  <tr>
+  <td align="center"><img src="Images/fillMode.jpg" width="414" height="235" class="imageBorder" /></td>
+  </tr>
+   <tr align="left">
+  <td align="center"><span class="codeInline">Fill </span>- Proportionately fills the entire chart area with the image</td>
+   </tr>
+  
+  </table></td></tr>
+  <tr>
+  <td>See the samples <a href="../../Code/MyFirstChart/bgImage-mode.html" target="_blank">live</a>!<br/>
+    <br/></td>
+  </tr>
+ 
+  <tr>
+  <td class="highlightBlock">Note: Alignment attributes are ignored for  <span class="codeInline">center</span> and <span class="codeInline">stretch</span> display modes and <span class="codeInline">bgImageScale</span> attribute works only for <span class="codeInline">none</span>, <span class="codeInline">center</span> and <span class="codeInline">tile</span>  display modes.</td>
+  </tr>
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("Resizing charts in %|PercentResize.html","Using Chart on SSL/HTTPS|SSL.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

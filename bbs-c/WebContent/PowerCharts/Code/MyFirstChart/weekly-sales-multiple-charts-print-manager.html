@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> PowerCharts XT - Print Manager</title>
+        <script type="text/javascript" language="Javascript" src="../assets/ui/js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="../../Charts/FusionCharts.js"></script>
+		<script type="text/javascript" language="Javascript" src="../assets/ui/js/lib.js"></script>
+        <link href="../assets/ui/css/style.css" rel="stylesheet" type="text/css" />
+       
+    </head>
+
+    <body>
+        <!-- wrapper -->
+        <div id="wrapper">
+            <!-- header -->
+            <div id="header">
+                <div class="logo"><a href="http://www.fusioncharts.com/powercharts/?BS=OfflineDocsLogo" target="_blank"><img src="../assets/ui/images/powercharts-xt-logo.jpg" width="180" height="97" alt="PowerCharts XT logo" /></a></div>
+                <h1 class="brand-name">PowerCharts XT</h1>
+                <h1 class="logo-text-home">Using Print Manager</h1>
+            </div>
+            <!-- content area -->
+            <div class="content-area">
+                <div id="content-area-inner-main">
+                    <p class="text" align="center">Print Manager is enabled in this page. It collects data from the charts provided in the page. After the print manager is ready with the image data and is ready to print, the "Print Page" button is enabled through an event. Click on the button to print the charts.</p>
+					<div id="messageBox" style="margin-left:10px; margin-right:10px; display:none;"></div>
+					<p>&nbsp;</p>
+					
+
+                    <div class="gen-chart-render">
+
+                        <center>
+                            <span id="chartContainerJan">January Spline Chart will load here</span>
+                            <span id="chartContainerFeb">February Waterfall Chart will load here</span>
+                            <span id="chartContainerMarch">March Waterfall Chart will load here</span>
+                            
+
+                            <script type="text/javascript"><!--
+
+                                var JanChart = new FusionCharts("../../Charts/Spline.swf", "JanChartId", "400", "300", "0");
+                                JanChart.setXMLData('<chart caption="Sales Summary" subCaption="January" showValues="0" xAxisName="Week" yAxisName="Sales" numberPrefix="$" useRoundEdges="1"><set label="Week 1" value="24400" /><set label="Week 2" value="29600" /><set label="Week 3" value="34000" /><set label="Week 4" value="45700" /></chart>');
+                                JanChart.render("chartContainerJan");
+
+                                
+
+                                var FebChart = new FusionCharts("../../Charts/Waterfall2D.swf", "FebChartId", "400", "300", "0");
+                                FebChart.setXMLData('<chart caption="Sales Summary"  subCaption="February"  showValues="0" xAxisName="Week" yAxisName="Sales" numberPrefix="$" useRoundEdges="1"><set label="Week 1" value="41400" /><set label="Week 2" value="91600" /><set label="Week 3" value="42000" /><set label="Week 4" value="51700" /></chart>');
+                                FebChart.render("chartContainerFeb");
+
+                                var MarChart = new FusionCharts("../../Charts/Waterfall2D.swf", "MarChartId", "400", "300", "0");
+                                MarChart.setXMLData('<chart caption="Sales Summary"  subCaption="March" xAxisName="Week" yAxisName="Sales" numberPrefix="$" useRoundEdges="1"><set label="Week 1" value="41400" /><set label="Week 2" value="61900" /><set label="Week 3" value="32400" /> <set label="Week 4" value="71500" /></chart>');
+                                MarChart.render("chartContainerMarch");
+
+                                FusionCharts.printManager.enabled(true);
+                                // -->
+                            </script>
+
+                            <script type="text/javascript">
+
+                                // The Print Manager takes a  bit of time to make all the charts ready for managed print
+                                // Hence, declaring an event listener to listen to the PrintReadyStateChange evnet that
+                                // Print Manager invokes when all charts are ready for print
+                                // Add an event listener
+                                FusionCharts.addEventListener("PrintReadyStateChange", function (e, a) {
+                                    // Enables Print button when print manager is ready
+                                    document.getElementById('printButton').disabled = !a.ready;
+                                    // Also adds pertinent text
+                                    document.getElementById('status').innerHTML = a.ready ?
+                                        'Charts are ready for print. You may use File->Print now.' :
+                                        'Charts are not ready for managed print. Please wait.'
+                                });
+
+                            </script>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- adds button which will invoke managedPrint() function when Print Manager is ready -->
+                            <button type="button" disabled="disabled" id="printButton" onClick="FusionCharts.printManager.managedPrint()">Print Page</button>
+                            <span id="status">Charts are not ready for managed print. Please wait.</span>
+
+
+                        </center>
+
+                    </div>
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                    <p class="small">    </p>
+                    <div class="underline-dull"></div>
+                </div>
+                <!-- footer -->
+                <div id="footer">
+                    <ul>
+                        <li><a href="index.html"><span>&laquo; Back to list of examples</span></a></li>
+                        <li class="pipe">|</li>
+                        <li><a href="../NoChart.html"><span>Unable to see the chart above?</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<script type="text/javascript"><!--//
+		 
+			$(document).ready(function() {
+				window.windowIsReady = true;
+				showConditionalMessage( "Your browser does not seem to have Flash Player support. A JavaScript chart is rendered instead.", isJSRenderer(FebChart) );
+			});	
+			
+			function notifyLocalAJAXSecurityRestriction()
+			{
+				if(isLocal())
+				{
+					addConditionalMessage( "<br /><br /><strong>Unable to see the chart below?</strong><br />"+isLocal()+"This sample uses data provided as URL. If you are unable to see the chart below, it is due to the browser's restriction on JavaScript from accessing local file system owing to security reasons. If you run the sample from a server, it will run absolutely fine, though. When running locally, however, if you provide the data as string, it works fine. Click <a href='weekly-sales-xml-embed.html'>here</a> to check out a sample using data as string.", isJSRenderer(chartContainerJan) );
+				}
+			}
+
+			
+		// -->
+		</script>
+    </body>
+</html>

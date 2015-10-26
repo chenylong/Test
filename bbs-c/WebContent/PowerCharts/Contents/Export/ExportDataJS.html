@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+
+<title>Exporting Chart Data &gt; Using JavaScript API </title>
+</head>
+
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Exporting chart data",  "Using JavaScript API" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="pageHeader">Exporting Chart Data using JavaScript API </td>
+
+  </tr>
+  <tr> 
+    <td valign="top" class="text"><p>You can access the data of the chart from its JavaScript API as well. </p>      </td>
+  </tr>
+  <tr>
+    <td valign="top" class="header">Setting up the chart to allow JavaScript export </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text">
+      <p>When using the JavaScript API to access chart data, you first need to make sure of that you are invoking the <span class="codeInline">getDataAsCSV()</span> API only after the chart has been rendered (that is, in the <span class="codeInline">FC_Rendered</span> method).<br />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <pre class="prettyprint code_container">&lt;HTML&gt;
+  &lt;HEAD&gt;
+   &lt;TITLE&gt;PowerCharts XT and JavaScript - Getting chart data as CSV &lt;/TITLE&gt; 
+    &lt;SCRIPT LANGUAGE=&quot;Javascript&quot; SRC=&quot;../../Charts/FusionCharts.js&quot;&gt;&lt;/SCRIPT&gt;
+    &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+  <span class="codeComment">    //FC_Rendered method is called whenever a chart on the page
+      //has finished initial rendering. To this function, the chart passes its 
+      //own DOM Id.</span>
+      function FC_Rendered(DOMId){
+         <span class="codeComment">//If it's our required chart</span>
+         if (DOMId==&quot;chart1Id&quot;){
+             <span class="codeComment">//Get reference to the chart object</span>
+            var chartObj = FusionCharts(&quot;chart1Id&quot;);  
+           <span class="codeComment"> //Simply alert the CSV Data </span>
+            window.alert(<strong>chartObj.getDataAsCSV()</strong>);
+            return;
+         }
+      }
+    &lt;/SCRIPT&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+   &lt;div id=&quot;chart1div&quot;&gt; FusionCharts &lt;/div&gt;
+   &lt;script language=&quot;JavaScript&quot;&gt; 
+      var chart1 = new FusionCharts(&quot;../../Charts/Spline.swf&quot;, &quot;<strong>chart1Id</strong>&quot;, &quot;400&quot;, &quot;300&quot;, &quot;0&quot;, <strong>&quot;1&quot;</strong>); 
+      chart1.setXMLData(&quot;&lt;chart caption=&quot;Weekly Sales Summary&quot; xAxisName=&quot;Week&quot; yAxisName=&quot;Sales&quot; numberPrefix=&quot;$&quot;&gt;&lt;set label=&quot;Week 1&quot; value=&quot;14400&quot; /&gt;&lt;set label=&quot;Week 2&quot; value=&quot;19600&quot; /&gt;&lt;set label=&quot;Week 3&quot; value=&quot;24000&quot; /&gt;&lt;set label=&quot;Week 4&quot; value=&quot;15700&quot; /&gt;&lt;/chart&gt;&quot;);
+      chart1.render(&quot;chart1div&quot;);
+   &lt;/script&gt;
+  &lt;/BODY&gt;
+&lt;/HTML&gt;</pre>   
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>When you run this code, you should get a screen as under:</p> 
+    <p><img src="Images/ExportData2.jpg" width="390" height="297" class="imageBorder" /></p>
+    <p>See it <a href="../../Code/JavaScript/Basics/GetCSVData.html" target="_blank">live</a>!</p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="header"><a name="format" id="format"></a><a name="cavattributes" id="cavattributes"></a>Customizing the output CSV</td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>The customization attributes for exported CSV data still remain the same, as under (to be specified in chart XML): </p></td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><table class="table" width="100%" border="0" cellpadding="2" cellspacing="0" >
+        <tr>
+          <td width="15%" valign="top" class="header">Attribute</td>
+          <td width="60%" class="header">Description</td>
+          <td width="25%" class="header">Example</td>
+        </tr>
+        <tr>
+          <td width="15%" valign="top" class="codeInline">exportDataSeparator</td>
+          <td width="60%" class="text"><p>Lets you set the separator for CSV data. For ease of use, this attribute accepts the following pseudo codes for characters:</p>
+              <ul>
+                <li>{tab} - To specify tab character</li>
+                <li>{quot} - To specify double quotes</li>
+                <li>{apos} - To specify single quotes </li>
+              </ul>
+            <p>You can also specify any other character apart from these pseudo codes. </p></td>
+          <td width="25%" valign="top" class="codeInline">exportDataSeparator='{tab}'</td>
+        </tr>
+        <tr>
+          <td width="15%" valign="top" class="codeInline">exportDataQualifier</td>
+          <td width="60%" class="text"><p>Lets you set the qualifier character for CSV data. For ease of use, this attribute accepts the following pseudo codes for characters:</p>
+              <ul>
+                <li>{tab} - To specify tab character</li>
+                <li>{quot} - To specify double quotes</li>
+                <li>{apos} - To specify single quotes </li>
+              </ul>
+            <p>You can also specify any other character apart from these pseudo codes. </p></td>
+          <td width="25%" valign="top" class="codeInline">exportDataQualifier='{quot}'</td>
+        </tr>
+        <tr>
+          <td width="15%" valign="top" class="codeInline">exportDataFormattedVal</td>
+          <td width="60%" class="text">Boolean value indicating whether to output formatted data values (as shown on chart) in the output CSV file. </td>
+          <td width="25%" valign="top" class="codeInline">exportDataFormattedVal='1'</td>
+        </tr>
+    </table><br /></td>
+  </tr>
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("Using Context Menu|ExportDataSetup.html","Number Formatting Basics|../Advanced/Number_Basics.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

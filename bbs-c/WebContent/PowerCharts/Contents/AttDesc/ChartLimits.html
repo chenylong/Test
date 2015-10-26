@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+
+<title>XML/JSON Attributes for Chart Limits </title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Quick Chart Configuration", "Chart limits" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="pageHeader">XML/JSON Attributes for Chart Limits </td>
+
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>Chart limits are the minimum and maximum y-axis values. PowerCharts XT automatically calculates the best chart limits when you do not specify them explicitly.</p>
+      <p> In PowerCharts XT, the axis limits encompasses all values present in the chart, that is,  no data value can be below the minimum y-axis value or above the maximum y-axis value - they have to be within the axis range. Even if you force an axis limit that is lower or higher than this, PowerCharts XT will automatically adjust it. </p>
+      <img src="Images/divlines1.jpg" width="238" height="252" class="imageBorder" />
+    <p>The XML/JSON code going into the above is:</p> 
+    
+	 <div class="container">
+	    <ul class="tabs">
+   	    <li><a href="#tab1">XML</a></li>
+      	 <li><a href="#tab2">JSON</a></li>
+	    </ul>
+   	 <div class="tab_container">
+    		<div id="tab1" class="tab_content">
+    		  <pre class="prettyprint code_container">&lt;chart caption='Monthly Revenue' xAxisName='Month' yAxisName='Revenue' numberPrefix='$' showValues='0'&gt;
+     ....
+&lt;/chart&gt;</pre>
+    		</div>
+			<div id="tab2" class="tab_content">
+			  <pre class="prettyprint code_container">{
+  "chart":{
+    "caption":"Monthly Revenue",
+    "xaxisname":"Month",
+    "yaxisname":"Revenue",
+    "numberprefix":"$",
+    "showvalues":"0"
+  },
+...
+}</pre>
+			</div>
+	    </div>
+	  </div><div style="clear:both"></div>
+	 
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>Note that the chart limits have not been defined.</p>  </td>
+  </tr>
+  <tr>
+    <td valign="top" class="header"><a name='chartlimits' id='chartlimits'></a>Setting chart limits explicitly </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>You can set the chart limits explicitly using the <span class="codeInline">yAxisMaxValue</span> and <span class="codeInline">yAxisMinValue</span> attributes.</p> 
+    <pre class="prettyprint code_container">&lt;chart yAxisMinValue='0' yAxisMaxValue='100' ...&gt;</pre>
+     </td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <td valign="top" class="header"><a name='adaptive_y_min' id='adaptive_y_min'></a>Set Adaptive y-Min </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>You can set whether the y-axis lower limit   would be 0 (in case of all positive values on chart) or should the y-axis lower   limit adapt itself to a different figure based on values provided to the chart.</p> 
+    
+	 <div class="container">
+	    <ul class="tabs">
+   	    <li><a href="#tab3">XML</a></li>
+      	 <li><a href="#tab4">JSON</a></li>
+	    </ul>
+   	 <div class="tab_container">
+    		<div id="tab3" class="tab_content">
+    		  <pre class="prettyprint code_container">&lt;chart caption='Monthly Revenue' xAxisName='Month' yAxisName='Revenue' numberPrefix='$' showValues='0' <strong>setAdaptiveYMin='1'</strong> &gt;
+      ....
+&lt;/chart&gt;</pre>
+    		</div>
+			<div id="tab4" class="tab_content">
+			  <pre class="prettyprint code_container">{
+  &quot;chart&quot;:{
+    &quot;caption&quot;:&quot;Monthly Revenue&quot;,
+    &quot;xaxisname&quot;:&quot;Month&quot;,
+    &quot;yaxisname&quot;:&quot;Revenue&quot;,
+    &quot;numberprefix&quot;:&quot;$&quot;,
+    &quot;showvalues&quot;:&quot;0&quot;,
+   <strong> &quot;setAdaptiveYMin&quot;:&quot;1&quot;</strong>
+  },
+  ...
+}</pre>
+			</div>
+		 </div>
+	  </div><div style="clear:both"></div>
+	 
+	 
+    <p>Note the change in the y-axis minimum value now:</p> 
+    <img src="Images/chart_limits.jpg" width="172" height="187" class="imageBorder" /></td>
+  </tr>
+  <tr><td height="25"></td></tr>
+  
+  <tr>
+    <td valign="top" class="header"><a name='hide_limits' id='hide_limits'></a>Hiding limits </td>
+  </tr>
+  <tr>
+    <td valign="top" class="text"><p>You can always hide the limit values of a chart. To hide the limits you need to set the following: </p>
+        <pre class="prettyprint code_container">&lt;chart showLimits='0' ..&gt; </pre>
+        
+		<p class="highlightBlock"><strong>Note:</strong> Chart limits cannot be hidden for Drag-able charts.</p>
+    </td>
+  </tr>
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("Chart Palettes|ChartPalettes.html","Div Lines & Grids|DivLines.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

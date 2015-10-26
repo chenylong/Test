@@ -1,0 +1,216 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="trLabel attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure labels in heat map chart" >
+    <topic name="labels.html#tr" url="../../../HeatMap/labels.html#tr" />
+  </key>
+</key>
+<key name="troubleshoot" >
+  <key name="basic" >
+    <topic name="Basic.html" url="../../../Debug/Basic.html" />
+  </key>
+  <key name="export charts as image/PDF" >
+    <topic name="ECTroubleshooting.html" url="../../../Export/ECTroubleshooting.html" />
+  </key>
+  <key name="first chart" >
+    <topic name="FirstChart.html#trouble" url="../../../FirstChart/FirstChart.html#trouble" />
+  </key>
+</key>
+<key name="trType attribute" >
+  <key name="configure tooltips in heat map chart" >
+    <topic name="labels.html#tooltip" url="../../../HeatMap/labels.html#tooltip" />
+  </key>
+</key>
+<key name="unescapeLinks attribute" >
+  <key name="create drill-down charts" >
+    <topic name="Simple.html" url="../../../DrillDown/Simple.html" />
+  </key>
+  <key name="FusionCharts link format" >
+    <topic name="LinkFormat.html" url="../../../DrillDown/LinkFormat.html" />
+  </key>
+  <key name="set full chart as hotspot" >
+    <topic name="ClickURL.html" url="../../../DrillDown/ClickURL.html" />
+  </key>
+</key>
+<key name="updateChart() function" >
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html#process" url="../../../JavaScript/JS_Example.html#process" />
+  </key>
+</key>
+<key name="updateFusionCharts method" >
+  <key name="change chart data using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#changedata" url="../../../jQuery/RetrieveUpdate.html#changedata" />
+  </key>
+  <key name="change chart size using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#changesize" url="../../../jQuery/RetrieveUpdate.html#changesize" />
+  </key>
+  <key name="change chart type using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#charttype" url="../../../jQuery/RetrieveUpdate.html#charttype" />
+  </key>
+  <key name="convert to JavaScript charts using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#renderasjs" url="../../../jQuery/RetrieveUpdate.html#renderasjs" />
+  </key>
+  <key name="retrieve and update properties of charts using  jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin" url="../../../jQuery/RetrieveUpdate.html" />
+  </key>
+</key>
+<key name="upgrade" >
+  <key name="from PowerCharts v3.2 evaluation" >
+    <topic name="UpgradingEval.html" url="../../../Introduction/UpgradingEval.html" />
+  </key>
+  <key name="to v3.2 from PowerCharts v3.x.y" >
+    <topic name="Upgrading32.html" url="../../../Introduction/Upgrading32.html" />
+  </key>
+</key>
+<key name="upperBoxColor attribute" >
+  <key name="create box and whisker chart" >
+    <topic name="Firstchart.html" url="../../../BoxandWhisker/Firstchart.html" />
+  </key>
+</key>
+<key name="use formatted number inputs" >
+  <topic name="Number_Input" url="../../../Advanced/Number_Input.html" />
+</key>
+<key name="use JavaScript (HTML5) renderer" >
+  <topic name="UsingPureJS.html" url="../../../FirstChart/UsingPureJS.html" />
+</key>
+<key name="use JSON as data source" >
+  <topic name="JSONData.html" url="../../../FirstChart/JSONData.html" />
+  <key name="provide JSON data using URL method" >
+    <topic name="JSONData.html#url" url="../../../FirstChart/JSONData.html#url" />
+  </key>
+  <key name="provide JSON object embedded in HTML" >
+    <topic name="JSONData.html#object" url="../../../FirstChart/JSONData.html#object" />
+  </key>
+  <key name="provide JSON string embedded in HTML" >
+    <topic name="JSONData.html#string" url="../../../FirstChart/JSONData.html#string" />
+  </key>
+</key>
+<key name="use server-side scripts" >
+  <topic name="ServerSideScripts.html" url="../../../FirstChart/ServerSideScripts.html" />
+</key>
+<key name="useForwardSteps attribute" >
+  <key name="step line chart overview" >
+    <topic name="Introduction.html" url="../../../MSStepLine/Introduction.html" />
+  </key>
+</key>
+<key name="useHorizontalErrorBar attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+  <key name="create error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+</key>
+<key name="useVerticalErrorBar attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="value attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure labels in heat map chart" >
+    <topic name="labels.html#value" url="../../../HeatMap/labels.html#value" />
+  </key>
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+</key>
+<key name="vertical divisional lines attributes" >
+  <topic name="VDivLines.html" url="../../../AttDesc/VDivLines.html" />
+</key>
+<key name="vertical separator lines attributes" >
+  <topic name="VLines.html" url="../../../AttDesc/VLines.html" />
+</key>
+<key name="verticalErrorBarAlpha attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="verticalErrorBarColor attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="verticalErrorBarThickness attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="verticalErrorBarWidth attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="viewMode attribute" >
+  <key name="add or edit connectors in a drag node chart" >
+    <topic name="AddEditConnectors.html" url="../../../Dragnode/AddEditConnectors.html" />
+  </key>
+  <key name="add or edit nodes in a drag node chart" >
+    <topic name="AddEditNodes.html" url="../../../Dragnode/AddEditNodes.html" />
+  </key>
+</key>
+<key name="waterfall chart" >
+  <key name="configuration" >
+    <topic name="Config.html" url="../../../Waterfall/Config.html" />
+  </key>
+  <key name="create first chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../Waterfall/Overview.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="window.print() function" >
+  <key name="managed print feature" >
+    <topic name="JS_PrintManager.html" url="../../../JavaScript/JS_PrintManager.html" />
+  </key>
+</key>
+<key name="xAxisName attribute" >
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+  <key name="export chart data using context menu" >
+    <topic name="ExportDataSetup.html" url="../../../Export/ExportDataSetup.html" />
+  </key>
+</key>
+<key name="yAxisName attribute" >
+  <key name="create log column 2D chart" >
+    <topic name="LogCol2DFirstchart.html" url="../../../Log/LogCol2DFirstchart.html" />
+  </key>
+  <key name="create log line 2D chart" >
+    <topic name="LogLine2DFirstchart.html" url="../../../Log/LogLine2DFirstchart.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+</key>
+<key name="yAxisValueDecimals attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="zero plane attributes" >
+  <topic name="ZeroPlane.html" url="../../../AttDesc/ZeroPlane.html" />
+</key>
+
+</indexdata>

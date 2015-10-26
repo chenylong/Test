@@ -1,0 +1,346 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="SDIconAlpha attribute" >
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html#standarddeviation" url="../../../BoxandWhisker/StandardDeviation.html#standarddeviation" />
+  </key>
+</key>
+<key name="SDIconColor attribute" >
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html#standarddeviation" url="../../../BoxandWhisker/StandardDeviation.html#standarddeviation" />
+  </key>
+</key>
+<key name="SDIconRadius attribute" >
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html#standarddeviation" url="../../../BoxandWhisker/StandardDeviation.html#standarddeviation" />
+  </key>
+</key>
+<key name="SDIconShape attribute" >
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html#standarddeviation" url="../../../BoxandWhisker/StandardDeviation.html#standarddeviation" />
+  </key>
+</key>
+<key name="SDIconSides attribute" >
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html#standarddeviation" url="../../../BoxandWhisker/StandardDeviation.html#standarddeviation" />
+  </key>
+</key>
+<key name="select scatter chart" >
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../SelectScatter/Overview.html" />
+  </key>
+  <key name="read data using JavaScript" >
+    <topic name="JSRead.html" url="../../../SelectScatter/JSRead.html" />
+  </key>
+  <key name="submit data as form elements" >
+    <topic name="Form.html" url="../../../SelectScatter/Form.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="SelectScatter" url="../../../ChartSS/SelectScatter.htm" />
+  </key>
+</key>
+<key name="server-side export" >
+  <key name="add export parameters to XML" >
+    <topic name="ECServerDownload.html" url="../../../Export/ECServerDownload.html" />
+  </key>
+  <key name="configure export dialog cosmetics" >
+    <topic name="ECExportDialog.html" url="../../../Export/ECExportDialog.html" />
+  </key>
+  <key name="configure file name of exported file" >
+    <topic name="ECServerDownload.html" url="../../../Export/ECServerDownload.html" />
+  </key>
+  <key name="configure output formats and context menu" >
+    <topic name="ECServerFormats.html" url="../../../Export/ECServerFormats.html" />
+  </key>
+  <key name="configure the server-side export handlers" >
+    <topic name="ECServerSave.html#export_handlers" url="../../../Export/ECServerSave.html#export_handlers" />
+  </key>
+  <key name="hide context menu items" >
+    <topic name="ECServerFormats.html" url="../../../Export/ECServerFormats.html" />
+  </key>
+  <key name="overview" >
+    <topic name="ECServerOverview.html" url="../../../Export/ECServerOverview.html" />
+  </key>
+  <key name="return the exported output as download" >
+    <topic name="ECServerDownload.html" url="../../../Export/ECServerDownload.html" />
+  </key>
+  <key name="save exported output on server disk" >
+    <topic name="ECServerSave.html" url="../../../Export/ECServerSave.html" />
+  </key>
+  <key name="set background color of the chart when chart messages are shown" >
+    <topic name="ChartMessages#setbg" url="../../../Advanced/ChartMessages.html#setbg" />
+  </key>
+  <key name="set target window for download" >
+    <topic name="ECServerDownload.html" url="../../../Export/ECServerDownload.html" />
+  </key>
+  <key name="set up the call back handler" >
+    <topic name="ECServerSave.html" url="../../../Export/ECServerSave.html" />
+  </key>
+</key>
+<key name="set chart background" >
+  <topic name="BgSWF" url="../../../Advanced/BgSWF.html" />
+</key>
+<key name="setChartAttribute() function" >
+  <key name="change chart attribute" >
+    <topic name="JS_ChangeChartProperties.html#setchartattribute" url="../../../JavaScript/JS_ChangeChartProperties.html#setchartattribute" />
+  </key>
+  <key name="change chart caption" >
+    <topic name="JS_ChangeChartProperties.html#chartcaption" url="../../../JavaScript/JS_ChangeChartProperties.html#chartcaption" />
+  </key>
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html" url="../../../JavaScript/JS_Example.html" />
+  </key>
+  <key name="limitations" >
+    <topic name="JS_ChangeChartProperties.html#changedimension" url="../../../JavaScript/JS_ChangeChartProperties.html#changedimension" />
+  </key>
+  <key name="managed printing in Mozilla browsers" >
+    <topic name="JS_PrintManager.html" url="../../../JavaScript/JS_PrintManager.html" />
+  </key>
+</key>
+<key name="setThreshhold() function" >
+  <key name="set connector strength threshold in drag node chart" >
+    <topic name="JSStrength.html" url="../../../Dragnode/JSStrength.html" />
+  </key>
+</key>
+
+<key name="setXMLUrl() function" >
+  <key name="provide chart data using JavaScript" >
+    <topic name="JS_ChangeData.html#provide" url="../../../JavaScript/JS_ChangeData.html#provide" />
+  </key>
+</key>
+<key name="shadow style type" >
+  <topic name="Shadow.html" url="../../../Styles/Shadow.html" />
+</key>
+<key name="show long data Labels" >
+  <topic name="xAxisNames" url="../../../Advanced/xAxisNames.html" />
+</key>
+<key name="showAllOutliers attribute" >
+  <key name="configure outliers in box and whikser chart" >
+    <topic name="Outliers.html" url="../../../BoxandWhisker/Outliers.html" />
+  </key>
+</key>
+<key name="showConnectors attribute" >
+  <key name="configure waterfall chart" >
+    <topic name="Waterfall" url="../../../ChartSS/Waterfall.htm" />
+  </key>
+</key>
+<key name="showDetailedLegend attribute" >
+  <key name="box and whisker chart legend" >
+    <topic name="Legend.html" url="../../../BoxandWhisker/Legend.html" />
+  </key>
+</key>
+<key name="showExportDataMenuItem attribute" >
+  <key name="export chart data using context menu" >
+    <topic name="ExportDataSetup.html#setup" url="../../../Export/ExportDataSetup.html#setup" />
+  </key>
+</key>
+<key name="showFormBtn attribute" >
+  <key name="submit data as form in select scatter chart" >
+    <topic name="Form.html" url="../../../SelectScatter/Form.html" />
+  </key>
+</key>
+<key name="showMaxValues attribute" >
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+</key>
+<key name="showMD attribute" >
+  <key name="configure mean deviation in box and whisker chart" >
+    <topic name="MeanDeviation.html" url="../../../BoxandWhisker/MeanDeviation.html" />
+  </key>
+</key>
+<key name="showMean attribute" >
+  <key name="configure mean in box and whisker" >
+    <topic name="Mean.html" url="../../../BoxandWhisker/Mean.html" />
+  </key>
+</key>
+<key name="showMedianValues attribute" >
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+</key>
+<key name="showMinValues attribute" >
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+</key>
+<key name="showQ1Values attribute" >
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+</key>
+<key name="showQ3Values attribute" >
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+</key>
+<key name="showQD attribute" >
+  <key name="configure quartile deviation in box and whisker chart" >
+    <topic name="QuartileDeviation.html#showhideQd" url="../../../BoxandWhisker/QuartileDeviation.html#showhideQd" />
+  </key>
+</key>
+<key name="showSD attribute" >
+  <key name="configure standard deviation in box and whisker chart" >
+    <topic name="StandardDeviation.html#showhideSD" url="../../../BoxandWhisker/StandardDeviation.html#showhideSD" />
+  </key>
+</key>
+<key name="showValues attribute" >
+  <key name="configure five summary number in box and whisker chart" >
+    <topic name="Chartconfig.html" url="../../../BoxandWhisker/Chartconfig.html" />
+  </key>
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html" url="../../../JavaScript/JS_Example.html" />
+  </key>
+</key>
+<key name="snapLegendPointers attribute" >
+  <key name="gradient legend in heat map chart" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+</key>
+<key name="sNumberPrefix attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="sNumberSuffix attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="special punctuation" >
+  <key name="use &lt; or &gt; sign" >
+    <topic name="SpPunctuation#ltgt" url="../../../Advanced/SpPunctuation.html#ltgt" />
+  </key>
+  <key name="use apostrophe (') sign" >
+    <topic name="SpPunctuation#apos" url="../../../Advanced/SpPunctuation.html#apos" />
+  </key>
+  <key name="use percent (%) sign" >
+    <topic name="SpPunctuation#percent" url="../../../Advanced/SpPunctuation.html#percent" />
+  </key>
+  <key name="use quote (&quot;) sign" >
+    <topic name="SpPunctuation#quot" url="../../../Advanced/SpPunctuation.html#quot" />
+  </key>
+  <key name="use the &amp; sign" >
+    <topic name="SpPunctuation#amp" url="../../../Advanced/SpPunctuation.html#amp" />
+  </key>
+</key>
+<key name="spline chart" >
+  <key name="how to provide data" >
+    <topic name="Overview.html" url="../../../Spline/Overview.html" />
+  </key>
+  <key name="limitation in connecting null data" >
+    <topic name="Overview.html" url="../../../Spline/Overview.html" />
+  </key>
+  <key name="multi-series spline 2D chart XML sheet" >
+    <topic name="MSSpline" url="../../../ChartSS/MSSpline.html" />
+  </key>
+  <key name="multi-series spline area 2D Chart" >
+    <topic name="MSSplineArea" url="../../../ChartSS/MSSplineArea.html" />
+  </key>
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../Spline/Overview.html" />
+  </key>
+  <key name="spline 2D chart XML sheet" >
+    <topic name="Spline" url="../../../ChartSS/Spline.html" />
+  </key>
+  <key name="spline area 2D chart" >
+    <topic name="SplineArea" url="../../../ChartSS/SplineArea.html" />
+  </key>
+</key>
+<key name="startLabel attribute" >
+  <key name="gradient legend in heat map chart" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="step line chart" >
+  <key name="create" >
+    <topic name="SimpleChart.html" url="../../../MSStepLine/SimpleChart.html" />
+  </key>
+  <key name="introduction" >
+    <topic name="Introduction.html" url="../../../MSStepLine/Introduction.html" />
+  </key>
+</key>
+<key name="styles" >
+  <key name="advantages" >
+    <topic name="Styles.html#advantage" url="../../../Styles/Styles.html#advantage" />
+  </key>
+  <key name="animation style type" >
+    <topic name="Animation.html" url="../../../Styles/Animation.html" />
+  </key>
+  <key name="bevel style type" >
+    <topic name="Bevel.html" url="../../../Styles/Bevel.html" />
+  </key>
+  <key name="blur style type" >
+    <topic name="Blur.html" url="../../../Styles/Blur.html" />
+  </key>
+  <key name="font style type" >
+    <topic name="Font.html" url="../../../Styles/Font.html" />
+  </key>
+  <key name="glow style type" >
+    <topic name="Glow.html" url="../../../Styles/Glow.html" />
+  </key>
+  <key name="how to use" >
+    <topic name="HowToUse.html" url="../../../Styles/HowToUse.html" />
+  </key>
+  <key name="overview" >
+    <topic name="Styles.html" url="../../../Styles/Styles.html" />
+  </key>
+  <key name="shadow stule type" >
+    <topic name="Shadow.html" url="../../../Styles/Shadow.html" />
+  </key>
+  <key name="style types" >
+    <topic name="Styles.html#type" url="../../../Styles/Styles.html#type" />
+  </key>
+</key>
+<key name="sub-caption attribute" >
+  <key name="create waterfall chart" >
+    <topic name="Firstchart.html" url="../../../Waterfall/Firstchart.html" />
+  </key>
+</key>
+<key name="submitDataAsXML attribute" >
+  <key name="submit data as form elements in select scatter chart" >
+    <topic name="Form.html" url="../../../SelectScatter/Form.html" />
+  </key>
+</key>
+<key name="swfUrl property" >
+  <key name="change chart type using jQuery" >
+    <topic name="Retrieving and updating properties of charts using FusionCharts jQuery plugin#charttype" url="../../../jQuery/RetrieveUpdate.html#charttype" />
+  </key>
+</key>
+<key name="thousandSeparator attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="tlLabel attribute" >
+  <key name="category based mapping in heat map chart" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="configure labels in heat map chart" >
+    <topic name="labels.html#tl" url="../../../HeatMap/labels.html#tl" />
+  </key>
+</key>
+<key name="tlType attribute" >
+  <key name="configure tooltips in heat map chart" >
+    <topic name="labels.html#tooltip" url="../../../HeatMap/labels.html#tooltip" />
+  </key>
+</key>
+<key name="toggleValues function" >
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html" url="../../../JavaScript/JS_Example.html" />
+  </key>
+</key>
+<key name="tool-tip attributes" >
+  <topic name="ToolTip.html" url="../../../AttDesc/ToolTip.html" />
+</key>
+<key name="trend line and trend zone attributes" >
+  <topic name="Trend.html" url="../../../AttDesc/Trend.html" />
+</key>
+
+</indexdata>

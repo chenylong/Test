@@ -1,0 +1,323 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="get chart reference" >
+  <topic name="JS_ChartInstance.html" url="../../../JavaScript/JS_ChartInstance.html" />
+  <key name="get HTML Object reference" >
+    <topic name="JS_ChartInstance.html#html" url="../../../JavaScript/JS_ChartInstance.html#html" />
+  </key>
+  <key name="get JavaScript Object reference" >
+    <topic name="JS_ChartInstance.html#js" url="../../../JavaScript/JS_ChartInstance.html#js" />
+  </key>
+  <key name="get reference to the chart object" >
+    <topic name="JS_ChartInstance.html#chartreference" url="../../../JavaScript/JS_ChartInstance.html#chartreference" />
+  </key>
+</key>
+<key name="get data back from chart using JavaScript" >
+  <topic name="JS_DataBackFromChart.html" url="../../../JavaScript/JS_DataBackFromChart.html" />
+  <key name="get CSV data" >
+    <topic name="JS_DataBackFromChart.html#csv" url="../../../JavaScript/JS_DataBackFromChart.html#csv" />
+  </key>
+  <key name="get JSON data" >
+    <topic name="JS_DataBackFromChart.html#jsondata" url="../../../JavaScript/JS_DataBackFromChart.html#jsondata" />
+  </key>
+  <key name="get XML data" >
+    <topic name="JS_DataBackFromChart.html#getxml" url="../../../JavaScript/JS_DataBackFromChart.html#getxml" />
+  </key>
+</key>
+<key name="getChartAttribute() function" >
+  <key name="get back data from chart using JavaScript" >
+    <topic name="JS_DataBackFromChart.html#getchartattribute" url="../../../JavaScript/JS_DataBackFromChart.html#getchartattribute" />
+  </key>
+</key>
+<key name="getChartData(format) function" >
+  <key name="get data back from chart using JavaScript" >
+    <topic name="JS_DataBackFromChart.html#getxml" url="../../../JavaScript/JS_DataBackFromChart.html#getxml" />
+  </key>
+</key>
+<key name="getChartFromId() function" >
+  <key name="get chart reference" >
+    <topic name="JS_ChartInstance.html#legacy" url="../../../JavaScript/JS_ChartInstance.html#legacy" />
+  </key>
+</key>
+<key name="getData method" >
+  <key name="read data using JavaScript in select scatter chart" >
+    <topic name="JSRead.html" url="../../../SelectScatter/JSRead.html" />
+  </key>
+</key>
+<key name="getData() function" >
+  <key name="read data using JavaScript in dragable charts" >
+    <topic name="JSRead.html" url="../../../Dragable/JSRead.html" />
+  </key>
+</key>
+<key name="getDataAsCSV() function" >
+  <key name="export chart data using JavaScript menu" >
+    <topic name="ExportDataJS.html" url="../../../Export/ExportDataJS.html" />
+  </key>
+  <key name="get CSV data from chart using JavaScript" >
+    <topic name="JS_DataBackFromChart.html#csv" url="../../../JavaScript/JS_DataBackFromChart.html#csv" />
+  </key>
+</key>
+<key name="getDataWithId method" >
+  <key name="read data using JavaScript in draggable charts" >
+    <topic name="JSRead.html" url="../../../Dragable/JSRead.html" />
+  </key>
+</key>
+<key name="getJSONData() function" >
+  <key name="get back data from chart using JavaScript" >
+    <topic name="JS_DataBackFromChart.html#jsondata" url="../../../JavaScript/JS_DataBackFromChart.html#jsondata" />
+  </key>
+</key>
+<key name="getProductXML() function" >
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html#process" url="../../../JavaScript/JS_Example.html#process" />
+  </key>
+</key>
+<key name="getXMLData() function" >
+  <key name="get data back from chart using JavaScript" >
+    <topic name="JS_DataBackFromChart.html#getxml" url="../../../JavaScript/JS_DataBackFromChart.html#getxml" />
+  </key>
+  <key name="read data using JavaScript in drag-node chart" >
+    <topic name="JSRead.html" url="../../../Dragnode/JSRead.html" />
+  </key>
+</key>
+<key name="glow style type" >
+  <topic name="Glow.html" url="../../../Styles/Glow.html" />
+</key>
+<key name="gradient attribute" >
+  <key name="create heat map chart" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="gradient legend in heat map chart" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+  <key name="icon legend in heat map chart" >
+    <topic name="iconlegend.html" url="../../../HeatMap/iconlegend.html" />
+  </key>
+  <key name="numeric based mapping in heat map chart" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+</key>
+<key name="gradients" >
+  <topic name="Gradients.html" url="../../../Advanced/Gradients.html" />
+</key>
+<key name="halfErrorBar attribute" >
+  <key name="error bar chart configuration" >
+    <topic name="ErrorBarConfig.html" url="../../../ErrorChart/ErrorBarConfig.html" />
+  </key>
+  <key name="error line chart configuration" >
+    <topic name="ErrorLineConfig.html" url="../../../ErrorChart/ErrorLineConfig.html" />
+  </key>
+</key>
+<key name="halfHorizontalErrorBar attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+  <key name="create error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+</key>
+<key name="halfVerticalErrorBar attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+  <key name="create error scatter chart" >
+    <topic name="ErrorScatterSimpleChart.html" url="../../../ErrorChart/ErrorScatterSimpleChart.html" />
+  </key>
+</key>
+<key name="heat map chart" >
+  <topic name="Overview.html" url="../../../HeatMap/Overview.html" />
+  <key name="category based mapping" >
+    <topic name="Categorybasedmapping.html" url="../../../HeatMap/Categorybasedmapping.html" />
+  </key>
+  <key name="create" >
+    <topic name="Firstchart.html" url="../../../HeatMap/Firstchart.html" />
+  </key>
+  <key name="customize legend appearance" >
+    <topic name="legendcosmetics.html" url="../../../HeatMap/legendcosmetics.html" />
+  </key>
+  <key name="gradient legend" >
+    <topic name="gradientlegend.html" url="../../../HeatMap/gradientlegend.html" />
+  </key>
+  <key name="icon legend" >
+    <topic name="iconlegend.html" url="../../../HeatMap/iconlegend.html" />
+  </key>
+  <key name="labels and tooltips" >
+    <topic name="labels.html" url="../../../HeatMap/labels.html" />
+  </key>
+  <key name="numeric based mapping" >
+    <topic name="Numericbasedmapping.html" url="../../../HeatMap/Numericbasedmapping.html" />
+  </key>
+  <key name="plot out of range data" >
+    <topic name="outofrange.html" url="../../../HeatMap/outofrange.html" />
+  </key>
+  <key name="XML sheet" >
+    <topic name="HeatMap" url="../../../ChartSS/HeatMap.html" />
+  </key>
+</key>
+<key name="highlight selective data" >
+  <topic name="Highlight" url="../../../Advanced/Highlight.html" />
+</key>
+<key name="horizontalErrorBarAlpha attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="horizontalErrorBarColor attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="horizontalErrorBarThickness attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="horizontalErrorBarWidth attribute" >
+  <key name="configure error scatter chart" >
+    <topic name="ErrorScatterConfig.html" url="../../../ErrorChart/ErrorScatterConfig.html" />
+  </key>
+</key>
+<key name="hotspot" >
+  <key name="full chart as hotspot" >
+    <topic name="ClickURL.html" url="../../../DrillDown/ClickURL.html" />
+  </key>
+</key>
+<key name="how PowerCharts works" >
+  <topic name="HowFCWorks.html" url="../../../WebDev/HowFCWorks.html" />
+</key>
+<key name="insertFusionCharts method" >
+  <key name="use in jQuery" >
+    <topic name="Using various chart rendering methods in FusionCharts jQuery plugin#insert" url="../../../jQuery/AdvancedRendering.html#insert" />
+  </key>
+</key>
+<key name="install PowerCharts" >
+  <key name="in your local machine" >
+    <topic name="Installation.html#local" url="../../../Introduction/Installation.html#local" />
+  </key>
+  <key name="in your Web application" >
+    <topic name="Installation.html#web" url="../../../Introduction/Installation.html#web" />
+  </key>
+</key>
+<key name="inverse y-axis charts" >
+  <key name="inverse y-axis area chart XML sheet" >
+    <topic name="InverseArea" url="../../../ChartSS/InverseArea.htm" />
+  </key>
+  <key name="inverse y-axis column 2D chart XML sheet" >
+    <topic name="InverseColumn" url="../../../ChartSS/InverseColumn.htm" />
+  </key>
+  <key name="inverse y-axis Line 2D chart XML sheet" >
+    <topic name="InverseLine" url="../../../ChartSS/InverseLine.htm" />
+  </key>
+  <key name="overview" >
+    <topic name="OverviewInverse.html" url="../../../Inverse/OverviewInverse.html" />
+  </key>
+</key>
+<key name="isReady() function" >
+  <key name="managed printing in Mozilla browsers" >
+    <topic name="JS_PrintManager.html#advanced" url="../../../JavaScript/JS_PrintManager.html#advanced" />
+  </key>
+</key>
+<key name="JavaScript" >
+  <key name="change chart properties" >
+    <topic name="JS_ChangeChartProperties.html" url="../../../JavaScript/JS_ChangeChartProperties.html" />
+  </key>
+  <key name="chart list" >
+    <topic name="JSChartingCapabilities.html#JSsupported_charts" url="../../../Introduction/JSChartingCapabilities.html#JSsupported_charts" />
+  </key>
+  <key name="create charts using various methods" >
+    <topic name="JS_CreateChart.html" url="../../../JavaScript/JS_CreateChart.html" />
+  </key>
+  <key name="create LinkedCharts" >
+    <topic name="JS_LinkedCharts.html" url="../../../JavaScript/JS_LinkedCharts.html" />
+  </key>
+  <key name="example application" >
+    <topic name="JS_Example.html" url="../../../JavaScript/JS_Example.html" />
+  </key>
+  <key name="explicitly render JavaScript only charts" >
+    <topic name="UsingPureJS.html#force" url="../../../FirstChart/UsingPureJS.html#force" />
+  </key>
+  <key name="export pure JavaScript charts" >
+    <topic name="ECPureJS.html" url="../../../Export/ECPureJS.html" />
+  </key>
+  <key name="export using JavaScript menu" >
+    <topic name="ExportDataJS.html" url="../../../Export/ExportDataJS.html" />
+  </key>
+  <key name="get chart instance" >
+    <topic name="JS_ChartInstance.html" url="../../../JavaScript/JS_ChartInstance.html" />
+  </key>
+  <key name="get data back from chart" >
+    <topic name="JS_DataBackFromChart.html" url="../../../JavaScript/JS_DataBackFromChart.html" />
+  </key>
+  <key name="handle errors" >
+    <topic name="JS_Errors.html" url="../../../JavaScript/JS_Errors.html" />
+  </key>
+  <key name="how it works" >
+    <topic name="JSChartingCapabilities.html#how" url="../../../Introduction/JSChartingCapabilities.html#how" />
+  </key>
+  <key name="JavaScript charting capabilities" >
+    <topic name="JSChartingCapabilities.html" url="../../../Introduction/JSChartingCapabilities.html" />
+  </key>
+  <key name="limitations" >
+    <topic name="JSChartingCapabilities.html#limitations" url="../../../Introduction/JSChartingCapabilities.html#limitations" />
+  </key>
+  <key name="listen to events" >
+    <topic name="JS_EventOverview.html" url="../../../JavaScript/JS_EventOverview.html" />
+  </key>
+  <key name="managed printing in Mozilla browsers" >
+    <topic name="JS_PrintManager.html" url="../../../JavaScript/JS_PrintManager.html" />
+  </key>
+  <key name="PowerCharts and JavaScript" >
+    <topic name="JS_Overview.html" url="../../../JavaScript/JS_Overview.html" />
+  </key>
+  <key name="provide and update chart date" >
+    <topic name="JS_ChangeData.html" url="../../../JavaScript/JS_ChangeData.html" />
+  </key>
+  <key name="pure JavaScript rendering (HTML5) export" >
+    <topic name="ECOverview.html" url="../../../Export/ECOverview.html" />
+  </key>
+  <key name="read data in drag node charts" >
+    <topic name="JSRead.html" url="../../../Dragnode/JSRead.html" />
+  </key>
+  <key name="read data in drag-able charts" >
+    <topic name="JSRead.html" url="../../../Dragable/JSRead.html" />
+  </key>
+  <key name="read data in select scatter chart" >
+    <topic name="JSRead.html" url="../../../SelectScatter/JSRead.html" />
+  </key>
+  <key name="use advanced event registration model" >
+    <topic name="JS_EventOverview.html#advanced" url="../../../JavaScript/JS_EventOverview.html#advanced" />
+  </key>
+  <key name="use JavaScript (HTML 5) renderer" >
+    <topic name="UsingPureJS.html" url="../../../FirstChart/UsingPureJS.html" />
+  </key>
+  <key name="use JavaScript functions as links" >
+    <topic name="JavaScript.html" url="../../../DrillDown/JavaScript.html" />
+  </key>
+</key>
+<key name="JavaScript alert() function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#advanced" url="../../../JavaScript/JS_EventOverview.html#advanced" />
+  </key>
+</key>
+<key name="JavaScript charting capabilities" >
+  <topic name="JSChartingCapabilities.html" url="../../../Introduction/JSChartingCapabilities.html" />
+</key>
+<key name="JavaScript reference for export" >
+  <key name="API" >
+    <topic name="ECReferenceJS.html" url="../../../Export/ECReferenceJS.html" />
+  </key>
+  <key name="component attributes" >
+    <topic name="ECReferenceComponent.html" url="../../../Export/ECReferenceComponent.html" />
+  </key>
+  <key name="debug mode" >
+    <topic name="ECReferenceDebugJS.html" url="../../../Export/ECReferenceDebugJS.html" />
+  </key>
+  <key name="export attributes" >
+    <topic name="ECReferenceExport.html" url="../../../Export/ECReferenceExport.html" />
+  </key>
+  <key name="initiate" >
+    <topic name="ECJavaScript.html" url="../../../Export/ECJavaScript.html" />
+  </key>
+</key>
+
+</indexdata>

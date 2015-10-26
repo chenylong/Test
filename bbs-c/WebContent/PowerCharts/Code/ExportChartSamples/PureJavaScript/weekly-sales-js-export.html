@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>PowerCharts XT My First chart using FusionCharts - Exporting Pure JavaScript based chart</title>
+        <script type="text/javascript" language="Javascript" src="../../assets/ui/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../Charts/FusionCharts.js"></script>
+		<script type="text/javascript" language="Javascript" src="../../assets/ui/js/lib.js"></script>
+
+        <link href="../../assets/ui/css/style.css" rel="stylesheet" type="text/css" />
+       
+    </head>
+    <body>
+		<!-- wrapper -->
+        <div id="wrapper">
+			<!-- header -->
+            <div id="header">
+                <div class="logo"><a href="http://www.fusioncharts.com/powercharts/?BS=OfflineDocsLogo" target="_blank"><img src="../../assets/ui/images/powercharts-xt-logo.jpg" width="180" height="97" alt="PowerCharts XT logo" /></a></div>
+                <h1 class="brand-name">PowerCharts XT</h1>
+                <h1 class="logo-text-home">Exporting pure JavaScript chart</h1>
+            </div>
+			<!-- content area -->
+            <div class="content-area">
+              <div id="content-area-inner-main">
+                    <p class="text" align="center">Exporting pure JavaScript chart.Click the download button on the top right corner of the chart.</p>
+					<div id="messageBox" style="margin-left:10px; margin-right:10px; display:none;"></div>
+					<p>&nbsp;</p>
+
+                    <div class="gen-chart-render">
+                        <center>
+                            <div id="chartContainer">PowerCharts XT will load here</div>
+
+                            <script type="text/javascript"><!--
+
+                                FusionCharts.setCurrentRenderer('JavaScript');
+                                var myChart = new FusionCharts("../../Charts/Spline.swf", "myChartId", "400", "300", "0");
+                                myChart.setXMLData('<chart caption="Weekly Sales Summary" xAxisName="Week" yAxisName="Sales" numberPrefix="$" \n\
+								   exportEnabled="1" yAxisMaxValue="30000">\n\
+									  <set label="Week 1" value="14400" /> \n\
+									  <set label="Week 2" value="19600" /> \n\
+									  <set label="Week 3" value="24000" /> \n\
+									  <set label="Week 4" value="15700" /> \n\
+								</chart>');
+                                myChart.render("chartContainer");
+
+
+                                // -->
+                            </script>
+                        </center>
+                    </div>
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                    <p class="small">    </p>
+                    <div class="underline-dull"></div>
+					<div>
+					
+                <p class="highlightBlock">The above sample showcases how to export pure JavaScript chart. Click <a href="../../../Contents/index.html?Export/ECPureJS.html" target="_blank">here</a> to know more on how the code of this example works.</p>
+            </div>
+                </div>
+            </div>
+			<!-- footer -->
+            <div id="footer">
+                <ul>
+                    <li><a href="../index.html"><span>&laquo; Back to list of examples</span></a></li>
+                    <li class="pipe">|</li>
+                    <li><a href="../../NoChart.html"><span>Unable to see the chart above?</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

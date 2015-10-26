@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PowerCharts XT Documentation Menu</title>
+
+<link rel="stylesheet" type="text/css" href="assets/dtree/dtree.css" />
+<script type="text/javascript">
+	window.__orphanarticle = false;
+	
+</script>
+<script type="text/javascript" src="assets/dtree/dtree.js"></script>
+<script type="text/javascript" src="assets/ul2d/ul2d.js"></script>
+
+<style type="text/css">
+	body { overflow:auto !important; background-color:#FFF; }
+	.tiny_links { font-size:75% !important; color: #CAC7D7 !important; margin-top:-3px; }
+	.tiny_links a { color:#BCC0C1 ; text-decoration:none;}
+	.tiny_links a:hover { color:#707273; }
+	 
+
+	body, table, tr, td
+	{
+		padding:0;
+		margin:0;
+		margin-left:5px;
+		margin-top:10px;
+	}
+	div#collapser 
+	{
+		cursor:pointer;
+		position:absolute;
+		top:0;
+		left:221px;
+	}
+			
+</style>
+
+<script type="text/javascript">
+	function isLocalStorageAvailable()
+	{
+		try
+		{
+			return ('localStorage' in window==true && window['localStorage'] !== null && typeof localStorage.getItem=='function');
+		}
+		catch(e)
+		{
+			return false;
+		}
+	}
+	
+	function getCookie(cname)
+	{
+		var ret="";
+		var cookies={};
+		var arrCookies=document.cookie.split(/\s?;\s?/);
+		
+		for (var i in arrCookies)
+		{
+			iCookie = arrCookies[i].split(/\s?=\s?/);
+			
+			if(cname==iCookie[0]){
+				ret = unescape(iCookie[1]);
+				break;
+			}
+		}
+		return ret;
+	}
+	
+	function collapseMenu()
+	{
+		if(isLocalStorageAvailable())
+		{
+			localStorage.removeItem("PCXT__MENU_COLLAPSED");
+			localStorage.setItem("PCXT__MENU_COLLAPSED", true);
+		}
+		try{
+			parent.document.getElementById("mainframeset").cols = "0,25,*";	
+		}catch(e) {}
+	}
+	
+</script>
+</head>
+<noscript>
+	<base target="contentFrame" />	
+</noscript>
+
+<body bgcolor="#FFFFFF"><a name="topMenuTerrace" id="topMenuTerrace"></a>
+
+	<script type="text/javascript">
+		noCollapse = window.location.search;
+		
+		if(!noCollapse || noCollapse.search("noCollapse")<0)
+		{
+			document.write(	'<div onClick="collapseMenu();" id="collapser" ><img src="assets/ui/images/collapse.png"  name="ec" width="16" height="16" id="ec"/></div>');
+		}
+	
+	</script>
+   <ul id="d1" class="navmenu dree">
+   <li>Introduction
+          <ul>
+         <li><a href="Overview.html">Overview</a></li>
+         <li><a href="Introduction/SysReq.html">System Requirements</a></li>
+         <li><a href="Introduction/Installation.html">Installation</a></li>
+         <li><a href="Introduction/DownloadC.html">Download Contents</a></li>
+         <li><a href="Introduction/ChartList.html">List of Charts</a></li>
+         <li><a href="Introduction/JSChartingCapabilities.html">JavaScript charting capabilities</a></li>
+		 <li><a href="Introduction/WhatsNew32.html">Version History</a></li>
+         <li><a href="Introduction/UpgradingEval.html">Upgrading from Evaluation</a></li>
+         <li><a href="Introduction/Upgrading32.html">Upgrading to XT</a></li>
+      </ul>
+      </li>
+   
+        
+         <li>Creating your First Chart
+                <ul>
+               <li><a href="FirstChart/FirstChart.html">Creating your First Chart</a></li>
+			   <li><a href="FirstChart/UsingPureJS.html">Creating JavaScript charts </a></li>
+			   <li><a href="FirstChart/JSONData.html">Using JSON data instead of XML </a></li>
+			   <li><a href="FirstChart/DataXML.html">Using XML embedded in the page</a></li>
+               <li><a href="FirstChart/ChangeChart.html">Changing Chart type</a></li>
+               <li><a href="FirstChart/ChangeSize.html">Changing Chart dimensions</a></li>
+               <li><a href="FirstChart/MultipleCharts.html">Creating multiple charts in a page</a></li>
+			   <li><a href="FirstChart/maps_charts.html">Creating charts, gauges and maps in a page</a></li>
+			   <li><a href="FirstChart/HtmlEmbed.html">Using HTML embedding method</a></li>
+               <li><a href="FirstChart/using_jquery.html">Using FusionCharts jQuery plugin</a> </li>
+               <li><a href="FirstChart/ServerSideScripts.html">Using Server side scripts</a></li>
+               <li><a href="FirstChart/DatabaseCharts.html">Creating Database driven charts</a></li>
+               <li><a href="FirstChart/Drilldown.html">Adding Drill-down links to charts</a></li>
+               <li><a href="FirstChart/LinkedCharts.html">Creating <i>LinkedCharts</i></a></li>
+               <li><a href="FirstChart/ExportChart.html">Exporting charts to Image/PDF</a></li>
+            </ul>
+      </li>
+	  <li>How PowerCharts XT works?
+             <ul>
+               <li><a href="WebDev/HowFCWorks.html">Overview</a></li>
+               <li><a href="WebDev/DataURL.html">Data URL Method</a></li>
+               <li><a href="WebDev/DataXMLExp.html">Data String Method</a></li>
+            </ul>
+      </li>
+	  
+	  
+         <li>PowerCharts XT data formats
+                <ul>
+               <li><a href="DataFormats/XMLOverview.html">XML Overview</a></li>
+               <li><a href="DataFormats/JSONOverview.html">JSON Overview</a></li>
+            </ul>
+      </li>
+         
+         <li>Quick Chart Configuration
+                <ul>
+               <li><a href="AttDesc/Background.html">Chart Border &amp; Background</a></li>
+               <li><a href="AttDesc/Canvas.html">Chart Canvas</a></li>
+               <li><a href="AttDesc/Logo.html">Loading External Logo</a></li>
+               <li><a href="AttDesc/Titles.html">Title &amp; Axis Names</a></li>
+               <li><a href="AttDesc/DataPlot.html">Data Plot</a></li>
+               <li><a href="AttDesc/DataLabels.html">Data Labels</a></li>
+               <li><a href="AttDesc/DataValues.html">Data Values</a></li>
+               <li><a href="AttDesc/FontProperties.html">Font Properties</a></li>
+               <li><a href="AttDesc/ChartPalettes.html">Chart Palettes</a></li>
+               <li><a href="AttDesc/ChartLimits.html">Chart Limits</a></li>
+               <li><a href="AttDesc/DivLines.html">Div Lines &amp; Grids</a></li>
+               <li><a href="AttDesc/VDivLines.html">Vertical Div Lines</a></li>
+               <li><a href="AttDesc/ZeroPlane.html">Zero Plane</a></li>
+               <li><a href="AttDesc/Trend.html">Trend Lines &amp; Zones</a></li>
+               <li><a href="AttDesc/Anchors.html">Anchors &amp; Lines</a></li>
+               <li><a href="AttDesc/ToolTip.html">Tool Tip</a></li>
+               <li><a href="AttDesc/Padding.html">Chart Paddings &amp; Margins</a></li>
+               <li><a href="AttDesc/VLines.html">Vertical Lines</a></li>
+               <li><a href="AttDesc/Legend.html">Legend</a></li>
+               <li><a href="AttDesc/Number_Basics.html">Number Formatting Basics</a></li>
+               <li><a href="AttDesc/Number_Scaling.html">Number Scaling</a></li>
+               <li><a href="AttDesc/CustomAboutMenu.html">Custom About Menu Item</a></li>
+               <li><a href="AttDesc/error_select_scatter.html">Scatter charts</a> </li>
+            </ul>
+      </li>
+
+<li>Drag-node Chart
+          <ul>
+         <li><a href="Dragnode/Overview.html">Overview</a></li>
+         <li><a href="Dragnode/AddEditNodes.html">Adding &amp; editing Nodes</a></li>
+         <li><a href="Dragnode/AddEditConnectors.html">Adding &amp; editing Connectors</a></li>
+         <li><a href="Dragnode/AddTextLabels.html">Adding text Labels</a></li>
+         <li><a href="Dragnode/Form.html">Getting data as form </a></li>
+         <li><a href="Dragnode/JSRead.html">Getting data using JavaScript</a></li>
+         <li><a href="Dragnode/JSStrength.html">Setting connector strength threshold</a></li>
+         
+         <li><a href="ChartSS/DragNode.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Drag-able Charts
+          <ul>
+         <li><a href="Dragable/Overview.html">Overview</a></li>
+         <li><a href="Dragable/Form.html">Getting data as form </a></li>
+         <li><a href="Dragable/JSRead.html">Getting data using JavaScript</a></li>
+         
+         <li>Chart XML Sheets
+                <ul>
+               <li><a href="ChartSS/DragCol2D.htm">Drag Column Chart</a></li>
+               <li><a href="ChartSS/DragLine.htm">Drag Line Chart</a></li>
+               <li><a href="ChartSS/DragArea.htm">Drag Area Chart</a></li>
+            </ul>
+            </li>
+      </ul>
+      </li>
+   <li>Select Scatter Chart
+          <ul>
+         <li><a href="SelectScatter/Overview.html">Overview</a></li>
+         <li><a href="SelectScatter/Form.html">Getting data as form </a></li>
+         <li><a href="SelectScatter/JSRead.html">Getting data using JavaScript</a></li>
+         
+         <li><a href="ChartSS/SelectScatter.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Heat Map Chart
+          <ul>
+         <li><a href="HeatMap/Overview.html">Overview</a></li>
+         <li><a href="HeatMap/Firstchart.html">Creating a simple chart</a></li>
+         <li><a href="HeatMap/Numericbasedmapping.html">Numeric based mapping</a></li>
+         <li><a href="HeatMap/Categorybasedmapping.html">Category based mapping</a></li>
+         <li>Legends
+                <ul>
+               <li><a href="HeatMap/gradientlegend.html">Gradient legend</a></li>
+               <li><a href="HeatMap/iconlegend.html">Icon legend</a></li>
+               <li><a href="HeatMap/legendcosmetics.html">Legend Cosmetics</a></li>
+            </ul>
+            </li>
+         <li><a href="HeatMap/labels.html">Labels and Tooltips</a> </li>
+         <li><a href="HeatMap/outofrange.html">Handling out of range data</a></li>
+        
+         <li><a href="ChartSS/HeatMap.html">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Box and Whisker
+          <ul>
+         <li><a href="BoxandWhisker/Overview.html">Overview</a></li>
+         <li><a href="BoxandWhisker/Firstchart.html">Creating a simple chart</a></li>
+         <li><a href="BoxandWhisker/Howitworks.html">How it works</a></li>
+         <li>Chart configuration
+                <ul>
+               <li><a href="BoxandWhisker/Chartconfig.html">Five Summary Numbers</a></li>
+               <li><a href="BoxandWhisker/Mean.html">Mean Configuration</a></li>
+               <li><a href="BoxandWhisker/MeanDeviation.html">Mean deviation</a></li>
+               <li><a href="BoxandWhisker/StandardDeviation.html">Standard deviation</a></li>
+               <li><a href="BoxandWhisker/QuartileDeviation.html">Quartile deviation</a></li>
+               <li><a href="BoxandWhisker/Outliers.html">Outliers</a></li>
+            </ul>
+            </li>
+         <li><a href="BoxandWhisker/Legend.html">Legend</a></li>
+         
+         <li><a href="ChartSS/BoxandWhisker2D.html">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Step Line Chart
+          <ul>
+         <li><a href="MSStepLine/Introduction.html">Overview</a></li>
+         <li><a href="MSStepLine/SimpleChart.html">Creating a simple chart</a></li>
+        
+         <li><a href="ChartSS/MSStepLine.html">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Multi-axis Line Chart
+          <ul>
+         <li><a href="MultiAxis/Overview.html">Overview</a></li>
+         
+         <li><a href="ChartSS/MALine.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Multi-level Pie Chart
+          <ul>
+         <li><a href="MultiLevelPie/Overview.html">Overview</a></li>
+         <li><a href="MultiLevelPie/FirstChart.html">Creating a simple chart</a></li>
+         
+         <li><a href="ChartSS/MultiLevelPie.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Candlestick Chart
+          <ul>
+         <li><a href="Candlestick/Overview.html">Overview</a></li>
+         
+         <li><a href="ChartSS/Candlestick.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Waterfall (Cascade) Chart
+          <ul>
+         <li><a href="Waterfall/Overview.html">Overview</a></li>
+         <li><a href="Waterfall/Config.html">Configuration</a></li>
+         
+         <li><a href="ChartSS/Waterfall.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Logarithmic Charts
+          <ul>
+         <li><a href="Log/Overview.html">Overview</a></li>
+         <li>Log Column 2D chart
+                <ul>
+               <li><a href="Log/LogCol2DFirstchart.html">Creating a simple chart</a></li>
+               
+               <li><a href="ChartSS/LogColumn2D.html">Chart XML Sheet</a></li>
+            </ul>
+            </li>
+         <li>Log Line 2D chart
+                <ul>
+               <li><a href="Log/LogLine2DFirstchart.html">Creating a simple chart</a></li>
+               
+               <li><a href="ChartSS/LogLine.html">Chart XML Sheet </a></li>
+            </ul>
+            </li>
+      </ul>
+      </li>
+   <li>Radar Chart
+          <ul>
+         <li><a href="Radar/Overview.html">Overview</a></li>
+         <li><a href="Radar/FirstChart.html">Creating a simple chart</a></li>
+        
+         <li><a href="ChartSS/Radar.html">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+   <li>Inverse y-Axis Charts
+          <ul>
+         <li><a href="Inverse/OverviewInverse.html">Overview</a></li>
+        
+         <li>Chart XML Sheets
+                <ul>
+               <li><a href="ChartSS/InverseColumn.htm">Inverse Column Chart</a></li>
+               <li><a href="ChartSS/InverseLine.htm">Inverse Line Chart</a></li>
+               <li><a href="ChartSS/InverseArea.htm">Inverse Area Chart</a></li>
+            </ul>
+            </li>
+      </ul>
+      </li>
+   <li>Error Charts
+          <ul>
+         <li><a href="ErrorChart/Overview.html">Overview</a></li>
+         <li>Error Bar
+                <ul>
+               <li><a href="ErrorChart/ErrorBarSimpleChart.html">A simple error bar chart</a></li>
+               <li><a href="ErrorChart/ErrorBarConfig.html">Configuration</a></li>
+               
+               <li><a href="ChartSS/ErrorBar.htm">Chart XML Sheet</a></li>
+            </ul>
+            </li>
+         <li>Error Line
+                <ul>
+               <li><a href="ErrorChart/ErrorLineSimpleChart.html">A simple error line chart</a></li>
+               <li><a href="ErrorChart/ErrorLineConfig.html">Configuration</a></li>
+              
+               <li><a href="ChartSS/ErrorLine.html">Chart XML Sheet</a></li>
+            </ul>
+            </li>
+         <li>Error Scatter
+                <ul>
+               <li><a href="ErrorChart/ErrorScatterSimpleChart.html">A simple error scatter chart</a></li>
+               <li><a href="ErrorChart/ErrorScatterConfig.html">Configuration</a></li>
+               
+               <li><a href="ChartSS/ErrorScatter.html">Chart XML Sheet</a></li>
+            </ul>
+            </li>
+      </ul>
+      </li>
+   <li>Spline Charts
+          <ul>
+         <li><a href="Spline/Overview.html">Overview</a></li>
+         
+         <li>Chart XML Sheets
+                <ul>
+               <li><a href="ChartSS/Spline.html">Spline Chart</a></li>
+               <li><a href="ChartSS/SplineArea.html">Spline Area Chart</a></li>
+               <li><a href="ChartSS/MSSpline.html">Multi-Series Spline Chart</a></li>
+               <li><a href="ChartSS/MSSplineArea.html">Multi-Series Spline Area Chart</a></li>
+            </ul>
+            </li>
+      </ul>
+      </li>
+   <li>Kagi Chart
+          <ul>
+         <li><a href="Kagi/Overview.html">Overview</a></li>
+         
+         <li><a href="ChartSS/Kagi.htm">Chart XML Sheet</a></li>
+      </ul>
+      </li>
+
+			 <li>Drill Down Charts
+              <ul>
+               <li><a href="DrillDown/Simple.html">Simple Example</a></li>
+               <li><a href="DrillDown/Frames.html">Links in frames</a></li>
+               <li><a href="DrillDown/PopUps.html">Links in pop-up windows</a></li>
+               <li><a href="DrillDown/ClickURL.html">Full Chart as a hotspot</a></li>
+               <li><a href="DrillDown/JavaScript.html">JavaScript functions as links</a></li>
+			   <li>LinkedCharts
+					<ul>
+						<li><a href="DrillDown/LinkedCharts.html">Overview</a></li>
+						<li><a href="DrillDown/LinkedChartsXMLFormat.html">XML Data Format</a></li>
+						<li><a href="DrillDown/LinkedChartsJSONFormat.html">JSON Data Format</a></li>
+					</ul>
+				</li>
+               <li><a href="DrillDown/LinkFormat.html">FusionCharts Link format</a></li>
+               </ul>
+             </li>
+			 <li>PowerCharts XT and JavaScript
+                <ul>
+               <li><a href="JavaScript/JS_Overview.html">Overview</a></li>
+               <li><a href="JavaScript/JS_CreateChart.html">Constructor methods</a></li>
+               <li><a href="JavaScript/JS_ChartInstance.html">Getting chart reference</a></li>
+               <li><a href="JavaScript/JS_ChangeData.html">Providing &amp; updating data</a></li>
+               <li><a href="JavaScript/JS_ChangeChartProperties.html">Changing chart properties</a></li>
+               <li><a href="JavaScript/JS_DataBackFromChart.html">Getting data back from chart</a></li>
+               <li><a href="JavaScript/JS_EventOverview.html">Listening to events</a></li>
+               <li><a href="JavaScript/JS_LinkedCharts.html">Using <i>LinkedCharts</i></a></li>
+               <li><a href="JavaScript/JS_PrintManager.html">Managed Print for Mozilla</a></li>
+               <li><a href="JavaScript/JS_Errors.html">Handling errors</a></li>
+               <li>API Reference
+                      <ul>
+                     <li><a href="JavaScript/API/Overview.html">Overview</a></li>
+                     <li><a href="JavaScript/API/Properties.html">Properties</a></li>
+                     <li><a href="JavaScript/API/Methods.html">Functions</a></li>
+                     <li><a href="JavaScript/API/Events.html">Events</a></li>
+                  </ul>
+                  </li>
+            </ul>
+             </li>
+			 <li>PowerCharts XT &amp; jQuery
+			   <ul>
+				<li><a href="jQuery/Overview.html">Overview</a></li>
+				<li><a href="jQuery/AdvancedRendering.html">Various rendering methods</a></li>
+				<li><a href="jQuery/RetrieveUpdate.html">Updating data and properties </a></li>
+				<li><a href="jQuery/Selector.html">Using Selector</a></li>
+				<li><a href="jQuery/Events.html">Handling Events</a></li>
+				<li><a href="jQuery/API.html">API Reference</a></li>
+			</ul></li>
+		<li>PowerCharts XT Styles
+                <ul>
+               <li><a href="Styles/Styles.html">Overview</a></li>
+               <li><a href="Styles/HowToUse.html">How to Use?</a></li>
+               <li><a href="Styles/Font.html">Font Style Type</a></li>
+               <li><a href="Styles/Animation.html">Animation Style Type</a></li>
+               <li><a href="Styles/Shadow.html">Shadow Style Type</a></li>
+               <li><a href="Styles/Glow.html">Glow Style Type</a></li>
+               <li><a href="Styles/Bevel.html">Bevel Style Type</a></li>
+               <li><a href="Styles/Blur.html">Blur Style Type</a></li>
+            </ul>
+      </li>
+			 <li>Exporting as Image/PDF
+                <ul>
+               <li><a href="Export/ECOverview.html">Overview</a></li>
+               <li><a href="Export/ECProcess.html">How it works?</a></li>
+               <li><a href="Export/ECTerminology.html">Terminologies</a></li>
+               <li><a href="Export/ECXML.html">XML Attributes</a></li>
+               <li>Server-side exporting
+                      <ul>
+                     <li><a href="Export/ECServerOverview.html">Overview</a></li>
+                     <li><a href="Export/ECServerDownload.html">Returning image as download</a></li>
+                     <li><a href="Export/ECServerSave.html">Saving to server disk</a></li>
+                     <li><a href="Export/ECServerFormats.html">Configuring Export Formats</a></li>
+                     <li><a href="Export/ECExportDialog.html">Configuring Export Dialog</a></li>
+                  </ul>
+                  </li>
+               <li>Client-side exporting
+                      <ul>
+                     <li><a href="Export/ECClientOverview.html">Overview</a></li>
+                     <li><a href="Export/ECClientSimple.html">Simple Example</a></li>
+                     <li><a href="Export/ECClientMultiple.html">Setting for multiple charts</a></li>
+                     <li><a href="Export/ECClientCallback.html">Setting JavaScript callback</a></li>
+                     <li><a href="Export/ECComponentUI.html">Component UI Customization</a></li>
+                     <li><a href="Export/ECServerFormats_client.html">Configuring Export Formats</a></li>
+                     <li><a href="Export/ECExportDialog_client.html">Configuring Export Dialog</a></li>
+                  </ul>
+                  </li>
+               <li>Batch exporting charts
+                      <ul>
+                     <li><a href="Export/ECBatchOverview.html">Overview</a></li>
+                     <li><a href="Export/ECBatchSetup.html">Setting it up</a></li>
+                     <li><a href="Export/ECBatchCallback.html">Setting JavaScript callback</a></li>
+                     <li><a href="Export/ECBatchOverride.html">Over-riding export parameters</a></li>
+                  </ul>
+                  </li>
+               <li>JavaScript Reference
+                      <ul>
+                     <li><a href="Export/ECReferenceJS.html">JavaScript API</a></li>
+                     <li><a href="Export/ECReferenceComponent.html">Component Attributes</a></li>
+                     <li><a href="Export/ECReferenceExport.html">Export Attributes</a></li>
+                  </ul>
+                  </li>
+				<li><a href="Export/ECJavaScript.html">Initiating from JavaScript</a></li>
+                <li><a href="Export/ECPureJS.html">Exporting Pure JavaScript Charts</a></li>
+               <li><a href="Export/ECReferenceDebugJS.html">Export Component Debug Mode</a></li>
+               <li><a href="Export/ECTroubleshooting.html">Troubleshooting</a></li>
+            </ul>
+             </li>
+         <li>Exporting Chart Data
+                <ul>
+               <li><a href="Export/ExportDataSetup.html">Using Context Menu</a></li>
+               <li><a href="Export/ExportDataJS.html">Using JavaScript API</a></li>
+            </ul>
+      </li>
+	  
+	   <li>Advanced Charting
+                <ul>
+               <li>Number Formatting
+                      <ul>
+                     <li><a href="Advanced/Number_Basics.html">Basics</a></li>
+                     <li><a href="Advanced/Number_Scaling.html">Number Scaling</a></li>
+                     <li><a href="Advanced/Rec_Num_Scaling.html">Recursive Number Scaling</a> </li>
+                     <li><a href="Advanced/Number_Input.html">Input Number Formatting</a></li>
+                  </ul>
+                  </li>
+               <li>Using Special Characters
+                      <ul>
+                     <li><a href="Advanced/SpChar.html">Using Multi-lingual text</a></li>
+                     <li><a href="Advanced/SpCharAll.html">Using Currency Symbols</a></li>
+                     <li><a href="Advanced/SpPunctuation.html">Using Special Punctuation</a></li>
+                  </ul>
+                  </li>
+               
+               <li><a href="Advanced/Highlight.html">Highlighting selective data</a></li>
+               <li><a href="Advanced/xAxisNames.html">Showing long data labels</a></li>
+               <li><a href="Advanced/Gradients.html">Using Gradients</a></li>
+               <li><a href="Advanced/TTip_Lines.html">Tool Tip in multiple lines</a></li>
+               <li><a href="Advanced/PercentResize.html">Resizing charts in %</a></li>
+               <li><a href="Advanced/BgSWF.html">Set backgrounds for chart</a></li>
+               <li><a href="Advanced/SSL.html">Using Chart on SSL/HTTPS</a></li>
+               <li><a href="Advanced/ChartMessages.html">Changing chart messages</a></li>
+            </ul>
+      </li>
+   <li>Debugging your Charts
+          <ul>
+         <li><a href="Debug/Basic.html">Basic Troubleshooting</a></li>
+         <li><a href="Debug/advanced.html">Advanced Troubleshooting</a> </li>
+         <li><a href="Debug/Window.html">Using Flash Debug Window</a></li>
+         <li><a href="Debug/JS.html">Using JavaScript</a></li>
+      </ul>
+     </li>
+	   
+   <li><a href="FAQ.html">Frequently Asked Questions</a></li>
+</ul>
+<script type="text/javascript">
+  <!--
+  	menuDataStore ={ "0" : {id:"0", pid:"-1", name:"root"} };
+	var selectedItemId=2;
+	
+	d1_d = ul2d.parse('d1', 'PowerCharts XT <span class="tiny_links">[<a onclick="JavaScript:toggleOpenAll(this);" href="javascript:void(0);" title="Expand/Collapse all" id="shortEC"> + </a>]</span>', [0]);
+	dtree_addbase(d1_d, 'assets/dtree/');
+	d1_d.config.target='contentFrame';
+	document.write(d1_d);
+	
+	var menuSelectTimer;
+	var onPageLoad=true;
+	var oldContentSrc;
+	
+	window.onload = function() {
+		
+		if(window.parent.parent.parent.contentFrame){
+			oldContentSrc = getContentSrc("");
+			
+			menuSelectTimer = window.setInterval(function() {
+				var opendMenuItem ="";
+				opendMenuItem = getCookie("pcxtmenu");
+				opendMenuItem = ( isLocalStorageAvailable() && localStorage.getItem("pcxt__menu") ) ? localStorage.getItem("pcxt__menu") :""; 
+				menuItemSelect(opendMenuItem, true,true, false); 
+			}, 731);
+		}
+		
+	};
+		
+	
+	
+	/*--------------------------------------------------------*/
+
+	function toggleOpenAll(elm)
+	{
+		var allClosed = ( elm.innerHTML == ' + ' );
+		if(allClosed){
+			d.openAll();
+			elm.innerHTML = ' ― ';
+		}else{
+			d.closeAll();
+			elm.innerHTML = ' + ';
+		}
+		
+	}
+	
+	function intelligentMenuSelector(request)
+	{
+		var menuId, qs, src; 
+		
+		if (typeof request == "string" ) 
+		{
+			qs = getContentSrc(request);
+			
+			menuId = "" + menuDataStore[ qs ];
+		}
+		else
+		{
+			if(request)
+				qs = request.toString();
+			else
+				qs = "2";
+			menuId = qs;
+		}
+		
+		
+		return menuId;
+	}
+	
+	function getContentSrc(request)
+	{
+		
+			if(!request)
+			{
+				
+				
+				try {
+					
+					if(!request) request = top.frames["contentFrame"] && top.frames["contentFrame"].location ? top.frames["contentFrame"].location.toString() : "";			
+					//if(!request) request = window.parent.frames["contentFrame"] && window.parent.frames["contentFrame"].location ? window.parent.frames["contentFrame"].location.toString() : "";			
+					var contentSrc = request ? unescape(request).replace(/^.+?contents\//i,"").replace(/^\s+?|\s+?$|[?].+|\#.+$/g,"") : "";
+				
+					return contentSrc;
+					
+				}catch(err)
+				{
+					
+				}
+
+
+			}
+			
+			
+			return request;
+				
+
+	}
+	function menuItemSelect( request, forceCollapseOthers, scrollToNode, scrollToItem )
+	{
+	
+		request = request.toLowerCase();
+		
+		if (oldContentSrc == getContentSrc(request) && !onPageLoad) return; else oldContentSrc = getContentSrc(request);
+		
+		
+		if(request=="") 
+		{
+			request = oldContentSrc.toLowerCase();
+			//document.cookie = "fwxtmenu="+ oldContentSrc;
+		}
+		
+		var menuId = intelligentMenuSelector(request);
+
+		if(typeof menuId == "undefined" || !d.aNodes[menuId]) { return; }
+		
+		var pMenuId =  d.aNodes[menuId].pid;
+		
+		if ( menuId && d.aNodes[menuId] &&  d.getSelected() != menuId )
+		{
+			
+			window.setTimeout(function(){ d.openTo(menuId,true, true); }, 0 );
+
+			
+		
+			//special case where on root folder we do not scroll to node or menu item
+			if(pMenuId == "1" || menuId=="-1" || pMenuId == "-1" || typeof pMenuId == "undefined")  
+			{ 
+				window.scroll(0,0);
+				onPageLoad=false; 
+				return; 
+			
+			}
+
+			if(scrollToItem)  
+			{
+			
+				window.setTimeout(function(){ window.location.hash = menuId; }, 0 );
+
+			}
+			else
+			{
+				if(scrollToNode)	window.setTimeout(function(){ window.location.hash = pMenuId; }, 0 );
+
+			}
+
+		}
+		
+		//special case for page load open selected item's parent node which might have been closed in stored in cookie cache
+		if( !d.isOpen(pMenuId) && onPageLoad )
+		{
+			window.setTimeout(function(){ d.openTo(pMenuId, false, false); }, 0 );
+		}
+		
+		onPageLoad=false;
+	}
+		
+	
+  -->
+</script>
+	<p class="dtree" style="padding-left:10px;">
+		<a href="javascript:d.openAll();" onclick="JavaScript:document.getElementById('shortEC').innerHTML=' ― ';">Expand all</a> | <a href="javascript: d.closeAll();" onclick="JavaScript:document.getElementById('shortEC').innerHTML=' + ';">Collapse all</a>
+	</p>
+</body>
+</html>

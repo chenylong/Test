@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+
+<title>Box and Whisker chart &gt; Outliers</title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Box &amp; Whisker chart|Overview.html", "Chart configuration", "Outliers" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="pageHeader">Outliers</td>
+
+  </tr>
+ 
+  <tr> 
+    <td valign="top" class="text">
+      <p>Outliers are those values which are numerically distant from the set of numbers provided. Outliers are indicative values which may occur by chance or by error for any set of data provided. Outliers are not included in the statistical calculation of the five summaries. Rather these are placed as separate points on the chart. To show outliers for a set of data you need to specify the outlier values using the <span class="codeInline">outliers</span> attribute through the <span class="codeInline">&lt;set&gt;</span> elements for each set of data.</p>
+        <p>A chart displaying the outliers is shown below:</p>
+		<p><img src="Images/Outliers.jpg" class="imageBorder" /></p>
+	<p> In the above screenshot, the chart is displaying the outlier values by the triangle icons of each dataplot. This icon is customizable about which we will discuss <a href="#outliers">later</a>. </p>
+	<p> The  data for the above chart is given below:</p>	</td>
+  </tr>
+  <tr>
+    <td valign="top"> <div class="container">
+	    <ul class="tabs">
+   	    <li><a href="#tab1">XML</a></li>
+      	 <li><a href="#tab2">JSON</a></li>
+	    </ul>
+   	 <div class="tab_container">
+    		<div id="tab1" class="tab_content"><pre class="prettyprint code_container">
+&lt;chart caption='Visits to a Website' subCaption='In three years' showValues='0'&gt;
+...
+&lt;dataset seriesName="January" lowerBoxColor='019FAA ' upperboxColor='D4DFFF' mediancolor='FF0000' &gt;
+    &lt;set value='60,133,35,67,89,137,259' <strong>outliers='290'</strong>/&gt;
+    &lt;set value='139,197,175,114,39,67,191' <strong>outliers='250'</strong>/&gt;
+    &lt;set value='200,107,197,239,53,26,97' <strong>outliers='280'</strong>/&gt;
+&lt;/dataset&gt;
+&lt;/chart&gt;</pre>
+    		</div>
+			<div id="tab2" class="tab_content"><pre class="prettyprint code_container">{
+  "chart":{
+    "caption":"Visits to a Website",
+    "subcaption":"In three years",
+    "showvalues":"0"
+  },
+  ...
+  "dataset":[{
+      "seriesname":"January",
+      "lowerboxcolor":"019FAA ",
+      "upperboxcolor":"D4DFFF",
+      "mediancolor":"FF0000",
+      "data":[{
+          "value":"60,133,35,67,89,137,259",
+          "outliers":"290"
+        },
+        {
+          "value":"139,197,175,114,39,67,191",
+          "outliers":"250"
+        },
+        {
+          "value":"200,107,197,239,53,26,97",
+          "outliers":"280"
+        }
+      ]
+    }
+  ]
+}</pre></div>
+	    </div>
+	  </div>
+	  <div style="clear:both"></div>
+	  </td></tr>
+	  <tr>
+	  <td valign="top" class="text">
+    <p>In the above data, the <span class="codeInline">outliers</span> attribute is used to provide the outlier values through the <span class="codeInline">&lt;set&gt;</span> element. So, all the dataplots are displaying the outliers value icon.</p>
+	<p>The attributes used to customize the outlier icon  are given below:</p></td>
+  </tr>
+ 
+	<tr><td>
+	<a name="outliers" id="outliers"></a><table width="100%" border="0" cellpadding="0" cellspacing="0" class="table">
+      <tr>
+        <td width="180" class="header">Attribute Name </td>
+        <td width="80" class="header">Type</td>
+        <td width="80" class="header">Range</td>
+		<td class="header">Description</td>
+      </tr>
+      <tr>
+        <td class="codeInline">outlierIconShape</td>
+        <td>String</td>
+        <td></td>
+		<td>Specifies the shape of the icon. There are two options - polygon and spoke.</td>
+      </tr>
+      <tr class="trVeryLightYellowBg">
+        <td class="codeInline">outlierIconRadius</td>
+        <td>Number</td>
+        <td></td>
+        <td>Specifies the radius of the outlier icon.</td>
+      </tr>
+      <tr>
+        <td class="codeInline">outlierIconSides</td>
+        <td>Number</td>
+        <td></td>
+        <td>Specifies the number of sides for the icon. If the <span class="codeInline">outlierIconShape</span> is set as polygon, then the shape of the icon will depend on the number of sides. For example, 3 sides will display a triangle, 8 will display a circle.</td>
+      </tr>
+      <tr class="trVeryLightYellowBg">
+        <td class="codeInline">outlierIconColor</td>
+        <td>Hex code</td>
+        <td></td>
+		<td>Sets the color of the outlier icon.</td>
+      </tr>
+      <tr>
+        <td class="codeInline">outlierIconAlpha</td>
+        <td>Number</td>
+        <td>0-100</td>
+        <td>Sets the transparency of the outlier icon.</td>
+      </tr>
+	  </table> </td></tr>
+	  <tr>
+	  <td valign="top" class="text">&nbsp;</td>
+	  </tr>
+	  <tr>
+	  <td class="header">Show all Outliers</td>
+	  </tr>
+	  <tr>
+	  <td valign="top" class="text">
+	  <p>In the above example, all the outliers provided in each <span class="codeInline">&lt;set&gt;</span> element appear on the chart since they reside in the range of the y-axis scale. There can be instances where the outlier values are beyond the range of the y-axis scale. In this situation, the outlier values are not displayed to maintain the visual integrity of the dataplots. A sample chart is shown below:</p>
+	  <p><img src="Images/showalloutliers1.jpg" class="imageBorder" /></p>
+	  <p>In the above screen shot, only one outlier value is displayed though all the <span class="codeInline">&lt;set&gt;</span> elements have outlier values. The data for the above chart looks as under:</p></td></tr>
+	  <tr>
+    <td valign="top"> <div class="container">
+	    <ul class="tabs">
+   	    <li><a href="#tab3">XML</a></li>
+      	 <li><a href="#tab4">JSON</a></li>
+	    </ul>
+   	 <div class="tab_container">
+    		<div id="tab3" class="tab_content"><pre class="prettyprint code_container">
+&lt;chart caption='Visits to a Website' subCaption='In three years'&gt;
+...
+&lt;dataset seriesName="January" lowerBoxColor='019FAA ' upperboxColor='D4DFFF' mediancolor='FF0000' &gt;
+    &lt;set value='60,133,35,67,89,137,259' outliers='290'/&gt;
+    &lt;set value='139,197,175,114,39,67,191' outliers='350'/&gt;
+    &lt;set value='200,107,197,239,53,26,97' outliers='-30, -90'/&gt;
+&lt;/dataset&gt;
+&lt;/chart&gt;</pre></div>
+			<div id="tab4" class="tab_content"><pre class="prettyprint code_container">{
+  "chart":{
+    "caption":"Visits to a Website",
+    "subcaption":"In three years"
+  },
+  ...
+  "dataset":[{
+      "seriesname":"January",
+      "lowerboxcolor":"019FAA ",
+      "upperboxcolor":"D4DFFF",
+      "mediancolor":"FF0000",
+      "data":[{
+          "value":"60,133,35,67,89,137,259",
+          "outliers":"290"
+        },
+        {
+          "value":"139,197,175,114,39,67,191",
+          "outliers":"350"
+        },
+        {
+          "value":"200,107,197,239,53,26,97",
+          "outliers":"-30, -90"
+        }
+      ]
+    }
+  ]
+}</pre></div>
+	  </div>
+	  </div>
+	  <div style="clear:both"></div></td></tr>
+	  <tr>
+	  <td class="text">
+	   <p>In the above data, there is only one outlier value which resides within the range of the y-axis scale. So, except that value all the other outliers are not displayed in the chart.</p>
+	  <p>To display all the outlier values including the values which are beyond the range of the y-axis scale, set the <span class="codeInline">showAllOutliers</span> attribute to '1' in the <span class="codeInline">&lt;chart&gt;</span> element. A sample chart with all the outlier values displayed is given below:</p>
+      <p><img src="Images/showalloutliers2.jpg" class="imageBorder" /></p>
+	  <p>In the above screen shot, the chart is displaying all the outliers. 
+	  The data will be as under:</p></td>
+  </tr>
+  <tr>
+    <td valign="top"> <div class="container">
+	    <ul class="tabs">
+   	    <li><a href="#tab5">XML</a></li>
+      	 <li><a href="#tab6">JSON</a></li>
+	    </ul>
+   	 <div class="tab_container">
+    		<div id="tab5" class="tab_content"><pre class="prettyprint code_container">
+&lt;chart caption='Visits to a Website' subCaption='In three years' showAllOutliers='1'&gt;
+...
+&lt;dataset seriesName="January" lowerBoxColor='019FAA ' upperboxColor='D4DFFF' mediancolor='FF0000' &gt;
+    &lt;set value='60,133,35,67,89,137,259' outliers='290'/&gt;
+    &lt;set value='139,197,175,114,39,67,191' outliers='350'/&gt;
+    &lt;set value='200,107,197,239,53,26,97' outliers='-30, -90'/&gt;
+&lt;/dataset&gt;
+&lt;/chart&gt;</pre></div>
+			<div id="tab6" class="tab_content"><pre class="prettyprint code_container">{
+  "chart":{
+    "caption":"Visits to a Website",
+    "subcaption":"In three years",
+    "showalloutliers":"1"
+  },
+  ...
+  "dataset":[{
+      "seriesname":"January",
+      "lowerboxcolor":"019FAA ",
+      "upperboxcolor":"D4DFFF",
+      "mediancolor":"FF0000",
+      "data":[{
+          "value":"60,133,35,67,89,137,259",
+          "outliers":"290"
+        },
+        {
+          "value":"139,197,175,114,39,67,191",
+          "outliers":"350"
+        },
+        {
+          "value":"200,107,197,239,53,26,97",
+          "outliers":"-30, -90"
+        }
+      ]
+    }
+  ]
+}</pre></div>
+	  </div>
+	  </div>
+	  <div style="clear:both"></div>
+    </td></tr>
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("Quartile deviation|QuartileDeviation.html","Legend|Legend.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

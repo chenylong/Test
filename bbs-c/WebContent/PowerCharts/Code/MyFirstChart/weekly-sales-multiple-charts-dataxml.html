@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> PowerCharts XT - Using multiple charts in a page</title>
+        <script type="text/javascript" language="Javascript" src="../assets/ui/js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="../../Charts/FusionCharts.js"></script>
+		<script type="text/javascript" language="Javascript" src="../assets/ui/js/lib.js"></script>
+        <link href="../assets/ui/css/style.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+
+    <body>
+        <!-- wrapper -->
+        <div id="wrapper">
+            <!-- header -->
+            <div id="header">
+                <div class="logo"><a href="http://www.fusioncharts.com/powercharts/?BS=OfflineDocsLogo" target="_blank"><img src="../assets/ui/images/powercharts-xt-logo.jpg" width="180" height="97" alt="PowerCharts XT logo" /></a></div>
+                <h1 class="brand-name">PowerCharts XT</h1>
+                <h1 class="logo-text-home">Multiple charts in a page</h1>
+            </div>
+            <!-- content area -->
+            <div class="content-area">
+                <div id="content-area-inner-main">
+                    <p class="text" align="center">Create any number of charts in a single page. Here, 3 charts are embedded in a single HTML page.</p>
+					<div id="messageBox" style="margin-left:120px; margin-right:120px; display:none;"></div>
+					<p>&nbsp;</p>
+
+                    <div class="gen-chart-render">
+
+                        <center>
+                            <span id="chartContainerJan">January Spline Chart will load here</span>
+    						<span id="chartContainerFeb">February Spline Area Chart will load her</span>
+    						<span id="chartContainerMarch">March Waterfall Chart will load here</span>
+
+                            
+
+                            <script type="text/javascript"><!--
+
+                                var JanChart = new FusionCharts("../../Charts/SplineArea.swf", "JanChartId", "400", "300", "0");
+                JanChart.setXMLData('<chart caption="Sales Summary" subCaption="January" xAxisName="Week" yAxisName="Sales" numberPrefix="$" ><set label="Week 1" value="24400" /><set label="Week 2" value="29600" /><set label="Week 3" value="34000" /><set label="Week 4" value="45700" /></chart>');
+                JanChart.render("chartContainerJan");
+                
+                
+                var FebChart = new FusionCharts("../../Charts/Spline.swf", "FebChartId", "400", "300", "0");
+                FebChart.setXMLData('<chart caption="Sales Summary"  subCaption="February" xAxisName="Week" yAxisName="Sales" numberPrefix="$" ><set label="Week 1" value="41400" /><set label="Week 2" value="91600" /><set label="Week 3" value="42000" /><set label="Week 4" value="51700" /></chart>');
+                FebChart.render("chartContainerFeb");
+                
+                var MarChart = new FusionCharts("../../Charts/Waterfall2D.swf", "MarChartId", "400", "300", "0");
+                MarChart.setXMLData('<chart caption="Sales Summary" subCaption="March" xAxisName="Week" yAxisName="Sales" numberPrefix="$" ><set label="Week 1" value="41400" /><set label="Week 2" value="61900" /><set label="Week 3" value="32400" /><set label="Week 4" value="71500" /></chart>');
+                MarChart.render("chartContainerMarch");
+
+
+
+
+                                // -->
+                            </script>
+                        </center>
+
+                    </div>
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                    <p class="small">    </p>
+                    <div class="underline-dull"></div>
+					<div>
+					
+                <p class="highlightBlock">The above sample showcases how to create multiple charts in a page. Click <a href="../../Contents/index.html?FirstChart/MultipleCharts.html" target="_blank">here</a> to know more on how the code of this example works.</p>
+            </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <ul>
+                    <li><a href="index.html"><span>&laquo; Back to list of examples</span></a></li>
+                    <li class="pipe">|</li>
+                    <li><a href="../NoChart.html"><span>Unable to see the chart above?</span></a></li>
+                </ul>
+            </div>
+        </div>
+		 <script type="text/javascript"><!--//
+			$(document).ready ( function() {
+			   showConditionalMessage( "Your browser does not seem to have Flash Player support. JavaScript charts are rendered instead.", isJSRenderer(JanChart) );
+			});	
+		// -->
+		</script>
+    </body>
+</html>

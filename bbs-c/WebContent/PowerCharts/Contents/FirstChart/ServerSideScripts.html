@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+
+
+<title>Creating charts using various server side scripts </title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Creating your first chart|FirstChart.html",  "Using server side scripts" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="pageHeader">Creating charts using various server side scripts </td>
+
+  </tr>
+  <tr>
+     <td class="text">
+        <p>So far in this section, we have shown you how to build charts using static data (that is, data which was manually created by you). However, PowerCharts XT can also connect to dynamic sources of data using server side scripts like ASP, ASP.NET C#, ASP.NET VB.NET, PHP, J2EE, Ruby on Rails, ColdFusion,
+           <!--, Perl-->
+         etc. </p>
+        <p>PowerCharts XT can be implemented using <strong>ANY</strong> server-side technology, since charts are  rendered  at client side. The <strong>role of  server-side scripts is only to provide  XML/JSON data</strong> as string.</p>
+        <p>To make the task of embedding charts in  Web pages easier, PowerCharts XT uses wrapper classes  (FusionCharts wrapper classes) for various server-side scripts like ASP, ASP.NET C#, ASP.NET VB.NET, PHP, J2EE, Ruby on Rails, and ColdFusion. Moreover,  in ASP and PHP, the APIs allow you to connect to arrays and databases. You can  even dynamically build XML data which can directly be provided to the chart.</p>
+        <p class="highlightBlock">FusionCharts wrapper classes are present in FusionCharts XT pack. If you do not have the licensed pack of FusionCharts XT, you can directly <a href="http://www.fusioncharts.com/download" target="_blank">download the trial version of FusionCharts XT</a> and get the fully functional wrapper classes from the pack. The wrapper classes are present in the FusionCharts XT Download Pack's <span class="codeInline">Code</span> folder.</p>
+      <p>In this page, we provide highlights of code snippets that are used in various server-side technologies for embedding PowerCharts. The next section,  shows how charts can be generated using dynamic data from database. </p></td>
+  </tr>  
+  <tr>
+     <td class="header"><a name="asp" id="asp"></a>Using Classic ASP</td>
+  </tr>
+  <tr>
+     <td height="23"></td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">Call renderChart(&quot;../../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, 400, 300, False, True)</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>Code to create JavaScript chart:</p>
+     </td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">FC_SetRenderer( &quot;javascript&quot; )
+Call renderChart(&quot;../../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, 400, 300, False, True)</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>More examples using Classic ASP:</p>
+        <ul>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/asp/ASP_BasicExample.html" target="_blank">Creating a simple chart </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/asp/ASP_Array.html" target="_blank">Creating chart from data in Array </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/asp/ASP_Form.html" target="_blank">Creating chart with data in Forms </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/asp/ASP_DB.html" target="_blank">Creating chart from Database </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/asp/ASP_Drill.html" target="_blank">Creating Drill-down charts </a></li>
+         </ul>
+        
+     </td>
+  </tr>
+  <tr><td class="text">&nbsp;</td></tr>
+  <tr>
+     <td class="header"><a name="cs" id="cs"></a>Using ASP.NET C# </td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">FusionCharts.RenderChart(&quot;../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, &quot;400&quot;, &quot;300&quot;, false, true);</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>Code to create JavaScript chart:</p>
+     </td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">FusionCharts.SetRenderer(&quot;javascript&quot;);
+Literal1.Text = FusionCharts.RenderChart(&quot;../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, &quot;400&quot;, &quot;300&quot;, false, true); </pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>More examples using ASP.NET C#:</p>
+        <ul>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/csnet/CS_BasicExample.html" target="_blank">Creating a simple chart </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/csnet/CS_Array.html" target="_blank">Creating chart from data in Array </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/csnet/CS_Form.html" target="_blank">Creating chart with data in Forms </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/csnet/CS_Form.html" target="_blank">Creating chart from Database </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/csnet/CS_Drill.html" target="_blank">Creating Drill-down charts </a></li>
+        </ul>
+        
+     </td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td class="header"><a name="vb" id="vb"></a>Using ASP.NET VB</td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">FusionCharts.RenderChart(&quot;../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, &quot;400&quot;, &quot;300&quot;, False, True)</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>Code to create JavaScript chart:</p>
+     </td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">FusionCharts.SetRenderer(&quot;javascript&quot;)
+Literal1.Text = FusionCharts.RenderChart(&quot;../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, &quot;400&quot;, &quot;300&quot;, False, True)</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>More examples using ASP.NET VB:</p>
+        <ul>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/vbnet/VBNET_BasicExample.html" target="_blank">Creating a simple chart </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/vbnet/VBNET_Array.html" target="_blank">Creating chart from data in Array </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/vbnet/VBNET_Form.html">Creating chart with data in Forms</a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/vbnet/VBNET_DB.html" target="_blank">Creating chart from Database </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/vbnet/VBNET_Drill.html" target="_blank">Creating Drill-down charts </a></li>
+        </ul>
+        
+</td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td class="header"><a name="php" id="php"></a>Using PHP</td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">renderChart(&quot;../../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, 400, 300, false, true);</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>Code to create JavaScript chart:</p>
+     </td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">FC_SetRenderer( &quot;javascript&quot; );
+echo renderChart(&quot;../../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, 400, 300, false, true); </pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+<p>More examples using PHP:</p>
+<ul>
+   <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/php/PHP_BasicExample.html" target="_blank">Creating a simple chart </a></li>
+   <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/php/PHP_Array.html" target="_blank">Creating chart from data in Array </a></li>
+   <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/php/PHP_Form.html" target="_blank">Creating chart with data in Forms</a></li>
+   <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/php/PHP_DB.html" target="_blank">Creating chart from Database </a></li>
+   <li><a href="http://docs.fusioncharts.com/charts/contents/?guide-for-web-developers/php/PHP_Drill.html" target="_blank">Creating Drill-down charts </a></li>
+   </ul>
+
+     </td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td class="header"><a name="j2ee" id="j2ee"></a>Using J2EE</td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">&lt;<strong>fc:render</strong> chartId=&quot;chart1&quot; swfFilename=&quot;../../Charts/Spline.swf&quot; 
+    width=&quot;400&quot; height=&quot;300&quot; debugMode=&quot;false&quot; 
+     <strong>xmlUrl=&quot;Data/Data.xml&quot;</strong> /&gt;</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>Code to create JavaScript chart:</p>
+     </td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">&lt;<strong>fc:render</strong> chartId=&quot;chart1&quot; swfFilename=&quot;../../Charts/Spline.swf&quot; 
+    width=&quot;400&quot; height=&quot;300&quot; debugMode=&quot;false&quot; 
+     <strong>xmlUrl=&quot;Data/Data.xml&quot;</strong> renderer=&quot;javascript&quot;/&gt;</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>More examples using J2EE:</p>
+        <ul>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/J2EE/JSP_BasicExample.html" target="_blank">Creating a simple chart</a></li>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/J2EE/JSP_Array.html" target="_blank">Creating chart from data in Array</a></li>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/J2EE/JSP_Form.html" target="_blank">Creating chart with data in Forms</a></li>
+           <li><a href="http://www.fusioncharts.com/docs/?Code/J2EE/JSP_DB.html" target="_blank">Creating chart from Database</a></li>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/J2EE/JSP_Drill.html" target="_blank">Creating Drill-down charts </a></li>
+        </ul>
+        
+     </td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td class="header"><a name="cf" id="cf"></a>Using ColdFusion</td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">&lt;cfoutput&gt;#renderChart(&quot;../../Charts/Spline.swf&quot;, &quot;Data/Data.xml&quot;, &quot;&quot;, &quot;chart1&quot;, 400, 300, false, true)#&lt;/cfoutput&gt;</pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>More examples using ColdFusion:</p>
+        <ul>
+           <li><a href="http://docs.fusioncharts.com/charts/?guide-for-web-developers/coldfusion/CFM_BasicExample.html" target="_blank">Creating a simple chart </a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/?guide-for-web-developers/coldfusion/CFM_Array.html" target="_blank">Creating chart from data in Array</a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/?guide-for-web-developers/coldfusion/CFM_Form.html" target="_blank">Creating chart with data in Forms</a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/?guide-for-web-developers/coldfusion/CFM_DB.html" target="_blank">Creating chart from Database</a></li>
+           <li><a href="http://docs.fusioncharts.com/charts/?guide-for-web-developers/coldfusion/CFM_Drill.html" target="_blank">Creating Drill-down charts</a></li>
+         </ul>
+        
+     </td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td class="header"><a name="ror" id="ror"></a>Using Ruby on Rails</td>
+  </tr>
+  <tr>
+     <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">render_chart '/Charts/Spline.swf', 'Data/Data.xml', '', chart1, 400, 300, false, true </pre>
+     </td>
+  </tr>
+  <tr>
+     <td class="text">
+        <p>Code to create JavaScript chart:</p>
+     </td>
+  </tr>
+  <tr>
+     <td>
+        <pre class="code_container prettyprint">View:
+&lt;%
+ #Create the chart - Spline chart with data from Data/Data.xml
+ render_chart '/Charts/Spline.swf', '/Data/Data.xml', '', 'chart1', 
+ 400, 300, false, true, {:renderer=&gt;&quot;javascript&quot;} do-%&gt;
+&lt;% end -%&gt;</pre> 
+        <p>More examples using Ruby on Rails:</p>
+        <ul>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/ROR/Ruby_basicexample.html" target="_blank">Creating a simple chart</a></li>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/ROR/Ruby_array.html" target="_blank">Creating chart from data in Array </a></li>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/ROR/Ruby_form.html" target="_blank">Creating chart with data in Forms </a></li>
+           <li><a href="http://www.fusioncharts.com/docs/contents/?Code/ROR/Ruby_db.html" target="_blank">Creating chart from Database</a></li>
+           <li><a href="http://www.fusioncharts.com/docs/?Code/ROR/Ruby_drill.html" target="_blank">Creating Drill-down charts</a></li>
+         </ul>
+        
+</td>
+  </tr>
+  
+  <tr>
+     <td class="text">
+        <p class="highlightBlock">Apart from embedding chart in web applications, some of the server-side-scripts also help in exporting the chart into image or a PDF. You can know more on this from <strong>Exporting as Image/PDF &gt; <a href="../Export/ECServerOverview.html">Server Side Exporting</a></strong> section. For scripts that do not support server side exporting, you can always use the client side Export handlers.</p>
+      </td>
+  </tr> 
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("Using FusionCharts jQuery plugin|using_jquery.html","Creating Database driven charts|DatabaseCharts.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

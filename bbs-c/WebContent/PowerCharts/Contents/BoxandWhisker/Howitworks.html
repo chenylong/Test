@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="../assets/ui/css/style.css" type="text/css" />
+<script type="text/javascript" src="../assets/prettify/prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../assets/prettify/prettify.css" />
+<script type="text/javascript" src="../assets/ui/js/jquery.min.js" ></script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+
+a.whtbtnhide, a.whtbtnshow, a.whtbtnhidenav , a.whtbtnshownav { border-bottom:none !important; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="../assets/ui/js/whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whlang.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../assets/ui/js/whtopic.js"></script>
+<script type="text/javascript" src="../assets/ui/js/lib.js" ></script>
+<style type="text/css">
+<!--
+.style2 {font-size: xx-small}
+.style3 {font-size: 12pt}
+.style6 {font-size: xx-small; font-weight: bold; }
+-->
+</style>
+
+<title>Box and Whisker chart &gt; How it works? </title>
+</head>
+
+<body>
+<!-- breadcrumb starts here -->
+<div id="breadcrumb"></div>
+<script type="text/javascript">
+	document.write( addFCBreadcrumb( [ "Home|../Overview.html", "Box &amp; Whisker chart|Overview.html",  "How it works?" ] ) );
+</script>
+<!-- breadcrumb ends here -->
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+  <tr> 
+    <td class="pageHeader">How it works? </td>
+
+  </tr>
+  <tr> 
+    <td valign="top" class="text">
+      <p>Box and Whisker chart helps in interpreting the distribution of data. It gives us an idea where most of the numbers reside, i.e. where the frequency of numbers are more. '<a href="Chartconfig.html">Five-number summary</a>' principle is used to render   Box and Whisker plots. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median) and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a Box and Whisker plot is given below:&nbsp;</p>
+      <p><img src="Images/Model.gif" width="436" height="342" class="imageBorder" /></p>
+      <p class="highlightBlock">Note: There is another principle named as 'Seven-number summary' which is not used in the current implementation.</p>
+	   <p>To execute the five-number summary we have used the Quartiles method. Using this method, a set of numbers are divided into four equal parts by three quartiles - {Q1 (lower quartile), Q2 (median), and Q3 (upper quartile)}.</p>
+	  <p class="highlightBlock">Note: There are two other methods, namely, Deciles and Percentiles to execute the five-number summary which are not used in this implementation.</p>
+      <p>Before proceeding let's discuss some of the formulae that are used in the chart:</p>
+	  <p class="highlightBlock"> Note: All the  formulae are calculated after sorting the provided set of data in ascending order.</p> 
+	  <p><strong><a name="mean"></a>Mean</strong></p>
+      <p>Mean is the usual average. The formula to  calculate mean is <strong>&sum;<span class="style3">X</span></strong><span class="style6">i</span><strong> /N</strong>, where<strong> N </strong>is the total number of elements in a set of data, <strong>X</strong> is the data points or values present in the set of data, and <strong>i</strong> is the position of the values in the  set of data.</p>
+	  <p><strong><a name="median"></a>Median (Q2)</strong></p>
+	  <p>To  find the median, first you need to arrange the given set of data in ascending  order (from the least to the greatest number). The element that resides in the  middlemost position is said to be the median. This is easy to derive when the set of data contains  odd number of elements. You can also use the formula <strong>(N+1)/2 </strong>to find the position, where <strong>N </strong>is the number of<strong> </strong>elements  in the given set of data.<strong> </strong>But in  case the set of data consists of even number of elements, you get two middle  positions. The average of the two numbers residing in the middle gives the  median.</p>
+	  <p><strong><a name="lowerquartile"></a>Lower Quartile (Q1) </strong></p>
+	  <p>The median divides the data into a lower  half and an upper half. The lower  quartile is the middle value of the lower half, i.e. the element between the minimum number and the median. The formula to find the position of the Lower Quartile when  there are odd number of elements is <strong>(N+1)/4</strong> and for even number of elements is <strong>N/4</strong>.	  </p>
+	  <p><strong><a name="upperquartile"></a>Upper Quartile (Q3) </strong></p>
+	  <p>The upper  quartile is the middle value that resides between the maximum number and the median. The formula to find the position of the Upper Quartile when  there are odd number of elements is <strong>(3N+3)/4 </strong>and that for  even number of elements is <strong>3N/4</strong>.</p>
+	  <p><strong><a name="meandeviation"></a>Mean Deviation</strong></p>
+	  <p>Mean  deviation is the average of the absolute differences between each individual  value and the mean. It gives us an  idea of how spread out the set of value is from the center. The formula to  calculate Mean Deviation is <strong>&sum;|Xi - mean|/N</strong>,<strong> </strong>where<strong> N </strong>is the total number of elements in a set of data,<strong> X</strong> is the data points or values present  in the set of data, and <strong>i</strong> is the position  of the values in the set of data. For grouped data the formula stands out to be <strong>&sum;f |Xi - mean|/N</strong>, where <strong>f</strong> is the frequency of occurrence.</p>
+	  The process to calculate the Mean Deviation is  given below:
+	  <ol>
+	  <li>First  calculate the mean, i.e., the simple average of the given set of data.</li>
+	  <li>Then  subtract the mean from each number.</li>
+	  <li>Next  work out the mean (average) of those differences.</li>
+	  </ol>
+	  <p><strong><a name="standarddeviation"></a>Standard Deviation</strong></p>
+	  <p>Standard deviation is the measure of the  dispersion of a set of data from its mean. It gives an idea of how spread out the  set of value is from the mean. The more spread apart the data, the higher the  deviation. The formula to calculate Standard Deviation is <strong>&radic; (&sum; (Xi - mean) &sup2;/N)</strong>, where<strong> N </strong>is the total number of elements in a set of data,<strong> X</strong> is the data points or values present  in the set of data, and <strong>i</strong> is the position  of the values in the set of data.</p>
+	  The process to calculate the Standard Deviation  is given below:
+	  <ol>
+	  <li>First  calculate the mean, i.e., the simple average of the given set of data.</li>
+	  <li>Then  subtract the mean from each number and square the result.</li>
+	  <li>Next  work out the mean (average) of those squared differences.</li>
+	  <li>Take  the square root of the whole result.</li>
+	  </ol>
+	  <p><strong><a name="quartiledeviation"></a>Quartile Deviation   </strong></p>
+	  <p>The  distance between the upper quartile and the lower quartile is called the  Interquartile range. Quartile deviation is half the distance between the two  quartiles, i.e. half the Interquartile range. It is also called the semi  interquartile range. The formula to calculate Quartile Deviation is <strong>(Q3-Q1)/2</strong>.</p>
+	  
+    </td>
+  </tr>
+ <tr>
+ <td class="header">
+   Providing Data
+</td>
+  </tr>
+  
+  <tr>
+    <td valign="top" class="text"><p>The format of data provided in Box and Whisker chart is similar to other Multi-series charts. The only difference is, instead of providing a single value we provide data as a set of numbers. To  calculate the five summary numbers, the chart internally arrange the numbers  provided in a <span class="codeInline">&lt;set&gt;</span> element in ascending order. </p>
+      <p>By default, comma (,) is used to separate the numbers. The data separator is customizable. You can set the symbol as per your requirement by using the attribute <span class="codeInline">dataSeparator</span> in the 
+        <span class="codeInline">&lt;chart&gt;</span> element. For example, you can set <span class="codeInline">dataSeparator</span> as '<span class="codeInline">;</span>' and then use the same symbol in the 
+        <span class="codeInline">&lt;set&gt;</span> element to separate the numbers (35; 57; 89; -14).  
+    </p>
+	<p>The data for same can be listed as under:</p></td>
+  </tr>
+  <tr>
+    <td valign="top"> <div class="container">
+	    <ul class="tabs">
+   	    <li><a href="#tab1">XML</a></li>
+      	 <li><a href="#tab2">JSON</a></li>
+	    </ul>
+   	 <div class="tab_container">
+    		<div id="tab1" class="tab_content"><pre class="prettyprint code_container">
+&lt;chart caption='Visits to a Website' subCaption='In three years' dataSeparator=';'&gt;
+...
+&lt;dataset seriesName="January" lowerBoxColor='55236E' upperboxColor='CBBFF9'&gt;
+    &lt;set value='160;133;35;67;89;107;59' /&gt;
+    &lt;set value='139;67;75;114;39;67;191' /&gt;
+    &lt;set value='200;107;197;289;53;26;97' /&gt;
+&lt;/dataset&gt;
+...
+&lt;/chart&gt;</pre></div>
+			<div id="tab2" class="tab_content"><pre class="prettyprint code_container">{
+  "chart":{
+    "caption":"Visits to a Website",
+    "subcaption":"In three years",
+    "dataseparator":";"
+  },
+  "dataset":[{
+      "seriesname":"January",
+      "lowerboxcolor":"55236E",
+      "upperboxcolor":"CBBFF9",
+      "data":[{
+          "value":"160;133;35;67;89;107;59"
+        },
+        {
+          "value":"139;67;75;114;39;67;191"
+        },
+        {
+          "value":"200;107;197;289;53;26;97"
+        }
+      ]
+    }
+  ]
+}</pre></div>
+		 </div>
+	  </div>
+	  <div style="clear:both"></div></td></tr>
+ 
+</table>
+<!-- footer links starts-->
+<div id="fcfooter"></div>
+<script type="text/javascript">
+	document.getElementById("fcfooter").innerHTML =  addFCFooter("Creating a simple chart|Firstchart.html","Five Summary Numbers|Chartconfig.html");
+</script>
+<!-- footer links ends -->
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+
+	highlightSearch();
+
+//-->
+//]]></script>
+</body>
+</html>

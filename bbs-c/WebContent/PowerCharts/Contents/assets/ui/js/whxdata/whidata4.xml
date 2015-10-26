@@ -1,0 +1,307 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
+<key name="export chart data" >
+  <key name="using context menu" >
+    <topic name="ExportDataSetup.html" url="../../../Export/ExportDataSetup.html" />
+  </key>
+  <key name="using JavaScript menu" >
+    <topic name="ExportDataJS.html" url="../../../Export/ExportDataJS.html" />
+  </key>
+</key>
+<key name="exportAtClient attribute" >
+  <key name="export your first chart" >
+    <topic name="ExportChart.html#json_setup" url="../../../FirstChart/ExportChart.html#json_setup" />
+  </key>
+</key>
+<key name="exportCallback attribute" >
+  <key name="save exported output on server disk" >
+    <topic name="ECServerSave.html" url="../../../Export/ECServerSave.html" />
+  </key>
+</key>
+<key name="exportChart() function" >
+  <key name="export components" >
+    <topic name="ECReferenceExport.html" url="../../../Export/ECReferenceExport.html" />
+  </key>
+</key>
+<key name="exportDataFormattedVal attribute" >
+  <key name="export chart data using context menu" >
+    <topic name="ExportDataSetup.html#csvattributes" url="../../../Export/ExportDataSetup.html#csvattributes" />
+  </key>
+  <key name="export data using JavaScript menu" >
+    <topic name="ExportDataJS.html#cavattributes" url="../../../Export/ExportDataJS.html#cavattributes" />
+  </key>
+</key>
+<key name="exportDataMenuItemLabel attribute" >
+  <key name="export chart data using context menu" >
+    <topic name="ExportDataSetup.html#setup" url="../../../Export/ExportDataSetup.html#setup" />
+  </key>
+</key>
+<key name="exportDataQualifier attribute" >
+  <key name="export chart data using context menu" >
+    <topic name="ExportDataSetup.html#csvattributes" url="../../../Export/ExportDataSetup.html#csvattributes" />
+  </key>
+  <key name="export data using JavaScript menu" >
+    <topic name="ExportDataJS.html#cavattributes" url="../../../Export/ExportDataJS.html#cavattributes" />
+  </key>
+</key>
+<key name="exportDataSeparator attribute" >
+  <key name="export chart data using context menu" >
+    <topic name="ExportDataSetup.html#csvattributes" url="../../../Export/ExportDataSetup.html#csvattributes" />
+  </key>
+  <key name="export data using JavaScript menu" >
+    <topic name="ExportDataJS.html#cavattributes" url="../../../Export/ExportDataJS.html#cavattributes" />
+  </key>
+</key>
+<key name="exportEnabled attribute" >
+  <key name="export your first chart" >
+    <topic name="ExportChart.html#xml_setup" url="../../../FirstChart/ExportChart.html#xml_setup" />
+  </key>
+  <key name="return the exported output as download" >
+    <topic name="ECServerDownload.html" url="../../../Export/ECServerDownload.html" />
+  </key>
+</key>
+<key name="exportFileName attribute" >
+  <key name="save exported output on server disk" >
+    <topic name="ECServerSave.html" url="../../../Export/ECServerSave.html" />
+  </key>
+</key>
+<key name="FAQ" >
+  
+  
+    <topic name="FAQ.html" url="../../../FAQ.html" />
+  
+</key>
+<key name="FC_BatchExported(Object objRtn) event" >
+  <key name="setting JavaScript callback in batch export" >
+    <topic name="ECBatchCallback.html" url="../../../Export/ECBatchCallback.html" />
+  </key>
+</key>
+<key name="FC_DataLoadError event" >
+  <key name="debug using JavaScript" >
+    <topic name="JS.html#simple" url="../../../Debug/JS.html#simple" />
+  </key>
+  <key name="handle errors using FusionCharts JavaScript class" >
+    <topic name="JS_Errors.html" url="../../../JavaScript/JS_Errors.html" />
+  </key>
+</key>
+<key name="FC_DataXMLInvalid error event" >
+  <key name="debug using JavaScript" >
+    <topic name="JS.html#simple" url="../../../Debug/JS.html#simple" />
+  </key>
+  <key name="handle errors using FusionCharts JavaScript class" >
+    <topic name="JS_Errors.html" url="../../../JavaScript/JS_Errors.html" />
+  </key>
+</key>
+<key name="FC_Exported event" >
+  <key name="listen to events in JavaScript" >
+    <topic name="JS_EventOverview.html#simple" url="../../../JavaScript/JS_EventOverview.html#simple" />
+  </key>
+</key>
+<key name="FC_Exported function" >
+  <key name="save exported output on server disk" >
+    <topic name="ECServerSave.html" url="../../../Export/ECServerSave.html" />
+  </key>
+</key>
+<key name="FC_Exported(Object objRtn) event" >
+  <key name="setting JavaScript callback in batch export" >
+    <topic name="ECBatchCallback.html" url="../../../Export/ECBatchCallback.html" />
+  </key>
+</key>
+<key name="FC_ExportReady(string DOMId) event" >
+  <key name="setting JavaScript callback in batch export" >
+    <topic name="ECBatchCallback.html" url="../../../Export/ECBatchCallback.html" />
+  </key>
+</key>
+<key name="FC_NoDataToDisplay error event" >
+  <key name="debug using JavaScript" >
+    <topic name="JS.html#simple" url="../../../Debug/JS.html#simple" />
+  </key>
+  <key name="handle errors using FusionCharts JavaScript class" >
+    <topic name="JS_Errors.html" url="../../../JavaScript/JS_Errors.html" />
+  </key>
+</key>
+<key name="FC_Rendered event" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#simple" url="../../../JavaScript/JS_EventOverview.html#simple" />
+  </key>
+</key>
+<key name="FC_Rendered function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#simple" url="../../../JavaScript/JS_EventOverview.html#simple" />
+  </key>
+</key>
+<key name="FC_Rendered method" >
+  <key name="export chart data using JavaScript menu" >
+    <topic name="ExportDataJS.html" url="../../../Export/ExportDataJS.html" />
+  </key>
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html#process" url="../../../JavaScript/JS_Example.html#process" />
+  </key>
+</key>
+
+
+<key name="first chart" >
+  <topic name="FirstChart.html" url="../../../FirstChart/FirstChart.html" />
+  <key name="add drill-down feature" >
+    <topic name="Drilldown.html" url="../../../FirstChart/Drilldown.html" />
+  </key>
+  <key name="change chart size" >
+    <topic name="ChangeSize.html" url="../../../FirstChart/ChangeSize.html" />
+  </key>
+  <key name="change chart type" >
+    <topic name="ChangeChart.html" url="../../../FirstChart/ChangeChart.html" />
+  </key>
+  <key name="compact rendering method" >
+    <topic name="FirstChart.html#shortcut_render" url="../../../FirstChart/FirstChart.html#shortcut_render" />
+  </key>
+  <key name="create charts using various server-side scripts" >
+    <topic name="ServerSideScripts.html" url="../../../FirstChart/ServerSideScripts.html" />
+  </key>
+  <key name="create database driven charts" >
+    <topic name="DatabaseCharts.html" url="../../../FirstChart/DatabaseCharts.html" />
+  </key>
+  <key name="create LinkedCharts" >
+    <topic name="LinkedCharts.html" url="../../../FirstChart/LinkedCharts.html" />
+  </key>
+  <key name="embed charts using &lt;OBJECT&gt;/&lt;EMBED&gt; Tags" >
+    <topic name="HtmlEmbed.html" url="../../../FirstChart/HtmlEmbed.html" />
+  </key>
+  <key name="embed multiple charts in a page" >
+    <topic name="MultipleCharts.html" url="../../../FirstChart/MultipleCharts.html" />
+  </key>
+  <key name="export chart" >
+    <topic name="ExportChart.html" url="../../../FirstChart/ExportChart.html" />
+  </key>
+  <key name="export chart features" >
+    <topic name="ExportChart.html#features" url="../../../FirstChart/ExportChart.html#features" />
+  </key>
+  <key name="process" >
+    <topic name="FirstChart.html#how_it_works" url="../../../FirstChart/FirstChart.html#how_it_works" />
+  </key>
+  <key name="troubleshoot" >
+    <topic name="FirstChart.html#trouble" url="../../../FirstChart/FirstChart.html#trouble" />
+  </key>
+  <key name="understanding  XML data" >
+    <topic name="FirstChart.html#understanding_data" url="../../../FirstChart/FirstChart.html#understanding_data" />
+  </key>
+  <key name="understanding HTML and JavaScript code" >
+    <topic name="FirstChart.html#understanding_html" url="../../../FirstChart/FirstChart.html#understanding_html" />
+  </key>
+  <key name="use JavaScript (HTML5) renderer" >
+    <topic name="UsingPureJS.html" url="../../../FirstChart/UsingPureJS.html" />
+  </key>
+  <key name="use JSON as data source" >
+    <topic name="JSONData.html" url="../../../FirstChart/JSONData.html" />
+  </key>
+</key>
+
+<key name="font properties attributes" >
+  <topic name="FontProperties.html" url="../../../AttDesc/FontProperties.html" />
+</key>
+<key name="forceDecimals attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="forceYAxisValueDecimals attribute" >
+  <key name="number formatting" >
+    <topic name="Number_Basics.html" url="../../../Advanced/Number_Basics.html" />
+  </key>
+</key>
+<key name="formAction attribute" >
+  <key name="submit data as form elements in select scatter chart" >
+    <topic name="Form.html" url="../../../SelectScatter/Form.html" />
+  </key>
+</key>
+<key name="formBtnBgColor attribute" >
+  <key name="submit data as form elements in dragable charts" >
+    <topic name="Form.html" url="../../../Dragable/Form.html" />
+  </key>
+</key>
+<key name="formBtnBorderColor attribute" >
+  <key name="submit data as form elements in dragable charts" >
+    <topic name="Form.html" url="../../../Dragable/Form.html" />
+  </key>
+</key>
+<key name="formBtnTitle attribute" >
+  <key name="submit data as form elements in dragable charts" >
+    <topic name="Form.html" url="../../../Dragable/Form.html" />
+  </key>
+</key>
+<key name="formMethod attribute" >
+  <key name="submit data as form elements in dragable charts" >
+    <topic name="Form.html" url="../../../Dragable/Form.html" />
+  </key>
+</key>
+<key name="formTarget attribute" >
+  <key name="submit data as form elements in dragable charts" >
+    <topic name="Form.html" url="../../../Dragable/Form.html" />
+  </key>
+</key>
+<key name="frames" >
+  <key name="open links in frames" >
+    <topic name="Frames.html" url="../../../DrillDown/Frames.html" />
+  </key>
+</key>
+<key name="FusionCharts export component (client-side)" >
+  <key name="export chart as image/PDF terminologies" >
+    <topic name="ECTerminology.html#component" url="../../../Export/ECTerminology.html#component" />
+  </key>
+</key>
+<key name="FusionCharts Export Handlers" >
+  <key name="export chart as image/PDF terminologies" >
+    <topic name="ECTerminology.html#handler" url="../../../Export/ECTerminology.html#handler" />
+  </key>
+</key>
+<key name="FusionCharts JavaScript API" >
+  <key name="events" >
+    <topic name="Events.html" url="../../../JavaScript/API/Events.html" />
+  </key>
+  <key name="methods" >
+    <topic name="Methods.html" url="../../../JavaScript/API/Methods.html" />
+  </key>
+  <key name="overview" >
+    <topic name="Overview.html" url="../../../JavaScript/API/Overview.html" />
+  </key>
+  <key name="properties" >
+    <topic name="Properties.html" url="../../../JavaScript/API/Properties.html" />
+  </key>
+</key>
+<key name="FusionCharts JavaScript class" >
+  <key name="handle errors" >
+    <topic name="JS_Errors.html" url="../../../JavaScript/JS_Errors.html" />
+  </key>
+</key>
+<key name="FusionCharts link format" >
+  <topic name="LinkFormat.html" url="../../../DrillDown/LinkFormat.html" />
+</key>
+<key name="FusionCharts Server-side Export Handlers" >
+  <key name="export chart as image/PDF terminologies" >
+    <topic name="ECTerminology.html#sshandler" url="../../../Export/ECTerminology.html#sshandler" />
+  </key>
+</key>
+<key name="FusionCharts.addEventListener() static function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#advanced" url="../../../JavaScript/JS_EventOverview.html#advanced" />
+  </key>
+  <key name="listen to LinkedCharts events" >
+    <topic name="JS_LinkedCharts.html#events" url="../../../JavaScript/JS_LinkedCharts.html#events" />
+  </key>
+</key>
+<key name="FusionCharts.addEventListener()static function" >
+  <key name="listen to events using JavaScript" >
+    <topic name="JS_EventOverview.html#advanced" url="../../../JavaScript/JS_EventOverview.html#advanced" />
+  </key>
+</key>
+<key name="FusionCharts.printManager class" >
+  <key name="managed printing in Mozilla browsers" >
+    <topic name="JS_PrintManager.html" url="../../../JavaScript/JS_PrintManager.html" />
+  </key>
+</key>
+<key name="generateXML() function" >
+  <key name="JavaScript example application" >
+    <topic name="JS_Example.html#process" url="../../../JavaScript/JS_Example.html#process" />
+  </key>
+</key>
+
+</indexdata>
