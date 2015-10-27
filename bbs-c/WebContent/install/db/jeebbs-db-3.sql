@@ -23,8 +23,8 @@ CREATE TABLE `bbs_category` (
   PRIMARY KEY  (`CATEGORY_ID`),
   KEY `FK_BBS_CTG_SITE` (`SITE_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='论坛分区';
-INSERT INTO `bbs_category` VALUES (1,1,'service','≡JEECMS产品服务区≡',1,1,'');
-INSERT INTO `bbs_category` VALUES (2,1,'use','≡JEECMS使用交流区≡',2,1,'korven');
+INSERT INTO `bbs_category` VALUES (1,1,'service','服务区≡',1,1,'');
+INSERT INTO `bbs_category` VALUES (2,1,'use','交流区≡',2,1,'korven');
 CREATE TABLE `bbs_category_user` (
   `CATEGORY_ID` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE `bbs_config` (
   PRIMARY KEY  (`CONFIG_ID`),
   KEY `FK_BBS_CONFIG_SITE` (`site_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='论坛配置';
-INSERT INTO `bbs_config` VALUES (1,'1',160,160,20,10,'JEEBBS','JEEBBS',1,1,'',0,0,0,'1999-12-30',0,0,0,NULL,1,1,10,1);
+INSERT INTO `bbs_config` VALUES (1,'1',160,160,20,10,'CHENBBS','CHENBBS',1,1,'',0,0,0,'1999-12-30',0,0,0,NULL,1,1,10,1);
 CREATE TABLE `bbs_forum` (
   `FORUM_ID` int(11) NOT NULL auto_increment,
   `CATEGORY_ID` int(11) NOT NULL COMMENT '分区ID',
@@ -90,8 +90,8 @@ CREATE TABLE `bbs_forum` (
   KEY `FK_BBS_FORUM_POST` (`POST_ID`),
   KEY `FK_BBS_FORUM_WEBSITE` (`SITE_ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='论坛板块';
-INSERT INTO `bbs_forum` VALUES (1,1,1,24,6,'sqzx','系统售前咨询','提供JEECMS商业授权相关信息咨询','jsp cms,站群,开源','如果您需要使用JEECMS进行商业建站等商业性活动，例如：政府单位、教育机构、协会团体、企业等，请您购买我们的商业授权。如有需要，欢迎与我们联系。 QQ：811459917、48955621、122513110         电话：0791-6538070、13576281815    E-mail:jeecms@163.com',1,4,4,4,'',5,1,10,'2011-03-26 17:35:18',0,'korven',',14,1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,');
-INSERT INTO `bbs_forum` VALUES (2,2,1,33,6,'azsy','安装与使用','安装和使用JEECMS中遇到的问题大家可以在这里进行讨论','安装与使用','安装或使用中出现问题，请描述下您的系统使用环境，如操作系统，JDK版本，tocmat版本，mysql版本等',10,5,8,8,'',5,0,100,'2011-03-27 16:03:19',0,'korven',',14,1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,');
+INSERT INTO `bbs_forum` VALUES (1,1,1,24,6,'sqzx','系统售前咨询','提供CHENC商业授权相关信息咨询','jsp cms,站群,开源','如果您需要使用CHENC进行商业建站等商业性活动，例如：政府单位、教育机构、协会团体、企业等，请您购买我们的商业授权。如有需要，欢迎与我们联系。 QQ：811459917、48955621、122513110         电话：0791-6538070、13576281815    E-mail:CHENC@163.com',1,4,4,4,'',5,1,10,'2011-03-26 17:35:18',0,'korven',',14,1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,');
+INSERT INTO `bbs_forum` VALUES (2,2,1,33,6,'azsy','安装与使用','安装和使用CHENC中遇到的问题大家可以在这里进行讨论','安装与使用','安装或使用中出现问题，请描述下您的系统使用环境，如操作系统，JDK版本，tocmat版本，mysql版本等',10,5,8,8,'',5,0,100,'2011-03-27 16:03:19',0,'korven',',14,1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,',',1,2,3,4,5,6,7,8,9,10,11,12,13,');
 CREATE TABLE `bbs_forum_group_reply` (
   `FORUM_ID` int(11) NOT NULL,
   `GROUP_ID` int(11) NOT NULL,
@@ -402,7 +402,7 @@ CREATE TABLE `jb_user` (
   KEY `FK_BBS_MEMBER_MEMBERGROUP` (`group_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='BBS用户表';
 INSERT INTO `jb_user` VALUES (5,1,'admin','wudily2010@163.com','2011-03-17 12:02:04','127.0.0.1','2011-04-11 00:49:41','127.0.0.1',28,0,0,'2011-03-17',1,0,0,NULL,NULL,0,0,NULL,NULL,NULL,0,0,0,0,0,NULL);
-INSERT INTO `jb_user` VALUES (6,12,'korven','jeecms@163.com','2011-03-19 11:06:43','127.0.0.1','2011-04-11 00:37:51','127.0.0.1',46,0,0,'2011-03-19',0,0,0,NULL,NULL,0,41,NULL,'生命在于折腾~','08.gif',0,8,4,0,12,NULL);
+INSERT INTO `jb_user` VALUES (6,12,'korven','CHENC@163.com','2011-03-19 11:06:43','127.0.0.1','2011-04-11 00:37:51','127.0.0.1',46,0,0,'2011-03-19',0,0,0,NULL,NULL,0,41,NULL,'生命在于折腾~','08.gif',0,8,4,0,12,NULL);
 INSERT INTO `jb_user` VALUES (7,1,'korven1','1231@123.com','2011-03-19 11:17:01','127.0.0.1','2011-03-19 11:17:01','127.0.0.1',0,0,0,'2011-03-19',0,0,0,NULL,NULL,0,0,NULL,NULL,NULL,0,0,0,0,0,NULL);
 INSERT INTO `jb_user` VALUES (8,1,'rockect','rocket@163.com','2011-03-27 17:09:11','127.0.0.1','2011-03-27 17:11:49','127.0.0.1',1,0,0,'2011-03-27',0,0,0,NULL,NULL,0,0,NULL,NULL,NULL,0,0,0,0,0,NULL);
 INSERT INTO `jb_user` VALUES (9,1,'test','123@123.com','2011-04-11 00:38:08','127.0.0.1','2011-04-11 00:49:12','127.0.0.1',3,0,0,'2011-04-11',0,0,0,NULL,NULL,0,0,NULL,'','none.gif',0,0,0,0,0,NULL);
@@ -437,11 +437,11 @@ CREATE TABLE `jc_config` (
   `process_url` varchar(255) default NULL COMMENT '登录后处理地址',
   `count_clear_time` date NOT NULL COMMENT '计数器清除时间',
   `count_copy_time` datetime NOT NULL COMMENT '计数器拷贝时间',
-  `download_code` varchar(32) NOT NULL default 'jeecms' COMMENT '下载防盗链md5混淆码',
+  `download_code` varchar(32) NOT NULL default 'CHENC' COMMENT '下载防盗链md5混淆码',
   `download_time` int(11) NOT NULL default '12' COMMENT '下载有效时间（小时）',
   PRIMARY KEY  (`config_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='CMS配置表';
-INSERT INTO `jc_config` VALUES (1,'',NULL,80,'/dbfile.svl?n=',0,'/r/cms/www/blue/no_picture.gif','/login.jspx',NULL,'1999-12-30','1999-12-30 01:00:00','jeecms',12);
+INSERT INTO `jc_config` VALUES (1,'',NULL,80,'/dbfile.svl?n=',0,'/r/cms/www/blue/no_picture.gif','/login.jspx',NULL,'1999-12-30','1999-12-30 01:00:00','CHENC',12);
 CREATE TABLE `jc_site` (
   `site_id` int(11) NOT NULL auto_increment,
   `config_id` int(11) NOT NULL COMMENT '配置ID',
@@ -480,10 +480,10 @@ CREATE TABLE `jo_authentication` (
   PRIMARY KEY  (`authentication_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='认证信息表';
 INSERT INTO `jo_authentication` VALUES ('10dd9e72cf3449c2b9db2177192fb7c5',8,'rockect','rocket@163.com','2011-03-27 17:11:48','127.0.0.1','2011-03-27 17:13:49');
-INSERT INTO `jo_authentication` VALUES ('9444a31e2bcd4a18b3c7e4cabf98fb97',6,'korven','jeecms@163.com','2011-03-27 15:40:50','127.0.0.1','2011-03-27 15:41:05');
-INSERT INTO `jo_authentication` VALUES ('9a3b5de092d24070a707df149446f958',6,'korven','jeecms@163.com','2011-03-27 15:07:17','127.0.0.1','2011-03-27 16:08:54');
+INSERT INTO `jo_authentication` VALUES ('9444a31e2bcd4a18b3c7e4cabf98fb97',6,'korven','CHENC@163.com','2011-03-27 15:40:50','127.0.0.1','2011-03-27 15:41:05');
+INSERT INTO `jo_authentication` VALUES ('9a3b5de092d24070a707df149446f958',6,'korven','CHENC@163.com','2011-03-27 15:07:17','127.0.0.1','2011-03-27 16:08:54');
 INSERT INTO `jo_authentication` VALUES ('c784c67c3d134b34b85512b61ee75dc4',5,'admin','wudily2010@163.com','2011-04-11 00:49:41','127.0.0.1','2011-04-11 00:49:41');
-INSERT INTO `jo_authentication` VALUES ('eadd240452544de69d92c877f7f53345',6,'korven','jeecms@163.com','2011-03-27 23:04:01','127.0.0.1','2011-03-27 23:13:45');
+INSERT INTO `jo_authentication` VALUES ('eadd240452544de69d92c877f7f53345',6,'korven','CHENC@163.com','2011-03-27 23:04:01','127.0.0.1','2011-03-27 23:13:45');
 CREATE TABLE `jo_ftp` (
   `ftp_id` int(11) NOT NULL auto_increment,
   `ftp_name` varchar(100) NOT NULL COMMENT '名称',
@@ -527,7 +527,7 @@ CREATE TABLE `jo_user` (
   UNIQUE KEY `ak_username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='用户表';
 INSERT INTO `jo_user` VALUES (5,'admin','wudily2010@163.com','5f4dcc3b5aa765d61d8327deb882cf99','2011-03-17 12:02:04','127.0.0.1','2011-04-11 00:49:41','127.0.0.1',28,NULL,NULL);
-INSERT INTO `jo_user` VALUES (6,'korven','jeecms@163.com','4297f44b13955235245b2497399d7a93','2011-03-19 11:06:43','127.0.0.1','2011-04-11 00:37:51','127.0.0.1',46,NULL,NULL);
+INSERT INTO `jo_user` VALUES (6,'korven','CHENC@163.com','4297f44b13955235245b2497399d7a93','2011-03-19 11:06:43','127.0.0.1','2011-04-11 00:37:51','127.0.0.1',46,NULL,NULL);
 INSERT INTO `jo_user` VALUES (7,'korven1','1231@123.com','4297f44b13955235245b2497399d7a93','2011-03-19 11:17:01','127.0.0.1','2011-03-19 11:17:01','127.0.0.1',0,NULL,NULL);
 INSERT INTO `jo_user` VALUES (8,'rockect','rocket@163.com','4297f44b13955235245b2497399d7a93','2011-03-27 17:09:11','127.0.0.1','2011-03-27 17:11:48','127.0.0.1',1,NULL,NULL);
 INSERT INTO `jo_user` VALUES (9,'test','123@123.com','5f4dcc3b5aa765d61d8327deb882cf99','2011-04-11 00:38:08','127.0.0.1','2011-04-11 00:49:12','127.0.0.1',3,NULL,NULL);
@@ -646,17 +646,17 @@ LOCK TABLES `jo_config` WRITE;
 INSERT INTO `jo_config` VALUES ('email_encoding','utf-8');
 INSERT INTO `jo_config` VALUES ('email_host','smtp.126.com');
 INSERT INTO `jo_config` VALUES ('email_password','13979004408');
-INSERT INTO `jo_config` VALUES ('email_personal','jeecms');
+INSERT INTO `jo_config` VALUES ('email_personal','CHENC');
 INSERT INTO `jo_config` VALUES ('email_port',NULL);
 INSERT INTO `jo_config` VALUES ('email_username','dfl_tx1999@126.com');
 INSERT INTO `jo_config` VALUES ('login_error_interval','30');
 INSERT INTO `jo_config` VALUES ('login_error_times','2');
-INSERT INTO `jo_config` VALUES ('message_forgotpassword_subject','JEECMS会员密码找回信息');
-INSERT INTO `jo_config` VALUES ('message_forgotpassword_text','感谢您使用JEECMS系统会员密码找回功能，请记住以下找回信息：\r\n用户ID：${uid}\r\n用户名：${username}\r\n您的新密码为：${resetPwd}\r\n请访问如下链接新密码才能生效：\r\nhttp://localhost:8081/jeebbs3beta/member/password_reset.jspx?uid=${uid}&key=${resetKey}\r\n');
-INSERT INTO `jo_config` VALUES ('message_register_subject','JEECMS会员注册信息');
-INSERT INTO `jo_config` VALUES ('message_register_text','${username}您好：\r\n欢迎您注册JEECMS系统会员\r\n请点击以下链接进行激活\r\nhttp://localhost:8081/jeebbs3beta/active.jspx?username=${username}&key=${activationCode}\r\n');
-INSERT INTO `jo_config` VALUES ('message_subject','JEECMS会员密码找回信息');
-INSERT INTO `jo_config` VALUES ('message_text','感谢您使用JEECMS系统会员密码找回功能，请记住以下找回信息：\r\n用户ID：${uid}\r\n用户名：${username}\r\n您的新密码为：${resetPwd}\r\n请访问如下链接新密码才能生效：\r\nhttp://localhost/member/password_reset.jspx?uid=${uid}&key=${resetKey}\r\n');
+INSERT INTO `jo_config` VALUES ('message_forgotpassword_subject','CHENC会员密码找回信息');
+INSERT INTO `jo_config` VALUES ('message_forgotpassword_text','感谢您使用CHENC系统会员密码找回功能，请记住以下找回信息：\r\n用户ID：${uid}\r\n用户名：${username}\r\n您的新密码为：${resetPwd}\r\n请访问如下链接新密码才能生效：\r\nhttp://localhost:8081/jeebbs3beta/member/password_reset.jspx?uid=${uid}&key=${resetKey}\r\n');
+INSERT INTO `jo_config` VALUES ('message_register_subject','CHENC会员注册信息');
+INSERT INTO `jo_config` VALUES ('message_register_text','${username}您好：\r\n欢迎您注册CHENC系统会员\r\n请点击以下链接进行激活\r\nhttp://localhost:8081/jeebbs3beta/active.jspx?username=${username}&key=${activationCode}\r\n');
+INSERT INTO `jo_config` VALUES ('message_subject','CHENC会员密码找回信息');
+INSERT INTO `jo_config` VALUES ('message_text','感谢您使用CHENC系统会员密码找回功能，请记住以下找回信息：\r\n用户ID：${uid}\r\n用户名：${username}\r\n您的新密码为：${resetPwd}\r\n请访问如下链接新密码才能生效：\r\nhttp://localhost/member/password_reset.jspx?uid=${uid}&key=${resetKey}\r\n');
 /*!40000 ALTER TABLE `jo_config` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -996,9 +996,6 @@ ADD CONSTRAINT `fk_bbs_magic_usergroup_magic` FOREIGN KEY (`magicid`) REFERENCES
 ALTER TABLE `bbs_magic_usergroup_to`
 ADD CONSTRAINT `fk_bbs_magic_usergroup_to_group` FOREIGN KEY (`groupid`) REFERENCES `bbs_user_group` (`GROUP_ID`),
 ADD CONSTRAINT `fk_bbs_magic_usergroup_to_magic` FOREIGN KEY (`magicid`) REFERENCES `bbs_common_magic` (`magicid`);
-
-
-
 
 
 
