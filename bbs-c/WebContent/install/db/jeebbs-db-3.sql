@@ -337,7 +337,7 @@ INSERT INTO `bbs_topic` VALUES (8,1,NULL,18,1,6,6,'rr','2011-03-21 11:49:08','20
 INSERT INTO `bbs_topic` VALUES (9,1,NULL,20,1,6,6,'表情测试','2011-03-26 16:33:55','2011-03-26 16:33:55','2011-03-26 16:33:55',0,0,1,0,0,NULL,0,0,NULL,NULL,0,',',0);
 INSERT INTO `bbs_topic` VALUES (11,1,NULL,22,1,6,6,'为什么？','2011-03-26 17:29:55','2011-03-26 17:29:55','2011-03-26 17:29:55',4,0,0,0,0,NULL,0,0,NULL,NULL,0,',',0);
 INSERT INTO `bbs_topic` VALUES (12,1,24,23,1,6,6,'111','2011-03-26 17:34:54','2011-03-26 17:35:18','2011-03-26 17:34:54',0,1,0,0,0,NULL,0,0,NULL,NULL,0,',6,',0);
-INSERT INTO `bbs_topic` VALUES (14,2,NULL,26,1,6,6,'JEEBBS如何安装？','2011-03-27 15:20:53','2011-03-27 15:20:53','2011-03-27 15:20:53',0,0,0,0,0,NULL,0,0,NULL,NULL,0,',',0);
+INSERT INTO `bbs_topic` VALUES (14,2,NULL,26,1,6,6,'如何安装？','2011-03-27 15:20:53','2011-03-27 15:20:53','2011-03-27 15:20:53',0,0,0,0,0,NULL,0,0,NULL,NULL,0,',',0);
 INSERT INTO `bbs_topic` VALUES (15,2,NULL,27,1,6,6,'测试发帖','2011-03-27 15:21:30','2011-03-27 15:21:30','2011-03-27 15:21:30',0,0,0,0,0,NULL,0,0,NULL,NULL,0,',',0);
 INSERT INTO `bbs_topic` VALUES (16,2,NULL,28,1,6,6,'','2011-03-27 15:42:21','2011-03-27 15:42:21','2011-03-27 15:42:21',0,0,0,0,0,NULL,0,0,NULL,NULL,0,',',0);
 INSERT INTO `bbs_topic` VALUES (17,2,NULL,29,1,6,6,'测试插图','2011-03-27 15:46:36','2011-03-27 15:46:36','2011-03-27 15:46:36',0,0,0,0,0,NULL,0,0,NULL,NULL,0,',',0);
@@ -468,7 +468,7 @@ CREATE TABLE `jc_site` (
   PRIMARY KEY  (`site_id`),
   UNIQUE KEY `ak_domain` (`domain`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='站点表';
-INSERT INTO `jc_site` VALUES (1,1,NULL,'localhost','www','JEEBBS论坛','jeebbs','http://','.jhtml','.html',NULL,'0','0','zh_CN','zh_CN','blue',2,2,'1','1','','');
+INSERT INTO `jc_site` VALUES (1,1,NULL,'localhost','www','CHEN论坛','jeebbs','http://','.jhtml','.html',NULL,'0','0','zh_CN','zh_CN','blue',2,2,'1','1','','');
 CREATE TABLE `jo_authentication` (
   `authentication_id` char(32) NOT NULL COMMENT '认证ID',
   `userid` int(11) NOT NULL COMMENT '用户ID',
